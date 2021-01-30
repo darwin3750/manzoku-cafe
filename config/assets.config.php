@@ -1,7 +1,8 @@
 <?php
 
 define('CSS', "/assets/styles/styles.css");  
-define('LOGO', "/assets/images/"); 
+define('LOGO', "/assets/images/logo.png"); 
+define('BANNER', "/assets/images/banner.png"); 
 define('SITE_NAME', "Manzoku Cafe");
 define('HEAD', SERVER_ROOT . "/components/templates/head.tmpl.php"); 
 define('NAVBAR', SERVER_ROOT . "/components/templates/navbar.tmpl.php"); 
