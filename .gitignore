@@ -1,5 +1,5 @@
-BaltimoreCyberTrustRoot.crt.pem
-config/database.config.php 
+# BaltimoreCyberTrustRoot.crt.pem
+# config/database.config.php 
 
 # do these to apply .gitignore
 
