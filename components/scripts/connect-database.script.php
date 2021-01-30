@@ -6,5 +6,4 @@ mysqli_real_connect($conn, DB_SERVER, DB_USER, DB_PASS, DB_NAME, DB_PORT, MYSQLI
 if (mysqli_connect_errno($conn)) {
   die('Failed to connect to MySQL: '.mysqli_connect_error());
 }
-
 ?>
