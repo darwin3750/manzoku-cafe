@@ -1,16 +1,8 @@
 <?php
-require_once "constants.php";
+require "constants.php"; 
+$page_name = "Home";
+require_once HEAD; 
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href=<?php echo CSS; ?>>
-  <title>Manzoku Cafe</title>
-</head>
 
 <body class="theme1">
   <?php include NAVBAR; ?>
@@ -22,12 +14,10 @@ require_once "constants.php";
       require_once "components/scripts/connect-database.script.php";
       $template = PRODUCT_CARD;
       require_once "components/scripts/display-posts.script.php";
+      require_once "components/scripts/close-database.script.php";
       ?>
     </div>
   </section>
-
-
-
   <?php include FOOTER; ?>
 </body>
 

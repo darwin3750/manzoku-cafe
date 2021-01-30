@@ -5,37 +5,37 @@
 
 @font-face {
   font-family: main0;
-  src: url(../typefaces/Inter/Inter-Bold-slnt=0.ttf);
+  src: url(../typefaces/KGLifeisMessy/KGLifeisMessy.ttf);
 }
 
 @font-face {
   font-family: main1Regular;
-  src: url(../typefaces/Inter/Inter-Regular-slnt=0.ttf);
+  src: url(../typefaces/Lato/Lato-Regular.ttf);
 }
 
 @font-face {
   font-family: main1SemiBold;
-  src: url(../typefaces/Inter/Inter-SemiBold-slnt=0.ttf);
+  src: url(../typefaces/Lato/Lato-SemiBold.ttf);
 }
 
 @font-face {
   font-family: main1Bold;
-  src: url(../typefaces/Inter/Inter-Bold-slnt=0.ttf);
+  src: url(../typefaces/Lato/Lato-Bold.ttf);
 }
 
 @font-face {
   font-family: main1Black;
-  src: url(../typefaces/Inter/Inter-Black-slnt=0.ttf);
+  src: url(../typefaces/Lato/Lato-Black.ttf);
 }
 
 
 .theme1 {
-  --manzoku-base: #ffcd40;
+  --manzoku-base: #f8e81b;
   --manzoku-primary: #0e0000;
-  --manzoku-secondary: #fe2216;
+  --manzoku-secondary: #b00308;
 
-  --manzoku-base-dark: #ce9909;
-  --manzoku-base-light: #ffe9ac;
+  --manzoku-base-pos: #ce9909;
+  --manzoku-base-neg: #ffe9ac;
   /* --manzoku-primary-pos1: #62A474;
   --manzoku-primary-pos2: #528961;
   --manzoku-primary-pos3: #416D4D;
@@ -51,12 +51,12 @@
   --manzoku-primary-neg6: #EBF6EE; */
 
   --manzoku-accent1: #fe6c2b;
-  --manzoku-accent1-dark: #a84115;
-  --manzoku-accent1-light: #f3a888;
+  --manzoku-accent1-pos: #a84115;
+  --manzoku-accent1-neg: #f3a888;
 
   --manzoku-accent2: #26c2c2;
-  --manzoku-accent2-dark: #0d6d6d;
-  --manzoku-accent2-light: #67ffff;
+  --manzoku-accent2-pos: #0d6d6d;
+  --manzoku-accent2-neg: #67ffff;
 
   --manzoku-contrast: #fff8e9;
   --manzoku-hard-contrast: #fff;
@@ -68,6 +68,9 @@
   --manzoku-primary: #fff8e9;
   --manzoku-secondary: #fe2216;
 
+  --manzoku-base-pos: #ffe9ac;
+  --manzoku-base-neg: #ce9909;
+
   /* --manzoku-primary-pos1: #62A474;
   --manzoku-primary-pos2: #528961;
   --manzoku-primary-pos3: #416D4D;
@@ -83,12 +86,12 @@
   --manzoku-primary-neg6: #EBF6EE; */
 
   --manzoku-accent1: #fe6c2b;
-  --manzoku-accent1-dark: #ce501a;
-  --manzoku-accent1-light: #ff9668;
+  --manzoku-accent1-neg: #ce501a;
+  --manzoku-accent1-pos: #ff9668;
 
   --manzoku-accent2: #26c2c2;
-  --manzoku-accent2-dark: #20a5a5;
-  --manzoku-accent2-light: #34e0e0;
+  --manzoku-accent2-neg: #20a5a5;
+  --manzoku-accent2-pos: #34e0e0;
 
   --manzoku-contrast: #0e0000;
   --manzoku-hard-contrast: #000;
@@ -106,8 +109,7 @@
   }
 
 /* typography */
-  .manzoku-title{
-    font-size: 4.6rem;
+  .manzoku-typeface-main0{
     font-family: main0;
   }
   .manzoku-regular{
@@ -122,6 +124,15 @@
   .manzoku-black{
     font-family: main1Black;
   }
+
+  .manzoku-font-1{font-size: 1rem;}
+  .manzoku-font-2{font-size: 1.4rem;}
+  .manzoku-font-3{font-size: 1.8rem;}
+  .manzoku-font-4{font-size: 2.2rem;}
+  .manzoku-font-5{font-size: 2.6rem;}
+  .manzoku-font-6{font-size: 3rem;}
+  .manzoku-font-7{font-size: 4.4rem;}
+  .manzoku-font-8{font-size: 4.8rem;}
 
 /* text colors */
   .manzoku-color-base{
@@ -167,17 +178,17 @@
   .manzoku-btn-base {
     color: var(--manzoku-primary);
     background-color: var(--manzoku-base);
-    border-color: var(--manzoku-base-dark);
+    border-color: var(--manzoku-base-pos);
   }
   .manzoku-btn-accent1 {
     color: var(--manzoku-contrast);
     background-color: var(--manzoku-accent1);
-    border-color: var(--manzoku-accent1-dark);
+    border-color: var(--manzoku-accent1-pos);
   }
   .manzoku-btn-accent2 {
     color: var(--manzoku-contrast);
     background-color: var(--manzoku-accent2);
-    border-color: var(--manzoku-accent2-dark);
+    border-color: var(--manzoku-accent2-pos);
   }
 
   .manzoku-btn-primary:hover, .manzoku-btn-accent1:hover, 
@@ -198,7 +209,7 @@
   .manzoku-btn-outline-primary:hover {
     color: transparent;
     background-color: var(--manzoku-base);
-    border-color: var(--manzoku-base-dark);
+    border-color: var(--manzoku-base-pos);
   }
   .manzoku-btn-outline-primary.disabled, .manzoku-btn-outline-primary:disabled {
     filter: brightness(70%);
@@ -210,6 +221,23 @@
   }
   .manzoku-table{
     border-bottom: 4px solid var(--manzoku-contrast);
+  }
+
+/* forms */
+  .manzoku-form-transparent{
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--manzoku-contrast);
+    background-color: transparent;
+    background-clip: padding-box;
+    border: 0;
+    border-bottom: 2px solid var(--manzoku-base-neg);
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   }
 
 /* others */
