@@ -1,5 +1,5 @@
 <?php
-require_once "constants.php"; 
+require "constants.php"; 
 $page_name = "Home";
 require_once HEAD; 
 ?>
@@ -14,6 +14,7 @@ require_once HEAD;
       require_once "components/scripts/connect-database.script.php";
       $template = PRODUCT_CARD;
       require_once "components/scripts/display-posts.script.php";
+      require_once "components/scripts/close-database.script.php";
       ?>
     </div>
   </section>

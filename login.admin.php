@@ -1,6 +1,6 @@
 <?php
-require_once "constants.php";
-$page_name = "Admin Login";
+require "constants.php";
+$page_name = "Administrator Login";
 require_once HEAD;
 ?>
 
@@ -13,7 +13,7 @@ require_once HEAD;
       <img src="assets/images/decorations/art.svg" height="auto" width="300px" />
     </heading>
     <article class="manzoku-color-contrast p-3 manzoku-regular text-center">
-      <form action="/" class="d-inline-block w-100 w-md-50 text-left" method="POST">
+      <form action="components/scripts/authenticate.script.php" class="d-inline-block w-100 w-md-50 text-left" method="POST">
         <div class="form-group">
           <label for="username" class="">Username:</label>
           <input id="username" type="text" name="username" required="required" autocomplete="off"
@@ -24,14 +24,9 @@ require_once HEAD;
           <input id="password" type="password" name="password" required="required" autocomplete="off"
               class="manzoku-form-transparent" />
         </div>
-        <input type="submit" value="Login" class="btn manzoku-btn-accent1 btn-lg btn-block" />
+        <input type="submit" value="Login" class="btn manzoku-btn-accent1 btn-lg btn-block" name="signin-submit"/>
       </form>
     </article>
   </section>
 </body>
-
-<style>
-  
-</style>
-
 </html>
