@@ -30,9 +30,43 @@
 
 
 .theme1 {
-  --manzoku-base: #59C9A5;
-  --manzoku-primary: #5B6C5D;
-  --manzoku-secondary: #5B6C5D;
+  --manzoku-base: #ffcd40;
+  --manzoku-primary: #0e0000;
+  --manzoku-secondary: #fe2216;
+
+  --manzoku-base-dark: #ce9909;
+  --manzoku-base-light: #ffe9ac;
+  /* --manzoku-primary-pos1: #62A474;
+  --manzoku-primary-pos2: #528961;
+  --manzoku-primary-pos3: #416D4D;
+  --manzoku-primary-pos4: #235D3A;
+  --manzoku-primary-pos5: #203626;
+  --manzoku-primary-pos6: #101B13;
+
+  --manzoku-primary-neg1: #87C999;
+  --manzoku-primary-neg2: #9BD2AA;
+  --manzoku-primary-neg3: #AFDBBB;
+  --manzoku-primary-neg4: #C8EAD1;
+  --manzoku-primary-neg5: #D7EDDD;
+  --manzoku-primary-neg6: #EBF6EE; */
+
+  --manzoku-accent1: #fe6c2b;
+  --manzoku-accent1-dark: #a84115;
+  --manzoku-accent1-light: #f3a888;
+
+  --manzoku-accent2: #26c2c2;
+  --manzoku-accent2-dark: #0d6d6d;
+  --manzoku-accent2-light: #67ffff;
+
+  --manzoku-contrast: #fff8e9;
+  --manzoku-hard-contrast: #fff;
+  --manzoku-hard-contrast-negative: #000;
+}
+
+.theme2 {
+  --manzoku-base: #ffcd40;
+  --manzoku-primary: #fff8e9;
+  --manzoku-secondary: #fe2216;
 
   /* --manzoku-primary-pos1: #62A474;
   --manzoku-primary-pos2: #528961;
@@ -48,42 +82,17 @@
   --manzoku-primary-neg5: #D7EDDD;
   --manzoku-primary-neg6: #EBF6EE; */
 
-  --manzoku-accent1: #EF6F6C;
-  --manzoku-accent1-dark: #ca5957;
-  --manzoku-accent1-light: #ff9e9d;
+  --manzoku-accent1: #fe6c2b;
+  --manzoku-accent1-dark: #ce501a;
+  --manzoku-accent1-light: #ff9668;
 
-  --manzoku-accent2: #465775;
-  --manzoku-accent2-dark: #324361;
-  --manzoku-accent2-light: #647797;
+  --manzoku-accent2: #26c2c2;
+  --manzoku-accent2-dark: #20a5a5;
+  --manzoku-accent2-light: #34e0e0;
 
-  --manzoku-contrast: #EDF6F9;
-  --manzoku-hard-contrast: #fff;
-  --manzoku-hard-contrast-negative: #000;
-}
-
-.theme2 {
-  --manzoku-base: #235D3A;
-  --manzoku-main: #73C088;
-
-  --manzoku-main-pos1: #62A474;
-  --manzoku-main-pos2: #528961;
-  --manzoku-main-pos3: #416D4D;
-  --manzoku-main-pos4: #235D3A;
-  --manzoku-main-pos5: #203626;
-  --manzoku-main-pos6: #101B13;
-
-  --manzoku-main-neg1: #87C999;
-  --manzoku-main-neg2: #9BD2AA;
-  --manzoku-main-neg3: #AFDBBB;
-  --manzoku-main-neg4: #C8EAD1;
-  --manzoku-main-neg5: #D7EDDD;
-  --manzoku-main-neg6: #EBF6EE;
-
-  --manzoku-accent1: #A673C0;
-  --manzoku-accent2: #C073AB;
-  --manzoku-accent3: #C0737C;
-
-  --manzoku-contrast: #fff;
+  --manzoku-contrast: #0e0000;
+  --manzoku-hard-contrast: #000;
+  --manzoku-hard-contrast-negative: #fff;
 }
 
 :root {
@@ -118,8 +127,11 @@
   .manzoku-color-base{
     color: var(--manzoku-base);
   }
-  .manzoku-color-main{
-    color: var(--manzoku-main);
+  .manzoku-color-primary{
+    color: var(--manzoku-primary);
+  }
+  .manzoku-color-secondary{
+    color: var(--manzoku-secondary);
   }
   .manzoku-color-accent1{
     color: var(--manzoku-accent1);
@@ -135,8 +147,11 @@
   .manzoku-bg-base{
     background-color: var(--manzoku-base);
   }
-  .manzoku-bg-main{
-    background-color: var(--manzoku-main);
+  .manzoku-bg-primary{
+    background-color: var(--manzoku-primary);
+  }
+  .manzoku-bg-secondary{
+    background-color: var(--manzoku-secondary);
   }
   .manzoku-bg-accent1{
     background-color: var(--manzoku-accent1);
@@ -149,47 +164,41 @@
   }
 
 /* button fills */
-  .manzoku-btn-primary {
-    color: var(--manzoku-base);
+  .manzoku-btn-base {
+    color: var(--manzoku-primary);
+    background-color: var(--manzoku-base);
+    border-color: var(--manzoku-base-dark);
+  }
+  .manzoku-btn-accent1 {
+    color: var(--manzoku-contrast);
     background-color: var(--manzoku-accent1);
     border-color: var(--manzoku-accent1-dark);
   }
-
-  .manzoku-btn-primary:hover {
-    color: var(--manzoku-base);
-    filter: brightness(90%);
-  }
-
-  .manzoku-btn-primary.disabled, .manzoku-btn-primary:disabled {
-    filter: brightness(70%);
-  }
-
-  .manzoku-btn-secondary {
+  .manzoku-btn-accent2 {
     color: var(--manzoku-contrast);
     background-color: var(--manzoku-accent2);
     border-color: var(--manzoku-accent2-dark);
   }
 
-  .manzoku-btn-primary:hover {
+  .manzoku-btn-primary:hover, .manzoku-btn-accent1:hover, 
+  .manzoku-btn-accent2:hover {
     filter: brightness(90%);
   }
-
-  .manzoku-btn-primary.disabled, .manzoku-btn-primary:disabled {
+  .manzoku-btn-primary.disabled, .manzoku-btn-accent1:disabled,
+  .manzoku-btn-accent2:disabled {
     filter: brightness(70%);
   }
 
 /* button outlines */
-  .manzoku-btn-outline-primary {
-    color: var(--manzoku-accent1);
-    background-color: transparent;
-    background-image: none;
-    border-color: var(--manzoku-accent1);
-  }
-
-  .manzoku-btn-outline-primary:hover {
+  .manzoku-btn-outline-base {
     color: var(--manzoku-base);
-    background-color: var(--manzoku-accent1);
-    border-color: var(--manzoku-accent1-dark);
+    background-color: transparent;
+    border-color: var(--manzoku-base);
+  }
+  .manzoku-btn-outline-primary:hover {
+    color: transparent;
+    background-color: var(--manzoku-base);
+    border-color: var(--manzoku-base-dark);
   }
   .manzoku-btn-outline-primary.disabled, .manzoku-btn-outline-primary:disabled {
     filter: brightness(70%);

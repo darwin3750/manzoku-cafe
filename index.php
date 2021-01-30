@@ -12,7 +12,7 @@ require_once "constants.php";
   <title>Manzoku Cafe</title>
 </head>
 
-<body class="">
+<body class="theme1">
   <?php include NAVBAR; ?>
   <section class="container">
 
