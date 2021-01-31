@@ -5,8 +5,7 @@ $page_name = "Contact Us";
 require_once HEAD; 
 include NAVBAR; ?>
   <section class="container">
-    <br><h1 class="manzoku-typeface-main0 manzoku-font-3 text-center manzoku-color-base">Testimoanials</h1>
-    <br><h2 class="manzoku-typeface-main0 manzoku-font-3 text-center manzoku-color-base">See what customers say about our services</h2><br><br>
+    <br><h1 class="manzoku-typeface-main0 manzoku-font-3 text-center manzoku-color-base">Contact Us</h1><br><br>
     <div class="row">
       <?php 
       require_once "components/scripts/connect-database.script.php";
