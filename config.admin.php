@@ -1,9 +1,11 @@
 <?php
+session_start();
 require "constants.php"; 
-$page_name = "Home";
+$page_name = "Config";
 require_once HEAD; 
 ?>
 <body class="theme1 manzoku-bg-primary">
+  <?php include NAVBAR; ?>
 <section class="container p-0">
     <heading class="d-block text-center">
     </heading>
@@ -24,7 +26,7 @@ require_once HEAD;
           <input id="confirmpassword" type="password" name="confirmpassword" required="required" autocomplete="off"
               class="manzoku-form-transparent" />
         </div>
-        <input type="submit" value="Register" class="btn manzoku-btn-accent1 btn-lg btn-block" name="register-submit"/>
+        <input type="submit" value="Register" class="btn manzoku-btn-accent1 btn-lg btn-block manzoku-typeface-main0" name="register-submit"/>
       </form>
     </article>
   </section>

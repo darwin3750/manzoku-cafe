@@ -18,7 +18,7 @@
     $sql_query_username = "SELECT USERNAME FROM USERS WHERE USERNAME=?";
     $sql_statement = mysqli_stmt_init($conn);
     if(!mysqli_stmt_prepare($sql_statement, $sql_query_username)){
-      header("Location: ../config.admin.php?error=sqlerror1");
+      header("Location: ../../config.admin.php?error=sqlerror1");
       exit();
     }
     else{
@@ -40,21 +40,21 @@
     $sql_query = "INSERT INTO USERS (USERNAME, PRIVILEGE, PASSWORD) VALUES (?, ?, ?)";
     $sql_statement = mysqli_stmt_init($conn);
     if(!mysqli_stmt_prepare($sql_statement, $sql_query)){
-      header("Location: ../config.admin.php?error=sqlerorr2");
+      header("Location: ../../config.admin.php?error=sqlerorr2");
       exit();
     }
     else{
       $hashed_password = password_hash($password, PASSWORD_DEFAULT);
       mysqli_stmt_bind_param($sql_statement, "sss", $username, $privilege, $hashed_password);
       mysqli_stmt_execute($sql_statement);
-      header("Location: ../config.admin.php?signup=success");
+      header("Location: ../../config.admin.php?signup=success");
       exit();
     }
     mysqli_stmt_close($sql_statement);
     mysqli_close($conn);
   }
   else{
-    header("Location: ../config.admin.php?signup=failed ");
+    header("Location: ../../config.admin.php?signup=failed ");
     exit();
   }
 ?>
