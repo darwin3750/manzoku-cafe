@@ -10,8 +10,8 @@ include NAVBAR; ?>
       <?php 
       require_once "components/scripts/connect-database.script.php";
       //require_once "components/scripts/get-testimonies.script.php";
-      $template = TESTIMONIAL_CARD;
-      include "components/scripts/display-testimonials.script.php";
+      $template = SOCIAL_CARD;
+      include "components/scripts/display-contact-us.script.php";
       require_once "components/scripts/close-database.script.php";
       ?>
     </div>
