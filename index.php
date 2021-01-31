@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once "constants.php"; 
 $page_name = "Home";
 require_once HEAD; 
