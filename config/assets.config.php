@@ -2,6 +2,7 @@
 
 define('CSS', "/assets/styles/styles.css");  
 define('LOGO', "/assets/images/logo.png"); 
+define('LOGO2', "/assets/images/logo2.png"); 
 define('BANNER', "/assets/images/banner.png"); 
 define('SITE_NAME', "Manzoku Cafe");
 define('HEAD', SERVER_ROOT . "/components/templates/head.tmpl.php"); 

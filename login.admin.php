@@ -3,8 +3,6 @@ require "constants.php";
 $page_name = "Administrator Login";
 require_once HEAD;
 ?>
-
-<body class="theme1 manzoku-bg-primary">
   <section class="container p-0">
     <heading class="d-block text-center">
       <img src="<?php echo BANNER ?>" class="img-fluid w-md-50 d-inline-block">
@@ -35,6 +33,4 @@ require_once HEAD;
     </article>
   </section>
 </body>
-<script>
-</script>
 </html>
