@@ -10,6 +10,7 @@ define('HEAD', SERVER_ROOT . "/components/templates/head.tmpl.php");
 define('NAVBAR', SERVER_ROOT . "/components/templates/navbar.tmpl.php"); 
 define('FOOTER', SERVER_ROOT . "/components/templates/footer.tmpl.php"); 
 define('PRODUCT_CARD', SERVER_ROOT . "/components/templates/product-card.tmpl.php"); 
+define('TESTIMONIAL_CARD', SERVER_ROOT . "/components/templates/testimonial-card.tmpl.php"); 
 
 define('CONNECT_DATABASE', SERVER_ROOT . "/components/scripts/connect-database.script.php"); 
 define('CLOSE_DATABASE', SERVER_ROOT . "/components/scripts/close-database.script.php"); 
