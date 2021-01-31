@@ -31,7 +31,7 @@ if(isset($_POST['signin-submit'])){
         $_SESSION['current_user'] = $row['USERNAME'];
         $_SESSION['current_user_privilege'] = $row['PRIVILEGE'];
 
-        $success_reply = "Location: ../index.php?login=success;";
+        $success_reply = "Location: ../../config.admin.php?login=success;";
         header($success_reply);
         exit();
       }else{

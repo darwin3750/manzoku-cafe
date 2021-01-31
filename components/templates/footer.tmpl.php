@@ -6,3 +6,6 @@
     <a class="navbar-brand">Manzoku Cafe</a>
   </div>
 </section>
+
+</body>
+</html>
