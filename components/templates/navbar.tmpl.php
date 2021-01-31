@@ -6,7 +6,7 @@
       <a class="manzoku-font-2" href="about_us.php">About Us</a>
       <a class="manzoku-font-2" href="contact_us.php">Contact Us</a>
       <a class="manzoku-font-2" href="testimonies.php">Testimonies</a>
-      <?php if($_SESSION['current_user_privilege'] == "ADMIN"){ ?>
+      <?php if(isset($_SESSION['current_user_privilege']) && $_SESSION['current_user_privilege'] == "ADMIN"){ ?>
         <a class="manzoku-font-2" href="config.admin.php">Config</a>
       <?php }?>
     </section>

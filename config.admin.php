@@ -28,6 +28,9 @@ require_once HEAD;
         </div>
         <input type="submit" value="Register" class="btn manzoku-btn-accent1 btn-lg btn-block manzoku-typeface-main0" name="register-submit"/>
       </form>
+      <form action="components/scripts/sign-out.script.php" class="d-inline-block w-100 w-md-50 text-left" method="POST">
+        <input type="submit" value="Sign Out" class="btn manzoku-btn-accent1 btn-lg btn-block manzoku-typeface-main0"/>
+      </form>
     </article>
   </section>
 </body>
