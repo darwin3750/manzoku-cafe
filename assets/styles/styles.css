@@ -290,3 +290,25 @@
   .manzoku-border-contrast-5{
     border: 5px solid var(--manzoku-contrast)
   }
+
+/* tooltip */
+  .tooltip-enabler {
+    position: relative;
+    display: inline-block;
+    width: 0;
+  }
+
+  .tooltip {
+    /* hide and position tooltip */
+    background-color: var(--manzoku-base);
+    color: var(--manzoku-primary);
+    border-radius: 5px;
+    opacity: 0;
+    position: absolute;
+    transition: opacity 0.5s;
+  }
+
+  .tooltip-enabler:hover .tooltip {
+    /* display tooltip on hover */
+    opacity: 1;
+  }
