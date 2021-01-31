@@ -186,10 +186,8 @@
 
   .manzoku-footer{
     background-image: url("../images/decorations/footerbgdark.png");
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+    
+
   }
 
 /* button fills */
