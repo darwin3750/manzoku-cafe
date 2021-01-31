@@ -8,7 +8,13 @@ require_once HEAD;
   <section class="container p-0">
     <heading class="d-block text-center">
       <img src="<?php echo BANNER ?>" class="img-fluid w-md-50 d-inline-block">
-      <h2 class=" manzoku-typeface-main0 manzoku-font-3 text-center manzoku-color-base">ADMINISTRATOR LOGIN</h2>
+      <h2 class=" manzoku-typeface-main0 manzoku-font-3 text-center manzoku-color-base">ADMINISTRATOR LOGIN
+        <span class="tooltip-enabler">(?)
+          <span class="tooltip manzoku-font-1 manzoku-typeface-main0 p-2">
+            This feature is for the website's administrators only. If you got to this page by accident, please leave now.
+          </span>
+        </span>
+      </h2>
       <hr/>
       <img src="assets/images/decorations/art.svg" height="auto" width="300px" />
     </heading>
@@ -24,9 +30,11 @@ require_once HEAD;
           <input id="password" type="password" name="password" required="required" autocomplete="off"
               class="manzoku-form-transparent" />
         </div>
-        <input type="submit" value="Login" class="btn manzoku-btn-accent1 btn-lg btn-block" name="signin-submit"/>
+        <input type="submit" value="LOGIN" class="btn manzoku-btn-accent1 btn-lg btn-block manzoku-black" name="signin-submit"/>
       </form>
     </article>
   </section>
 </body>
+<script>
+</script>
 </html>
