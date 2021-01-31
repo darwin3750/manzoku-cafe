@@ -6,6 +6,7 @@ define('LOGO2', "assets/images/logo2.png");
 define('BANNER', "assets/images/banner.png"); 
 define('BANNER2', "assets/images/banner2.png"); 
 define('SITE_NAME', "Manzoku Cafe");
+define('FOOTER_BG', "assets/images/decorations/footerbg.png");
 
 //TEMPLATES
 define('HEAD', SERVER_ROOT . "/components/templates/head.tmpl.php"); 
