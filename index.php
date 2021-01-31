@@ -9,8 +9,7 @@ include NAVBAR; ?>
     <div class="row">
       <?php
       require_once "components/scripts/connect-database.script.php";
-      $template = PRODUCT_CARD;
-      include "components/scripts/display-posts.script.php";
+      include "components/scripts/display-featured-content.script.php";
       require_once "components/scripts/close-database.script.php";
       ?>
     </div>

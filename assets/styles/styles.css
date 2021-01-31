@@ -66,13 +66,12 @@
 }
 
 .theme2 {
-  --manzoku-base: #ffcd40;
-  --manzoku-primary: #fff8e9;
-  --manzoku-secondary: #fe2216;
+  --manzoku-base: #f8e81b;
+  --manzoku-primary: #0e0000;
+  --manzoku-secondary: #b00308;
 
-  --manzoku-base-pos: #ffe9ac;
-  --manzoku-base-neg: #ce9909;
-
+  --manzoku-base-pos: #ce9909;
+  --manzoku-base-neg: #ffe9ac;
   /* --manzoku-primary-pos1: #62A474;
   --manzoku-primary-pos2: #528961;
   --manzoku-primary-pos3: #416D4D;
@@ -88,16 +87,16 @@
   --manzoku-primary-neg6: #EBF6EE; */
 
   --manzoku-accent1: #fe6c2b;
-  --manzoku-accent1-neg: #ce501a;
-  --manzoku-accent1-pos: #ff9668;
+  --manzoku-accent1-pos: #a84115;
+  --manzoku-accent1-neg: #f3a888;
 
   --manzoku-accent2: #26c2c2;
-  --manzoku-accent2-neg: #20a5a5;
-  --manzoku-accent2-pos: #34e0e0;
+  --manzoku-accent2-pos: #0d6d6d;
+  --manzoku-accent2-neg: #67ffff;
 
-  --manzoku-contrast: #0e0000;
-  --manzoku-hard-contrast: #000;
-  --manzoku-hard-contrast-negative: #fff;
+  --manzoku-contrast: #fff8e9;
+  --manzoku-hard-contrast: #fff;
+  --manzoku-hard-contrast-negative: #000;
 }
 
 :root {
@@ -381,10 +380,11 @@
     border-radius: 5px;
     opacity: 0;
     position: absolute;
-    transition: opacity 0.5s;
+    display: none;
   }
 
   .tooltip-enabler:hover .tooltip {
     /* display tooltip on hover */
     opacity: 1;
+    display: block;
   }
