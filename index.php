@@ -9,7 +9,7 @@ include NAVBAR; ?>
   <div class="row">
     <?php
     require_once "components/scripts/connect-database.script.php";
-    
+    $form = FORM_FEATURED_CONTENT;
     include "components/templates/add-content-modal.tmpl.php";
     include "components/scripts/display-featured-content.script.php";
     include "components/templates/add-content-section.tmpl.php";
