@@ -11,20 +11,28 @@
       //if the string doesn't contain any space then it will cut without word basis.
       $content = $endPoint? substr($stringCut, 0, $endPoint) : substr($stringCut, 0);
       $content .= '...';
-  } 
-  ?>
-<br/>
-<div class="col-sm-4 d-flex" style="margin-left:auto; margin-right:auto;">
-<div class="p-2 row-sm-2 d-flex align-items-stretch">
-<div class="card shadow p-40 text-white bg-secondary mb-4" style="width: 20rem; height: 550px;">
-  <img class="card-img-top img-fluid rounded img-thumbnail" src="<?php echo $img_src?>"  alt="Card image cap">
-  <div class="card-body" style="text-align:center;">
-  <p class="card-title" style="font-weight:bold;"><?php echo $title ?></p>
-  <p class="card-body" style="margin-top:-8%;"><?php echo $content ?></p>
-  <div style="position: absolute; bottom: 0; left:36%;";>
+   }
   
-  </div>
-  </div>
-</div>
-</div>
-</div>
+   if ($type == "NUMBER")
+   {
+     echo 
+     '<div class="card border-warning mb-3" style="max-width: 18rem;">
+        <div class="card-header">'.$title.'</div>
+        <div class="card-body">
+          <!-- <img src="'.$img_src.'" style= "width: 70pt; height:50pt; display: block; margin-left: auto;">-->
+          <p class="card-text">'.$content.'</p>
+        </div>
+      </div>';
+   } 
+    if ($type == "SOCIAL MEDIA")
+    {
+    echo
+    '<div class="card w-50">
+    <div class="card-body">
+      <h5 class="card-title">'.$title.'</h5>
+      <a href="'.$content.'" class="btn btn-primary">Visit</a>
+    </div>
+    </div>';
+    }
+
+?>
