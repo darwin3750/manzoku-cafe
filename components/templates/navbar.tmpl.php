@@ -22,7 +22,6 @@
         el.classList.remove("active");
       };
     });
-    //div[text()="Hello World"]
   }
 </script>
 
