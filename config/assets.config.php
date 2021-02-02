@@ -6,6 +6,7 @@ define('LOGO2', "assets/images/logo2.png");
 define('BANNER', "assets/images/banner.png"); 
 define('BANNER2', "assets/images/banner2.png"); 
 define('SITE_NAME', "Manzoku Cafe");
+define('FOOTER_BG', "assets/images/decorations/footerbg.png");
 
 //FOLDER--RELATIVE PATH FROM ROOT
 define('ROOT_POSTERS_FOLDER', "assets/images/posters/"); 
@@ -29,6 +30,7 @@ define('DECORATIONS_FOLDER', SERVER_ROOT . "/assets/images/posters/");
 define('HEAD', SERVER_ROOT . "/components/templates/head.tmpl.php"); 
 define('NAVBAR', SERVER_ROOT . "/components/templates/navbar.tmpl.php"); 
 define('FOOTER', SERVER_ROOT . "/components/templates/footer.tmpl.php"); 
+<<<<<<< HEAD
 define('FEATURED_CONTENT', SERVER_ROOT . "/components/templates/featured-content.tmpl.php"); 
 define('MENU_CATEGORY', SERVER_ROOT . "/components/templates/menu-category.tmpl.php"); 
 define('MENU_CONTENT', SERVER_ROOT . "/components/templates/menu-content.tmpl.php"); 
@@ -36,6 +38,11 @@ define('MENU_CONTENT', SERVER_ROOT . "/components/templates/menu-content.tmpl.ph
 //TEMPLATES--FILE NAME
 define('FORM_FEATURED_CONTENT', "form-featured-content.tmpl.php"); 
 define('FORM_MENUS', "form-menus.tmpl.php"); 
+=======
+define('PRODUCT_CARD', SERVER_ROOT . "/components/templates/product-card.tmpl.php"); 
+define('TESTIMONIAL_CARD', SERVER_ROOT . "/components/templates/testimonial-card.tmpl.php"); 
+define('CONTACT_US_CARD', SERVER_ROOT . "/components/templates/contact-us-card.tmpl.php"); 
+>>>>>>> 8cd91abe0c9d1a155fcaba77428e5a02316d9975
 
 //SCRIPTS--ABSOLUTE PATH
 define('CONNECT_DATABASE', SERVER_ROOT . "/components/scripts/connect-database.script.php"); 
