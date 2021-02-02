@@ -6,7 +6,7 @@ require_once HEAD;
 include NAVBAR; ?>
 
 <section class="container">
-  <div class="row">
+  <div class="row p-3 p-md-0">
     <?php
     require_once "components/scripts/connect-database.script.php";
     $form = FORM_FEATURED_CONTENT;

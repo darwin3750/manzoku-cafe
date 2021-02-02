@@ -8,11 +8,4 @@
     </article>
   </section>
 
-  <script>
-    window.onload = () => {
-      document.querySelector("#add-content").addEventListener('click', ()=> {
-        document.querySelector("#add-modal").classList.add("d-block");
-      });
-    }
-  </script>
 <?php } ?>

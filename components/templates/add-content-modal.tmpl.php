@@ -17,9 +17,3 @@
     </div>
   </div>
 </div>
-
-<script>
-  function closeModal(){
-    document.querySelector("#add-modal").classList.remove("d-block");
-  }
-</script>
