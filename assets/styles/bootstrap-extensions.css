@@ -16,6 +16,9 @@
 .opacity-none {
   opacity: 0;
 }
+.opacity-full {
+  opacity: 1 !important;
+}
 .fit-content{
   width: fit-content;
 }
