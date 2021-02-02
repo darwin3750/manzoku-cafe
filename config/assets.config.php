@@ -26,13 +26,10 @@ define('NAVBAR', SERVER_ROOT . "/components/templates/navbar.tmpl.php");
 define('FOOTER', SERVER_ROOT . "/components/templates/footer.tmpl.php"); 
 define('PRODUCT_CARD', SERVER_ROOT . "/components/templates/product-card.tmpl.php"); 
 define('TESTIMONIAL_CARD', SERVER_ROOT . "/components/templates/testimonial-card.tmpl.php"); 
-<<<<<<< HEAD
 define('FEATURED_CONTENT', SERVER_ROOT . "/components/templates/featured-content.tmpl.php"); 
 
 //TEMPLATES--FILE NAME
 define('FORM_FEATURED_CONTENT', "form-featured-content.tmpl.php"); 
-=======
->>>>>>> b48aad62f4ff864923b2352bd0234f0578940d60
 
 //SCRIPTS--ABSOLUTE PATH
 define('CONNECT_DATABASE', SERVER_ROOT . "/components/scripts/connect-database.script.php"); 
