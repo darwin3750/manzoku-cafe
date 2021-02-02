@@ -13,7 +13,6 @@ include NAVBAR; ?>
       $template = TESTIMONIAL_CARD;
       include "components/scripts/display-testimonials.script.php";
       include "components/scripts/get-testimonies.script.php";
-      deleteTestTest();
       require_once "components/scripts/close-database.script.php";
       ?>
     </div>
