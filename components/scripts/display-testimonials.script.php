@@ -8,6 +8,7 @@ if (!mysqli_stmt_prepare($sql_statement, $sql_query_cardcode)) {
   mysqli_stmt_execute($sql_statement);
   $result = mysqli_stmt_get_result($sql_statement);
   while ($row = mysqli_fetch_assoc($result)) {
+    $id = $row['TESTIMONY_ID'];
     $type = $row['TESTIMONY_TYPE'];
     $title = $row['TITLE'];
     $date = $row['DATE'];
