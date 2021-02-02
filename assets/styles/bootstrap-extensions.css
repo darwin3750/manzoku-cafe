@@ -16,6 +16,9 @@
 .opacity-none {
   opacity: 0;
 }
+.opacity-full {
+  opacity: 1 !important;
+}
 .fit-content{
   width: fit-content;
 }
@@ -43,6 +46,16 @@
 .rounded-left-0 {
   border-top-left-radius: 0 !important;
   border-bottom-left-radius: 0 !important;
+}
+
+.top-0{
+  top: 0;
+}
+.right-0{
+  right: 0;
+}
+.left-0{
+  left: 0;
 }
 
 .w-fit-content {
