@@ -12,7 +12,7 @@
       </div>
       <!-- Modal footer -->
       <div class="modal-footer">
-        <input type="submit" value="ADD CONTENT" class="btn manzoku-btn-accent1 btn-lg btn-block manzoku-typeface-main0" name="featured-content-submit" form="currentForm" />
+        <input type="submit" value="ADD CONTENT" class="btn manzoku-btn-accent1 btn-lg btn-block manzoku-typeface-main0" name="add-content-submit" form="currentForm" />
       </div>
     </div>
   </div>
