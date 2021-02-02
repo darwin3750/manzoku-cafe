@@ -10,6 +10,7 @@ if (!mysqli_stmt_prepare($sql_statement, $sql_query_cardcode)) {
   while ($row = mysqli_fetch_assoc($result)) {
     $type = $row['TESTIMONY_TYPE'];
     $title = $row['TITLE'];
+    $date = $row['DATE'];
     $author = $row['AUTHOR_NAME'];
     $content = $row['CONTENT'];
     $img_src = $row['IMG_SRC'];
