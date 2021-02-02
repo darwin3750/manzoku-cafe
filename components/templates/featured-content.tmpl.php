@@ -7,7 +7,7 @@
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="d-inline-block p-1" role="button" onclick="
                 openModal('#modify-content-modal', this);
                 populateFormModal({<?php echo 
-                  "content_title:'{$content_title}', subheading:'{$subheading}', description:'{$description}', 
+                  "content_id:'{$content_id}', content_title:'{$content_title}', subheading:'{$subheading}', description:'{$description}', 
                   img_src:'{$img_src}', img_layout:'{$img_layout}', is_carousel:'{$is_carousel}'"
                 ?>});">
             <g fill='var(--manzoku-contrast)'>

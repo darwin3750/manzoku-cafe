@@ -1,4 +1,8 @@
 <form id="currentForm" action="components/scripts/modify-featured-content.script.php" class="" method="POST" enctype="multipart/form-data">
+  <div class="form-group d-none">
+    <label for="content_id" class="manzoku-color-secondary">Content ID:</label>
+    <input id="content_id" type="text" name="content_id" class="manzoku-form-transparent"/>
+  </div>
   <div class="form-group">
     <label for="content_title" class="manzoku-color-secondary">Content Title:</label>
     <input id="content_title" type="text" name="content_title" autocomplete="off" class="manzoku-form-transparent" />
