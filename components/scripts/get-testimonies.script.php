@@ -26,7 +26,7 @@ VALUES ('NORMAL', 'CUSTOMER', '2020-07-22', 'Reynalita G Maglalang', 'Delicious 
     $conn->close();
 }
 
-function editTestTest()
+function updateTestTest()
 {
     $servername = "localhost";
     $username = "root";
@@ -41,7 +41,7 @@ function editTestTest()
         die("Connection failed: " . $conn->connect_error);
     }
     //$id = $_GET['id'];
-    $sql = "UPDATE testimonies SET TITLE='Marin' WHERE TESTIMONY_ID=18";
+    $sql = "UPDATE testimonies SET TITLE='Marin', AUTHOR_NAME='Mark' WHERE TESTIMONY_ID=19";
     if ($conn->query($sql) === true)
     {
         echo "Record updated successfully";
