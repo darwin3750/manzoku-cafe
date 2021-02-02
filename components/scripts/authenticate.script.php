@@ -64,5 +64,5 @@ if(isset($_POST['signin-submit'])){
   mysqli_stmt_close($sql_statement);
   require_once "components/scripts/close-database.script.php";
 }
-header("Location: /");
+header("Location: ../../");
 ?>
