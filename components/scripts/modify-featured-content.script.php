@@ -14,61 +14,35 @@ $subheading = $_POST['subheading'];
 $description = $_POST['description'];
 $img_src =  $_POST['img_src'];
 
-//for when adding content
+$sql_statement = mysqli_stmt_init($conn);
+
+function prepareSQLStatement($sql_query){
+  global $sql_statement;
+  if(!mysqli_stmt_prepare($sql_statement, $sql_query)){
+    header("Location: ../../?error=sqlerorr");
+    exit();
+  }
+}
+
+//for adding content
 if(isset($_POST['add-content-submit'])){
-  //put to DB
-  $sql_query = "INSERT INTO FEATURED_CONTENT (IMG_LAYOUT, IS_CAROUSEL, CONTENT_TITLE, SUBHEADING, DESCRIPTION, IMG_SRC) VALUES (?, ?, ?, ?, ?, ?)";
-  $sql_statement = mysqli_stmt_init($conn);
-  if(!mysqli_stmt_prepare($sql_statement, $sql_query)){
-    header("Location: ../../?error=sqlerorr");
-    exit();
-  }
-  else{
-    mysqli_stmt_bind_param($sql_statement, "sissss", $img_layout, $is_carousel, $content_title, $subheading, $description, $img_src);
-    mysqli_stmt_execute($sql_statement);
-    header("Location: ../../?add=success");
-    exit();
-  }
-  // mysqli_stmt_close($sql_statement);
-  // mysqli_close($conn);
+  prepareSQLStatement("INSERT INTO FEATURED_CONTENT (IMG_LAYOUT, IS_CAROUSEL, CONTENT_TITLE, SUBHEADING, DESCRIPTION, IMG_SRC) VALUES (?, ?, ?, ?, ?, ?)");
+  mysqli_stmt_bind_param($sql_statement, "sissss", $img_layout, $is_carousel, $content_title, $subheading, $description, $img_src);
 }
-//for when editing content
+//for editing content
 else if(isset($_POST['edit-content-submit'])){
-  //update in DB
-  $sql_query = "UPDATE FEATURED_CONTENT SET IMG_LAYOUT=?, IS_CAROUSEL=?, CONTENT_TITLE=?, SUBHEADING=?, DESCRIPTION=?, IMG_SRC=? WHERE CONTENT_ID=?";
-  $sql_statement = mysqli_stmt_init($conn);
-  if(!mysqli_stmt_prepare($sql_statement, $sql_query)){
-    header("Location: ../../?error=sqlerorr");
-    exit();
-  }
-  else{
-    mysqli_stmt_bind_param($sql_statement, "sissssi", $img_layout, $is_carousel, $content_title, $subheading, $description, $img_src, $content_id);
-    mysqli_stmt_execute($sql_statement);
-    header("Location: ../../?update=success");
-    exit();
-  }
-  // mysqli_stmt_close($sql_statement);
-  // mysqli_close($conn);
+  prepareSQLStatement("UPDATE FEATURED_CONTENT SET IMG_LAYOUT=?, IS_CAROUSEL=?, CONTENT_TITLE=?, SUBHEADING=?, DESCRIPTION=?, IMG_SRC=? WHERE CONTENT_ID=?");
+  mysqli_stmt_bind_param($sql_statement, "sissssi", $img_layout, $is_carousel, $content_title, $subheading, $description, $img_src, $content_id);
 }
-//for when deleting content
+//for deleting content
 else if(isset($_POST['delete-section-submit'])){
-  //update in DB
-  $sql_query = "DELETE FROM FEATURED_CONTENT WHERE CONTENT_ID=?";
-  $sql_statement = mysqli_stmt_init($conn);
-  if(!mysqli_stmt_prepare($sql_statement, $sql_query)){
-    header("Location: ../../?error=sqlerorr2");
-    exit();
-  }
-  else{
-    mysqli_stmt_bind_param($sql_statement, "i", $content_id);
-    mysqli_stmt_execute($sql_statement);
-    header("Location: ../../?delete=success");
-    exit();
-  }
-  // mysqli_stmt_close($sql_statement);
-  // mysqli_close($conn);
+  prepareSQLStatement("DELETE FROM FEATURED_CONTENT WHERE CONTENT_ID=?");
+  mysqli_stmt_bind_param($sql_statement, "i", $content_id);
 }else{
   header("Location: ../../");
   exit();
 }
+mysqli_stmt_execute($sql_statement);
+header("Location: ../../?query_status=success");
+exit();
 ?>
