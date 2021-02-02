@@ -1,4 +1,4 @@
-<form id="currentForm" action="components/scripts/add-featured-content.script.php" class="" method="POST" enctype="multipart/form-data">
+<form id="currentForm" action="components/scripts/modify-featured-content.script.php" class="" method="POST" enctype="multipart/form-data">
   <div class="form-group">
     <label for="content_title" class="manzoku-color-secondary">Content Title:</label>
     <input id="content_title" type="text" name="content_title" autocomplete="off" class="manzoku-form-transparent" />
@@ -11,7 +11,7 @@
     <label for="description" class="manzoku-color-secondary">Description:</label>
     <input id="description" type="text" name="description" autocomplete="off" class="manzoku-form-transparent" />
   </div>
-  <select name="img_src" class="form-select manzoku-form-transparent mt-2 mb-2" required>
+  <select id="img_src" name="img_src" class="form-select manzoku-form-transparent mt-2 mb-2" required>
     <option class="d-none" value="" selected>Select image to display</option>
     <?php
     foreach (scandir(POSTERS_FOLDER) as $key => $file) {
@@ -21,7 +21,7 @@
     }
     ?>
   </select>
-  <select name="img_layout" class="form-select manzoku-form-transparent mt-2 mb-2" required>
+  <select id="img_layout" name="img_layout" class="form-select manzoku-form-transparent mt-2 mb-2" required>
     <option class="d-none" value="" selected>Select image position</option>
     <option value="CENTER">CENTER</option>
     <option value="RIGHT">RIGHT</option>
@@ -30,7 +30,7 @@
   </select>
   <section class="d-flex justify-content-end">
     <div class="form-check">
-      <input class="form-check-input manzoku-color-base" type="checkbox" id="is_carousel" name="is_carousel">
+      <input id="is_carousel" class="form-check-input manzoku-color-base" type="checkbox" name="is_carousel">
       <label class="form-check-label manzoku-color-secondary" for="is_carousel">
         Put inside carousel?
       </label>

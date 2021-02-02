@@ -199,6 +199,11 @@
     background-color: var(--manzoku-base);
     border-color: var(--manzoku-base-pos);
   }
+  .manzoku-btn-secondary {
+    color: var(--manzoku-contrast);
+    background-color: var(--manzoku-secondary);
+    border-color: var(--manzoku-base-secondary);
+  }
   .manzoku-btn-accent1 {
     color: var(--manzoku-contrast);
     background-color: var(--manzoku-accent1);
@@ -211,11 +216,11 @@
   }
 
   .manzoku-btn-primary:hover, .manzoku-btn-accent1:hover, 
-  .manzoku-btn-accent2:hover {
+  .manzoku-btn-accent2:hover, .manzoku-btn-secondary:hover {
     filter: brightness(90%);
   }
   .manzoku-btn-primary.disabled, .manzoku-btn-accent1:disabled,
-  .manzoku-btn-accent2:disabled {
+  .manzoku-btn-accent2:disabled, .manzoku-btn-secondary:disabled {
     filter: brightness(70%);
   }
 

@@ -3,7 +3,7 @@
 <?php
 require "../../constants.php";
 echo "Location: ". SERVER_ROOT;
-//check if the user got to this page by clicking the sign up button
+//for when adding content
 if(isset($_POST['add-content-submit'])){
   //connect to the DB
   require_once "connect-database.script.php";
