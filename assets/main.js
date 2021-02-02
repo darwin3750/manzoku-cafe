@@ -14,9 +14,11 @@ function openModal(modal, caller){
   if(caller.id == "add-content"){
     document.querySelector("#modal-add-footer").classList.replace("d-none", "d-block");
     document.querySelector("#modal-edit-footer").classList.replace("d-block", "d-none");
+    document.querySelector("#modal-add-footer input").disabled = false;
   }else{
     document.querySelector("#modal-edit-footer").classList.replace("d-none", "d-block");
     document.querySelector("#modal-add-footer").classList.replace("d-block", "d-none");
+    document.querySelector("#modal-add-footer input").disabled = true;
   }
 }
 

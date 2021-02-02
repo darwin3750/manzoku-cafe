@@ -16,7 +16,7 @@
           <input type="submit" value="ADD CONTENT" class="btn manzoku-btn-accent1 btn-lg btn-block manzoku-typeface-main0" name="add-content-submit" form="currentForm" />
         </div>
         <div id="modal-edit-footer" class="d-none w-100">
-          <input type="submit" value="APPLY CHANGES" class="btn manzoku-btn-accent1 btn-lg btn-block manzoku-typeface-main0" name="add-content-submit" form="currentForm" />
+          <input type="submit" value="APPLY CHANGES" class="btn manzoku-btn-accent1 btn-lg btn-block manzoku-typeface-main0" name="edit-content-submit" form="currentForm" />
           <input type="submit" value="DELETE SECTION" class="btn manzoku-btn-secondary btn-lg btn-block manzoku-typeface-main0" name="delete-section-submit" form="currentForm" />
         </div>
       </div>
