@@ -3,6 +3,7 @@
     <a class="navbar-brand" href="index.php"><img src=<?php echo BANNER2 ?> class="img-fluid" width="300px"></a>
     <section id="navigation-links" class="manzoku-typeface-main0 manzoku-color-contrast">
       <a class="manzoku-font-2" href="index.php">Home</a>
+      <a class="manzoku-font-2" href="menus.php">Menus</a>
       <a class="manzoku-font-2" href="about_us.php">About Us</a>
       <a class="manzoku-font-2" href="contact_us.php">Contact Us</a>
       <a class="manzoku-font-2" href="testimonies.php">Testimonies</a>

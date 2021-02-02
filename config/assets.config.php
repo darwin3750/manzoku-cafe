@@ -13,6 +13,12 @@ define('ROOT_MENUS_FOLDER', "assets/images/menus/");
 define('ROOT_CONTACT_US_FOLDER', "assets/images/contact-us/"); 
 define('ROOT_DECORATIONS_FOLDER', "assets/images/posters/"); 
 
+//FOLDER--RELATIVE PATH FROM TEMPLATE
+define('TEMPLATE_POSTERS_FOLDER', "../../assets/images/posters/"); 
+define('TEMPLATE_MENUS_FOLDER', "../../assets/images/menus/"); 
+define('TEMPLATE_CONTACT_US_FOLDER', "../../assets/images/contact-us/"); 
+define('TEMPLATE_DECORATIONS_FOLDER', "../../assets/images/posters/"); 
+
 //FOLDERS--ABSOLUTE PATH
 define('POSTERS_FOLDER', SERVER_ROOT . "/assets/images/posters/"); 
 define('MENUS_FOLDER', SERVER_ROOT . "/assets/images/menus/"); 
@@ -23,11 +29,13 @@ define('DECORATIONS_FOLDER', SERVER_ROOT . "/assets/images/posters/");
 define('HEAD', SERVER_ROOT . "/components/templates/head.tmpl.php"); 
 define('NAVBAR', SERVER_ROOT . "/components/templates/navbar.tmpl.php"); 
 define('FOOTER', SERVER_ROOT . "/components/templates/footer.tmpl.php"); 
-define('PRODUCT_CARD', SERVER_ROOT . "/components/templates/product-card.tmpl.php"); 
 define('FEATURED_CONTENT', SERVER_ROOT . "/components/templates/featured-content.tmpl.php"); 
+define('MENU_CATEGORY', SERVER_ROOT . "/components/templates/menu-category.tmpl.php"); 
+define('MENU_CONTENT', SERVER_ROOT . "/components/templates/menu-content.tmpl.php"); 
 
 //TEMPLATES--FILE NAME
 define('FORM_FEATURED_CONTENT', "form-featured-content.tmpl.php"); 
+define('FORM_MENUS', "form-menus.tmpl.php"); 
 
 //SCRIPTS--ABSOLUTE PATH
 define('CONNECT_DATABASE', SERVER_ROOT . "/components/scripts/connect-database.script.php"); 
