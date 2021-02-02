@@ -15,7 +15,7 @@ $description = $_POST['description'];
 $img_src =  $_POST['img_src'];
 
 $sql_statement = mysqli_stmt_init($conn);
-
+//to prevent SQL injections
 function prepareSQLStatement($sql_query){
   global $sql_statement;
   if(!mysqli_stmt_prepare($sql_statement, $sql_query)){
