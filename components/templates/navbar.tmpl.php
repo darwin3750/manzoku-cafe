@@ -13,19 +13,6 @@
   </div>
 </section>
 
-<script>
-  window.onload = () => {
-    [].slice.call(document.querySelector("#navigation-links").children).forEach(function(el){
-      if(el.textContent == "<?php echo $page_name ?>"){
-        el.classList.add("active");
-      }else{
-        el.classList.remove("active");
-      };
-    });
-  }
-</script>
-
-
 <style>
   #navigation-links > a {
     margin-right: 0.5rem;

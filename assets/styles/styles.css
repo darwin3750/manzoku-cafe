@@ -389,3 +389,29 @@
 ::-webkit-scrollbar-thumb:hover {
   background: var(--manzoku-base-pos);
 }
+
+/* SVG */
+.svg-container-icon-1, .svg-container-icon-2, .svg-container-icon-3, .svg-container-icon-4, .svg-container-icon-5{
+  display: inline-block;
+	position: relative;
+}
+.svg-container-icon-1 {
+  width: 1.6rem;
+}
+.svg-container-icon-2 {
+  width: 2.4rem;
+}
+.svg-container-icon-3 {
+  width: 3.2rem;
+}
+.svg-container-icon-4 {
+  width: 4rem;
+}
+.svg-container-icon-5 {
+  width: 4.8rem;
+}
+.svg-container { 
+	display: inline-block;
+	position: relative;
+  width: 100%;
+}
