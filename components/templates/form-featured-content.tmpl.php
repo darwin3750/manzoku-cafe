@@ -24,6 +24,4 @@
     <option value="LEFT">LEFT</option>
     <option value="NONE">NONE</option>
   </select>
-
-  <input type="file" name="imageToUpload" id="imageToUpload">
 </form>
