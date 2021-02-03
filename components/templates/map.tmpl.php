@@ -1,16 +1,13 @@
-<div id="googleMap" style="width:100%;height:400px;"></div>
-
-<script>
-function myMap() {
-var mapProp= {
-  center:new google.maps.LatLng(51.508742,-0.120850),
-  zoom:5,
-};
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-}
-</script>
-
-<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
-
-</body>
-</html>
+<p style="text-align: center;">
+<iframe 
+    src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d493258.8567076801!2d120.68343420910327!3d15.015735155115372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e6!4m3!3m2!1d14.5457152!2d121.0679296!4m3!3m2!1d15.4854329!2d120.9709183!5e0!3m2!1sen!2sph!4v1612341098693!5m2!1sen!2sph" 
+    width="600" 
+    height="450" 
+    frameborder="0" 
+    style="border:0;" 
+    allowfullscreen="" a
+    ria-hidden="false" 
+    tabindex="0"
+    >
+</iframe>
+</p>

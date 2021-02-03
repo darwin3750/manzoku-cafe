@@ -17,21 +17,9 @@ include NAVBAR; ?>
     </div>
   </section>
 
-  <div id="googleMap" style="width:100%;height:400px;"></div>
-
-<script>
-function myMap() {
-var mapProp= {
-  center:new google.maps.LatLng(51.508742,-0.120850),
-  zoom:5,
-};
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-}
-</script>
-
-<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
-
-</body>
-</html>
-<?php include FOOTER; ?>
+  </br></br><h2 class="manzoku-typeface-main0 manzoku-font-3 text-center manzoku-color-base">Where to find us?</h2></br>
+<?php 
+    include MAP;
+    include FOOTER; 
+?>
 

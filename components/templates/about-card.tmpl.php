@@ -12,6 +12,18 @@
   } 
   ?>
 <br/>
+<?php if ($title == "BRINGING JAPANESE CUISINE TO YOUR TASTEBUDS")
+   {
+     echo 
+    '<div class="card bg-dark text-white">
+    <img src="'.$img_src.'" class="card-img">
+    <div class="card-img-overlay">
+        <h5 class="card-title">'.$title.'</h5>
+        <p class="card-text">'.$idescription.'</p>
+    </div>
+    </div>'
+?>
+
 <div class="col-sm-4 d-flex" style="margin-left:auto; margin-right:auto;">
   <div class="col">
     <div class="card h-100">
