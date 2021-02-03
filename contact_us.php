@@ -53,7 +53,7 @@ include NAVBAR; ?>
                 </div>
             </div>
             <div class="col-md-12">
-                <input type="submit" class="btn btn-warning btn-send form-control" value="SEND MESSAGE">
+                <input type="submit" class="btn btn-warning btn-send form-control" value="SEND MESSAGE" name="send-message">
             </div>
         </div>
         <div class="row">

@@ -1,7 +1,7 @@
 <?php
     require "../../constants.php"; 
     //check if the user got to this page by clicking the Send Message button
-    if(isset($_POST['SEND MESSAGE'])){
+    if(isset($_POST['send-message'])){
       //connect to the DB
       require_once "connect-database.script.php";
       $name = $_POST['name'];
