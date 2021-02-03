@@ -1,4 +1,5 @@
 <form id="currentForm" action="components/scripts/modify-menus.script.php" class="" method="POST" enctype="multipart/form-data">
+  <!-- HIDDEN -->
   <div class="form-group d-none">
     <label for="menu_id" class="manzoku-color-secondary">Menu ID:</label>
     <input id="menu_id" type="text" name="menu_id" class="manzoku-form-transparent"/>
