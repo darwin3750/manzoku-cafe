@@ -7,6 +7,13 @@ window.onload = () => {
       el.classList.remove("active");
     };
   });
+  [].slice.call(document.querySelector("#mobile-navigation-links").children).forEach(function(el){
+    if(el.textContent == document.title.slice(document.title.indexOf("|") + 2)){
+      el.classList.add("active");
+    }else{
+      el.classList.remove("active");
+    };
+  });
 
   //menu accordion
   document.querySelectorAll(".manzoku-accordion-head ").forEach(head => {
