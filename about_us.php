@@ -15,11 +15,12 @@ include NAVBAR; ?>
       require_once "components/scripts/close-database.script.php";
       ?>
     </div>
+    <br><br><h2 class="manzoku-typeface-main0 manzoku-font-3 text-center manzoku-color-base">Where to find us?</h2>
+    <?php include MAP;?>
   </section>
 
-  </br></br><h2 class="manzoku-typeface-main0 manzoku-font-3 text-center manzoku-color-base">Where to find us?</h2></br>
+  
 <?php 
-    include MAP;
     include FOOTER; 
 ?>
 
