@@ -300,6 +300,23 @@
   .rounded-switch{
     border-radius: 1.6rem;
   }
+/* accordions */
+  .manzoku-accordion-head{
+
+  }
+  .manzoku-accordion-body{
+    transform: translateY(-100%);
+    opacity: 0;
+    height: auto;
+    max-height: 0;
+    transition: max-height 1s ease-in-out;
+  }
+  .manzoku-accordion-body.active{
+    transform: translateY(0);
+    opacity: 1;
+    height: auto;
+    max-height: 5000px;
+  }
 
 /* borders */
   .manzoku-border-contrast-1{

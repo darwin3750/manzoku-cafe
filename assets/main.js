@@ -7,6 +7,15 @@ window.onload = () => {
       el.classList.remove("active");
     };
   });
+
+  document.querySelectorAll(".manzoku-accordion-head").forEach(head => {
+    head.addEventListener('click', () => {
+      document.querySelectorAll(".manzoku-accordion-body").forEach(body => {
+        if(head != body.parentElement.previousElementSibling) {body.classList.remove("active");}
+      });
+      head.nextElementSibling.firstElementChild.classList.toggle("active");
+    })
+  })
 }
 
 function openModal(modal, caller){
