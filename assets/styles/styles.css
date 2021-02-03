@@ -373,6 +373,21 @@
   .manzoku-border-secondary-5{
     border: 5px solid var(--manzoku-secondary)
   }
+  .manzoku-border-top-base-1{
+    border-top: 1px solid var(--manzoku-base)
+  }
+  .manzoku-border-top-base-2{
+    border-top: 2px solid var(--manzoku-base)
+  }
+  .manzoku-border-top-base-3{
+    border-top: 3px solid var(--manzoku-base)
+  }
+  .manzoku-border-top-base-4{
+    border-top: 4px solid var(--manzoku-base)
+  }
+  .manzoku-border-top-base-5{
+    border-top: 5px solid var(--manzoku-base);
+  }
 
 /* tooltip */
   .tooltip-enabler {
