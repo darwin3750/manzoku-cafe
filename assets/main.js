@@ -1,5 +1,5 @@
 window.onload = () => {
-  //NAVBAR
+  //DESKTOP NAVBAR
   [].slice.call(document.querySelector("#navigation-links").children).forEach(function(el){
     if(el.textContent == document.title.slice(document.title.indexOf("|") + 2)){
       el.classList.add("active");
@@ -7,9 +7,33 @@ window.onload = () => {
       el.classList.remove("active");
     };
   });
+  //MOBILE NAVBAR
+  [].slice.call(document.querySelector("#mobile-navigation-links").children).forEach(function(el){
+    if(el.textContent == document.title.slice(document.title.indexOf("|") + 2)){
+      el.classList.add("active");
+    }else{
+      el.classList.remove("active");
+    };
+  });
+
+  //menu accordion
+  document.querySelectorAll(".manzoku-accordion-head ").forEach(head => {
+    head.addEventListener('click', () => {
+      head.nextElementSibling.firstElementChild.classList.toggle("active");
+      document.querySelectorAll(".manzoku-accordion-body").forEach(body => {
+        //close other menus if the user opens one 
+        if(head != body.parentElement.previousElementSibling) {body.classList.remove("active");}
+        //rotate chevron
+        body.parentElement.previousElementSibling.firstElementChild.lastElementChild.style.transform = 
+            body.classList.contains("active") ? 'rotate(900deg)' : 'rotate(0deg)';
+      });
+    })
+  })
 }
 
+// Modals
 function openModal(modal, caller){
+  console.log("asd")
   document.querySelector(modal).classList.add("d-block");
   if(caller.id == "add-content"){
     document.querySelector("#modal-add-footer").classList.replace("d-none", "d-block");
