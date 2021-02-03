@@ -34,8 +34,8 @@
     <option value="NONE">NONE</option>
   </select>
   <!-- HIDDEN -->
-  <section class="d-flex justify-content-end d-none">
-    <div class="form-check">
+  <section class="d-flex justify-content-end">
+    <div class="form-check d-none">
       <input id="is_carousel" class="form-check-input manzoku-color-base" type="checkbox" name="is_carousel">
       <label class="form-check-label manzoku-color-secondary" for="is_carousel">
         Put inside carousel?
