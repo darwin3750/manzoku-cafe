@@ -15,6 +15,7 @@ define('ROOT_MENUS_FOLDER', "assets/images/menus/");
 define('ROOT_CONTACT_US_FOLDER', "assets/images/contact-us/"); 
 define('ROOT_DECORATIONS_FOLDER', "assets/images/posters/"); 
 define('ROOT_ABOUT_FOLDER', "assets/images/about/");
+define('ROOT_TESTIMONIALS_FOLDER', "assets/images/testimonies/");
 
 //FOLDER--RELATIVE PATH FROM TEMPLATE
 define('TEMPLATE_POSTERS_FOLDER', "../../assets/images/posters/"); 
