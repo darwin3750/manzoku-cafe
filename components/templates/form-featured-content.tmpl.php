@@ -1,4 +1,5 @@
 <form id="currentForm" action="components/scripts/modify-featured-content.script.php" class="" method="POST" enctype="multipart/form-data">
+  <!-- HIDDEN -->
   <div class="form-group d-none">
     <label for="content_id" class="manzoku-color-secondary">Content ID:</label>
     <input id="content_id" type="text" name="content_id" class="manzoku-form-transparent"/>
@@ -32,7 +33,8 @@
     <option value="LEFT">LEFT</option>
     <option value="NONE">NONE</option>
   </select>
-  <section class="d-flex justify-content-end">
+  <!-- HIDDEN -->
+  <section class="d-flex justify-content-end d-none">
     <div class="form-check">
       <input id="is_carousel" class="form-check-input manzoku-color-base" type="checkbox" name="is_carousel">
       <label class="form-check-label manzoku-color-secondary" for="is_carousel">
