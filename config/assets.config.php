@@ -24,7 +24,8 @@ define('TEMPLATE_DECORATIONS_FOLDER', "../../assets/images/posters/");
 define('POSTERS_FOLDER', SERVER_ROOT . "/assets/images/posters/"); 
 define('MENUS_FOLDER', SERVER_ROOT . "/assets/images/menus/"); 
 define('CONTACT_US_FOLDER', SERVER_ROOT . "/assets/images/contact-us/"); 
-define('DECORATIONS_FOLDER', SERVER_ROOT . "/assets/images/posters/"); 
+define('DECORATIONS_FOLDER', SERVER_ROOT . "/assets/images/posters/");
+define('ABOUT_FOLDER', SERVER_ROOT ."/assets/images/about/");  
 
 //TEMPLATES--ABSOLUTE PATH
 define('HEAD', SERVER_ROOT . "/components/templates/head.tmpl.php"); 

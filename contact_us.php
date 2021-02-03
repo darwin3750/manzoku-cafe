@@ -11,6 +11,7 @@ include NAVBAR; ?>
       require_once "components/scripts/connect-database.script.php";
       //require_once "components/scripts/get-testimonies.script.php";
       $template = CONTACT_US_CARD;
+      $image = ABOUT_FOLDER;
       include "components/scripts/display-contact-us.script.php";
       require_once "components/scripts/close-database.script.php";
       ?>
