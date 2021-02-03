@@ -35,24 +35,18 @@ define('FOOTER', SERVER_ROOT . "/components/templates/footer.tmpl.php");
 define('FEATURED_CONTENT', SERVER_ROOT . "/components/templates/featured-content.tmpl.php"); 
 define('TESTIMONIAL_CARD', SERVER_ROOT . "/components/templates/testimonial-card.tmpl.php"); 
 define('MENU_CATEGORY', SERVER_ROOT . "/components/templates/menu-category.tmpl.php");
-<<<<<<< HEAD
 
 //TEMPLATES--FILE NAME
 define('FORM_FEATURED_CONTENT', "form-featured-content.tmpl.php"); 
 define('FORM_MENUS', "form-menus.tmpl.php"); 
-=======
->>>>>>> e89a54420d540e955fd7ecc9a75f999cd3c93199
 define('PRODUCT_CARD', SERVER_ROOT . "/components/templates/product-card.tmpl.php"); 
 define('CONTACT_US_CARD', SERVER_ROOT . "/components/templates/contact-us-card.tmpl.php"); 
 define('ABOUT_CARD', SERVER_ROOT . "/components/templates/about-card.tmpl.php"); 
 define('MAP', SERVER_ROOT . "/components/templates/map.tmpl.php"); 
-<<<<<<< HEAD
-=======
 
 //TEMPLATES--FILE NAME
 define('FORM_FEATURED_CONTENT', "form-featured-content.tmpl.php"); 
 define('FORM_MENUS', "form-menus.tmpl.php"); 
->>>>>>> e89a54420d540e955fd7ecc9a75f999cd3c93199
 
 //SCRIPTS--ABSOLUTE PATH
 define('CONNECT_DATABASE', SERVER_ROOT . "/components/scripts/connect-database.script.php"); 
