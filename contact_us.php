@@ -8,7 +8,7 @@ include NAVBAR; ?>
     <br><h1 class="manzoku-typeface-main0 manzoku-font-3 text-center manzoku-color-base">Send Us a Message</h1><br><br>
     <div class="container-fluid row card manzoku-bg-contrast">
     <div class="container-fluid py-3">
-    <form id="contact-form" method="post" action="contact_message_db.php" role="form">
+    <form id="contact-form" method="POST" action="components/scripts/contact_message_db.php" role="form">
         <div class="messages"></div>
         <div class="controls">
             <div class="row">
@@ -28,8 +28,8 @@ include NAVBAR; ?>
                 </div>
                 <div class="col-sm-3">
                     <div class="form-group">
-                        <label for="form_phone">Phone</label>
-                        <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="09123456789">
+                        <label for="phone">Phone</label>
+                        <input id="phone" type="tel" name="phone" class="form-control" placeholder="09123456789">
                         <div class="help-block with-errors"></div>
                     </div>
                 </div>
@@ -47,13 +47,13 @@ include NAVBAR; ?>
         <div class="row">
             <div class="col-md-12">
                 <div class="form-group">
-                    <label for="form_message">Message *</label>
-                    <textarea id="form_message" name="message" class="form-control" placeholder="Message for us *" rows="4" required="required" data-error="send a message."></textarea>
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" class="form-control" placeholder="Message for us *" rows="4" required="required" data-error="send a message."></textarea>
                     <div class="help-block with-errors"></div>
                 </div>
             </div>
             <div class="col-md-12">
-                <input type="submit" class="btn btn-warning btn-send form-control" value="Send message">
+                <input type="submit" class="btn btn-warning btn-send form-control" value="SEND MESSAGE">
             </div>
         </div>
         <div class="row">
