@@ -1,5 +1,4 @@
 <section class="modal-footer manzoku-footer">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <div class="row" style="padding:10px">
     <div class="col-2" style="padding-left:20px">
       <img src=<?php echo LOGO ?> width="55" style="padding-left:10px; padding-top: 20px"></br>

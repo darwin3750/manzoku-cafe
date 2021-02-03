@@ -7,7 +7,17 @@ if(isset($_POST['signin-submit'])){
   $username = $_POST['username'];
   $password = $_POST['password'];
 
-  //FOR SET UP ONLY
+  $sql_statement = mysqli_stmt_init($conn);
+  //to prevent SQL injections
+  function prepareSQLStatement($sql_query){
+    global $sql_statement;
+    if(!mysqli_stmt_prepare($sql_statement, $sql_query)){
+      header("Location: ../../?error=sqlerorr");
+      exit();
+    }
+  }
+
+  //TEMPORARY HARDCODED ACCOUNT FOR SET UP ONLY
   if($username == "ADMIN" && $password == "BOTSWANA"){
     session_start();
     $_SESSION['current_user'] = $row['USERNAME'];
@@ -22,38 +32,29 @@ if(isset($_POST['signin-submit'])){
   //ERROR HANDLERS
   $errors = "Location: ../../login.admin.php?error=;";
 
-  $sql_query = "SELECT * FROM USERS WHERE USERNAME=?";
-  $sql_statement = mysqli_stmt_init($conn);
-  if(!mysqli_stmt_prepare($sql_statement, $sql_query)){
-    header("Location: ../../login.admin.php?error=sqlerorr");
-    exit();
+  //search for username in DB
+  prepareSQLStatement("SELECT * FROM USERS WHERE USERNAME=?");
+  mysqli_stmt_bind_param($sql_statement, "s", $username);
+  mysqli_stmt_execute($sql_statement);
+
+  $result = mysqli_stmt_get_result($sql_statement);
+  if($row = mysqli_fetch_assoc($result)){
+    if(password_verify($password, $row['PASSWORD'])){
+      //log the user in to the website
+      session_start();
+      $_SESSION['current_user'] = $row['USERNAME'];
+      $_SESSION['current_user_privilege'] = $row['PRIVILEGE'];
+
+      header("Location: ../../config.admin.php?login=success;");
+      exit();
+    }else{
+      $errors .= "wrongpassword;";
+    }
   }
   else{
-    mysqli_stmt_bind_param($sql_statement, "s", $username);
-    mysqli_stmt_execute($sql_statement);
-    $result = mysqli_stmt_get_result($sql_statement);
-
-    if($row = mysqli_fetch_assoc($result)){
-      $passwordcheck = password_verify($password, $row['PASSWORD']);
-      if($passwordcheck == false){
-        $errors .= "wrongpassword;";
-      }else if($passwordcheck == true){
-        //log the user in to the website
-        session_start();
-        $_SESSION['current_user'] = $row['USERNAME'];
-        $_SESSION['current_user_privilege'] = $row['PRIVILEGE'];
-
-        $success_reply = "Location: ../../config.admin.php?login=success;";
-        header($success_reply);
-        exit();
-      }else{
-        $errors .= "erroroccurred;";
-      }
-    }
-    else{
-      $errors .= "nouser;";
-    }
+    $errors .= "nouser;";
   }
+  
 
   if(!preg_match("/error=;$/", $errors)){
     header($errors);
@@ -63,5 +64,5 @@ if(isset($_POST['signin-submit'])){
   mysqli_stmt_close($sql_statement);
   require_once "components/scripts/close-database.script.php";
 }
-header("Location: /");
+header("Location: ../../");
 ?>

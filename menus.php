@@ -1,21 +1,21 @@
 <?php
 session_start();
 require_once "constants.php";
-$page_name = "Home";
+$page_name = "Menus";
 require_once HEAD;
 include NAVBAR; ?>
 
-<section`>
+<section class="">
   <?php
   //connect to DB
   require_once "components/scripts/connect-database.script.php";
 
   //render modal
-  $form = FORM_FEATURED_CONTENT;
+  $form = FORM_MENUS;
   include "components/templates/modify-content-modal.tmpl.php";
 
-  //render featured content
-  include "components/scripts/display-featured-content.script.php";
+  //render menus content
+  include "components/scripts/display-menus.script.php";
 
   //render add-content section for admins
   include "components/templates/add-content-section.tmpl.php";

@@ -9,52 +9,48 @@
     $confirmpassword = $_POST['confirmpassword'];
     $privilege = "ADMIN";
     $errors = "Location: ../../config.admin.php?error=;";
+
+    $sql_statement = mysqli_stmt_init($conn);
+    //to prevent SQL injections
+    function prepareSQLStatement($sql_query){
+      global $sql_statement;
+      if(!mysqli_stmt_prepare($sql_statement, $sql_query)){
+        header("Location: ../../config.admin.php?error=sqlerorr");
+        exit();
+      }
+    }
+
     //ERROR HANDLERS
     //check if passwords matched
     if($password !== $confirmpassword){
       $errors .= "passwordnotmatch;";
     }
-    //check if username already taken
-    $sql_query_username = "SELECT USERNAME FROM USERS WHERE USERNAME=?";
-    $sql_statement = mysqli_stmt_init($conn);
-    if(!mysqli_stmt_prepare($sql_statement, $sql_query_username)){
-      header("Location: ../../config.admin.php?error=sqlerror1");
-      exit();
-    }
-    else{
-      mysqli_stmt_bind_param($sql_statement, "s", $username);
-      mysqli_stmt_execute($sql_statement);
-      mysqli_stmt_store_result($sql_statement);
-      $matches_username = mysqli_stmt_num_rows($sql_statement);
 
-      if($matches_username > 0){
-        $errors .= "usernametaken;";
-      }
+    //check if username already taken
+    prepareSQLStatement("SELECT USERNAME FROM USERS WHERE USERNAME=?");
+    mysqli_stmt_bind_param($sql_statement, "s", $username);
+    mysqli_stmt_execute($sql_statement);
+    mysqli_stmt_store_result($sql_statement);
+    if(mysqli_stmt_num_rows($sql_statement) > 0){
+      $errors .= "usernametaken;";
     }
+    
+    //halt execution if there were errors
     if(!preg_match("/error=;$/", $errors)){
       header($errors);
       exit();
     }
 
     //put to DB
-    $sql_query = "INSERT INTO USERS (USERNAME, PRIVILEGE, PASSWORD) VALUES (?, ?, ?)";
-    $sql_statement = mysqli_stmt_init($conn);
-    if(!mysqli_stmt_prepare($sql_statement, $sql_query)){
-      header("Location: ../../config.admin.php?error=sqlerorr2");
-      exit();
-    }
-    else{
-      $hashed_password = password_hash($password, PASSWORD_DEFAULT);
-      mysqli_stmt_bind_param($sql_statement, "sss", $username, $privilege, $hashed_password);
-      mysqli_stmt_execute($sql_statement);
-      header("Location: ../../config.admin.php?signup=success");
-      exit();
-    }
-    mysqli_stmt_close($sql_statement);
-    mysqli_close($conn);
+    prepareSQLStatement("INSERT INTO USERS (USERNAME, PRIVILEGE, PASSWORD) VALUES (?, ?, ?)");
+    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+    mysqli_stmt_bind_param($sql_statement, "sss", $username, $privilege, $hashed_password);
+    mysqli_stmt_execute($sql_statement);
+    header("Location: ../../config.admin.php?signup=success");
+    exit();
   }
   else{
-    header("Location: ../../config.admin.php?signup=failed ");
+    header("Location: ../../");
     exit();
   }
 ?>

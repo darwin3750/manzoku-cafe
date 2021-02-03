@@ -4,7 +4,7 @@
       <h4 class="manzoku-color-contrast manzoku-typeface-main0">
         This feature is visible only to the website's administrators. Add content to this page by clicking on the button below.
       </h4>
-      <button type="button" id="add-content" class="btn manzoku-btn-accent1 btn-lg manzoku-typeface-main0">ADD CONTENT</button>
+      <button type="button" id="add-content" class="btn manzoku-btn-accent1 btn-lg manzoku-typeface-main0" onclick="openModal('#modify-content-modal', this);populateFormModal({})">ADD CONTENT</button>
     </article>
   </section>
 
