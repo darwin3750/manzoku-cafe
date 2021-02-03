@@ -43,6 +43,7 @@ define('FORM_MENUS', "form-menus.tmpl.php");
 define('CONNECT_DATABASE', SERVER_ROOT . "/components/scripts/connect-database.script.php"); 
 define('CLOSE_DATABASE', SERVER_ROOT . "/components/scripts/close-database.script.php"); 
 define('AUTHENTICATE', SERVER_ROOT . "/components/scripts/authenticate.script.php"); 
-define('DISPLAY_POSTS', SERVER_ROOT . "/components/scripts/display-posts.script.php"); 
 define("REGISTER", SERVER_ROOT . "/components/scripts/register.script.php"); 
+define('DISPLAY_POSTS', SERVER_ROOT . "/components/scripts/display-posts.script.php"); 
+define('GET_DISTINCT_MENU_CATEGORIES', SERVER_ROOT . "/components/scripts/get-distinct-menu-categories.script.php"); 
 ?>

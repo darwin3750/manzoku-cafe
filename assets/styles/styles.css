@@ -308,8 +308,8 @@
     border-radius: 1.6rem;
   }
 /* accordions */
-  .manzoku-accordion-head{
-
+  .manzoku-accordion-head:hover{
+    filter: brightness(90%);
   }
   .manzoku-accordion-body{
     transform: translateY(-100%);

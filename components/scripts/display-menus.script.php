@@ -9,14 +9,7 @@ function prepareSQLStatement($sql_query){
   }
 }
 
-$categories = array();
-
-prepareSQLStatement("SELECT DISTINCT CATEGORY FROM MENUS");
-mysqli_stmt_execute($sql_statement);
-$result = mysqli_stmt_get_result($sql_statement);
-while ($row = mysqli_fetch_assoc($result)) {
-  array_push($categories, $row['CATEGORY']);
-}
+require GET_DISTINCT_MENU_CATEGORIES;
 
 foreach ($categories as $key => $category) {
   prepareSQLStatement("SELECT * FROM MENUS WHERE CATEGORY=?");

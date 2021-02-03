@@ -5,7 +5,7 @@ $page_name = "Home";
 require_once HEAD;
 include NAVBAR; ?>
 
-<section class="container">
+<section>
   <?php
   //connect to DB
   require_once "components/scripts/connect-database.script.php";

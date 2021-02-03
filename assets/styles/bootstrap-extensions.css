@@ -4,6 +4,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.fit-content{
+  width: fit-content;
+}
 .line-height-normal{
   line-height: normal;
 }
@@ -18,15 +21,6 @@
 }
 .opacity-full {
   opacity: 1 !important;
-}
-.fit-content{
-  width: fit-content;
-}
-.underline{
-  text-decoration: underline;
-}
-.vertical-align-middle{
-  vertical-align: middle;
 }
 .rounded-top-0 {
   border-top-left-radius: 0 !important;
@@ -51,13 +45,21 @@
 .top-0{
   top: 0;
 }
+.transition-1{
+  transition: 1s;
+}
 .right-0{
   right: 0;
 }
 .left-0{
   left: 0;
 }
-
+.underline{
+  text-decoration: underline;
+}
+.vertical-align-middle{
+  vertical-align: middle;
+}
 .w-fit-content {
   width: fit-content !important;
 }

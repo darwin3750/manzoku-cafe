@@ -17,11 +17,11 @@ include NAVBAR; ?>
   //render menus content
   include "components/scripts/display-menus.script.php";
 
-  // //render add-content section for admins
-  // include "components/templates/add-content-section.tmpl.php";
+  //render add-content section for admins
+  include "components/templates/add-content-section.tmpl.php";
 
-  // //close DB connection
-  // require_once "components/scripts/close-database.script.php";
+  //close DB connection
+  require_once "components/scripts/close-database.script.php";
   ?>
 </section>
 
