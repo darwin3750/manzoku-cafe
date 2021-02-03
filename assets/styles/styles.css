@@ -29,6 +29,7 @@
 }
 
 
+
 .theme1 {
   --manzoku-base: #f8e81b;
   --manzoku-primary: #0e0000;
@@ -191,6 +192,12 @@
   .manzoku-bg-primary-tint{
     background-color: var(--manzoku-primary);
     opacity: 0.6;
+  }
+
+  .manzoku-footer{
+    background-image: url("../images/decorations/footerbgdark.png");
+    
+
   }
 
 /* button fills */

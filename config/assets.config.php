@@ -6,6 +6,7 @@ define('LOGO2', "assets/images/logo2.png");
 define('BANNER', "assets/images/banner.png"); 
 define('BANNER2', "assets/images/banner2.png"); 
 define('SITE_NAME', "Manzoku Cafe");
+define('FOOTER_BG', "assets/images/decorations/footerbg.png");
 
 //FOLDER--RELATIVE PATH FROM ROOT
 define('ROOT_POSTERS_FOLDER', "assets/images/posters/"); 
@@ -25,6 +26,7 @@ define('NAVBAR', SERVER_ROOT . "/components/templates/navbar.tmpl.php");
 define('FOOTER', SERVER_ROOT . "/components/templates/footer.tmpl.php"); 
 define('PRODUCT_CARD', SERVER_ROOT . "/components/templates/product-card.tmpl.php"); 
 define('FEATURED_CONTENT', SERVER_ROOT . "/components/templates/featured-content.tmpl.php"); 
+define('TESTIMONIAL_CARD', SERVER_ROOT . "/components/templates/testimonial-card.tmpl.php"); 
 
 //TEMPLATES--FILE NAME
 define('FORM_FEATURED_CONTENT', "form-featured-content.tmpl.php"); 
