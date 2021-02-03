@@ -5,7 +5,7 @@ $page_name = "Testimonies";
 require_once HEAD; 
 include NAVBAR; ?>
   <section class="container">
-    <br><h1 class="manzoku-typeface-main0 manzoku-font-3 text-center manzoku-color-base">Testimoanials</h1>
+    <br><h1 class="manzoku-typeface-main0 manzoku-font-3 text-center manzoku-color-base">Testimonials</h1>
     <br><h2 class="manzoku-typeface-main0 manzoku-font-3 text-center manzoku-color-base">See what customers say about our services</h2><br><br>
     <div class="row">
       <?php 
