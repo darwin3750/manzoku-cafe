@@ -39,14 +39,10 @@ define('MENU_CATEGORY', SERVER_ROOT . "/components/templates/menu-category.tmpl.
 //TEMPLATES--FILE NAME
 define('FORM_FEATURED_CONTENT', "form-featured-content.tmpl.php"); 
 define('FORM_MENUS', "form-menus.tmpl.php"); 
-<<<<<<< HEAD:config/assets.config.php
 define('PRODUCT_CARD', SERVER_ROOT . "/components/templates/product-card.tmpl.php"); 
-define('TESTIMONIAL_CARD', SERVER_ROOT . "/components/templates/testimonial-card.tmpl.php"); 
 define('CONTACT_US_CARD', SERVER_ROOT . "/components/templates/contact-us-card.tmpl.php"); 
 define('ABOUT_CARD', SERVER_ROOT . "/components/templates/about-card.tmpl.php"); 
 define('MAP', SERVER_ROOT . "/components/templates/map.tmpl.php"); 
-=======
->>>>>>> 4f71c2df93c274ffc7094344558b232bb264c0a4:config/path-constants.config.php
 
 //SCRIPTS--ABSOLUTE PATH
 define('CONNECT_DATABASE', SERVER_ROOT . "/components/scripts/connect-database.script.php"); 
