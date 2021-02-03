@@ -12,7 +12,8 @@ include NAVBAR; ?>
       require_once "components/scripts/connect-database.script.php";
       $template = TESTIMONIAL_CARD;
       include "components/scripts/display-testimonials.script.php";
-      include "components/scripts/get-testimonies.script.php";
+      //include "components/scripts/get-testimonies.script.php";
+      include "components/templates/add-testimonial-section.tmpl.php";
       require_once "components/scripts/close-database.script.php";
       ?>
     </div>

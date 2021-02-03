@@ -13,7 +13,7 @@
   ?>
 <br/>
 <div class="col-sm-4 d-flex" style="margin-left:auto; margin-right:auto;">
-<div class="p-2 row-sm-2 d-flex align-items-stretch">
+<div class="p-2 row-sm-2 d-flex align-items-stretch rounded manzoku-color-contrast">
 <div class="card shadow p-40 text-white bg-secondary mb-4" style="width: 20rem; height: 550px;">
   <img class="card-img-top img-fluid rounded img-thumbnail" src="<?php echo $img_src ?>"  alt="Card image cap">
   <div class="card-body" style="text-align:center;">
