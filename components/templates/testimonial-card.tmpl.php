@@ -1,9 +1,9 @@
 <?php
   $content = strip_tags($content);
-  if (strlen($content) > 160) {
+  if (strlen($content) > 150) {
   
       // truncate string
-      $stringCut = substr($content, 0, 160);
+      $stringCut = substr($content, 0, 150);
       $endPoint = strrpos($stringCut, ' ');
   
       //if the string doesn't contain any space then it will cut without word basis.

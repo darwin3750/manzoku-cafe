@@ -17,4 +17,4 @@ include NAVBAR; ?>
       ?>
     </div>
   </section>
-<?php /*include FOOTER;*/ ?>
+<?php include FOOTER; ?>
