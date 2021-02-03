@@ -46,6 +46,36 @@ body {font-family: Arial, Helvetica, sans-serif;}
 </style>
 </head>
 <body>
+<?php
+// define variables and set to empty values
+$nameErr = $emailErr = $titleErr = "";
+$name = $comment = $title = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (empty($_POST["name"])) {
+    $nameErr = "Name is required";
+  } else {
+    $name = test_input($_POST["name"]);
+    // check if name only contains letters and whitespace
+    if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
+      $nameErr = "Only letters and white space allowed";
+    }
+  }
+    
+
+  if (empty($_POST["comment"])) {
+    $comment = "";
+  } else {
+    $comment = test_input($_POST["comment"]);
+  }
+
+  if (empty($_POST["title"])) {
+    $titleErr = "Title is required";
+  } else {
+    $title = test_input($_POST["title"]);
+  }
+}
+?>
 <!-- Trigger/Open The Modal -->
 <section class="manzoku-border-base-4 rounded m-3">
     <article class="container p-3 d-flex flex-column align-items-center">
@@ -59,19 +89,18 @@ body {font-family: Arial, Helvetica, sans-serif;}
 <div id="myModal" class="modal">
 
   <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>Some text in the Modal..</p>
-    <p>Some text in the Modal..</p>
-    <p>Some text in the Modal..</p>
-    <p>Some text in the Modal..</p>
-    <p>Some text in the Modal..</p>
-    <p>Some text in the Modal..</p>
-    <p>Some text in the Modal..</p>
-    <p>Some text in the Modal..</p>
-    <p>Some text in the Modal..</p>
-    <p>Some text in the Modal..</p>
-    <p>Some text in the Modal..</p>
+  <div class="modal-content manzoku-typeface-main0 manzoku-font-3 text-center manzoku-color-base container" style="color:black;">
+  <span class="close">&times;</span>
+    <h2>Add Testicles</h2> <br/>
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
+  Name: <input type="text" name="name">
+  <span class="error">* <?php echo $nameErr;?></span>
+  <br><br>
+  Comment: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
+  <br><br>
+  <br><br>
+  <input type="submit" name="submit" value="Submit">  
+</form>
   </div>
 
 </div>
