@@ -1,5 +1,5 @@
 </br></br>
-<div class="card mb-5" style="width: 95%; margin-left:auto; margin-right:auto;">
+<div class="card mb-5 manzoku-bg-contrast" style="width: 95%; margin-left:auto; margin-right:auto;">
     <div class="card-body" >
         <p style="text-align: center;">
             <iframe 
