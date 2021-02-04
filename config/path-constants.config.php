@@ -37,12 +37,15 @@ define('FEATURED_CONTENT', SERVER_ROOT . "/components/templates/featured-content
 define('FEATURED_CONTENT_CAROUSEL', SERVER_ROOT . "/components/templates/featured-content-carousel.tmpl.php"); 
 define('TESTIMONIAL_CARD', SERVER_ROOT . "/components/templates/testimonial-card.tmpl.php"); 
 define('MENU_CATEGORY', SERVER_ROOT . "/components/templates/menu-category.tmpl.php");
-
-//TEMPLATES--FILE NAME
-define('PRODUCT_CARD', SERVER_ROOT . "/components/templates/product-card.tmpl.php"); 
 define('CONTACT_US_CARD', SERVER_ROOT . "/components/templates/contact-us-card.tmpl.php"); 
 define('ABOUT_CARD', SERVER_ROOT . "/components/templates/about-card.tmpl.php"); 
 define('MAP', SERVER_ROOT . "/components/templates/map.tmpl.php"); 
+define('ADMIN_CONFIG_REGISTRATION', SERVER_ROOT . "/components/templates/admin-config-registration.tmpl.php"); 
+define('ADMIN_CONFIG_MESSAGES', SERVER_ROOT . "/components/templates/admin-config-messages.tmpl.php"); 
+define('ADMIN_CONFIG_FILES', SERVER_ROOT . "/components/templates/admin-config-files.tmpl.php"); 
+define('ADMIN_CONFIG_ANALYTICS', SERVER_ROOT . "/components/templates/admin-config-analytics.tmpl.php"); 
+
+//TEMPLATES--FILE NAME
 define('FORM_FEATURED_CONTENT', "form-featured-content.tmpl.php"); 
 define('FORM_MENUS', "form-menus.tmpl.php"); 
 
