@@ -35,7 +35,15 @@ window.onload = () => {
     document.querySelector("#header-bottom").style.paddingTop = entries[0].target.clientHeight + "px"
   )
   // start observing a DOM node
-  resizeObserver.observe(document.querySelector("#header"))
+  resizeObserver.observe(document.querySelector("#header"));
+}
+
+// Admin Carousel
+function carouselSwitchTo(page){
+  console.log("asd1");
+  let adminCarousel = new Flickity('#admin-config-carousel');
+  adminCarousel.select(page);
+  console.log("asd");
 }
 
 // Modals
