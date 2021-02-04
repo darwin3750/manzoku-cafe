@@ -1,4 +1,4 @@
-<section id="header" class="manzoku-svg-bg-1 p-3">
+<section id="header" class="manzoku-svg-bg-1 p-3 fixed-top">
   <div class="container d-flex justify-content-between align-items-center flex-xl-row flex-column">
     <a class="navbar-brand" href="index.php"><img src=<?php echo BANNER2 ?> class="img-fluid" width="300px"></a>
 
@@ -34,6 +34,8 @@
     <?php } ?>
   </section>
 </section>
+
+<hr id="header-bottom" class="m-0">
 
 <style>
   #navigation-links>a,
