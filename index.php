@@ -15,7 +15,7 @@ include NAVBAR; ?>
   include "components/templates/modify-content-modal.tmpl.php";
   
   //render featured content carousel
-  ?><div class="carousel" data-flickity='{ "wrapAround": true }'><?php
+  ?><div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": true, "adaptiveHeight": true, "pageDots": false }'><?php
     include "components/scripts/display-featured-content-carousel.script.php";
   ?></div><?php
   
@@ -28,14 +28,6 @@ include NAVBAR; ?>
   //close DB connection
   require_once "components/scripts/close-database.script.php";
   ?>
-
-
-<style>
-  .flickity-slider{
-    display: flex;
-    align-items: center;
-  }
-</style>
 
 </section>
 <?php include FOOTER; ?>
