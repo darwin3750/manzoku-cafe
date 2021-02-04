@@ -30,6 +30,14 @@ window.onload = () => {
     })
   })
 }
+//top-fixed header
+window.onscroll = () => {
+  if(window.scrollY > document.querySelector("#header").scrollHeight){
+    document.querySelector("#header").classList.add("fixed-top");
+  }else{
+    document.querySelector("#header").classList.remove("fixed-top");
+  }
+}
 
 // Modals
 function openModal(modal, caller){
