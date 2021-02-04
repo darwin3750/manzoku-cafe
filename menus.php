@@ -6,6 +6,11 @@ require_once HEAD;
 include NAVBAR; ?>
 
 <section class="">
+  <section class="p-3 manzoku-bg-secondary">
+  </section>
+  <section class="container p-3">
+    <h1 class="manzoku-typeface-main0 manzoku-font-5 manzoku-color-contrast p-3 m-0">Food Categories: </h1>
+  </section>
   <?php
   //connect to DB
   require_once "components/scripts/connect-database.script.php";
