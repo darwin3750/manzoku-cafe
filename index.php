@@ -13,7 +13,12 @@ include NAVBAR; ?>
   //render modal
   $form = FORM_FEATURED_CONTENT;
   include "components/templates/modify-content-modal.tmpl.php";
-
+  
+  //render featured content carousel
+  ?><div class="carousel" data-flickity='{ "wrapAround": true }'><?php
+    include "components/scripts/display-featured-content-carousel.script.php";
+  ?></div><?php
+  
   //render featured content
   include "components/scripts/display-featured-content.script.php";
 
@@ -25,25 +30,11 @@ include NAVBAR; ?>
   ?>
 
 
-
-<div class="carousel"
-  data-flickity='{ "wrapAround": true }'>
-  <div class="carousel-cell">1</div>
-  <div class="carousel-cell">2</div>
-</div>
-
-
 <style>
-
-.carousel-cell {
-  width: 100%;
-  height: 200px;
-  margin-right: 10px;
-  background: #8C8;
-  border-radius: 5px;
-  counter-increment: carousel-cell;
-}
-
+  .flickity-slider{
+    display: flex;
+    align-items: center;
+  }
 </style>
 
 </section>

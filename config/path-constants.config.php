@@ -32,6 +32,7 @@ define('HEAD', SERVER_ROOT . "/components/templates/head.tmpl.php");
 define('NAVBAR', SERVER_ROOT . "/components/templates/navbar.tmpl.php"); 
 define('FOOTER', SERVER_ROOT . "/components/templates/footer.tmpl.php"); 
 define('FEATURED_CONTENT', SERVER_ROOT . "/components/templates/featured-content.tmpl.php"); 
+define('FEATURED_CONTENT_CAROUSEL', SERVER_ROOT . "/components/templates/featured-content-carousel.tmpl.php"); 
 define('TESTIMONIAL_CARD', SERVER_ROOT . "/components/templates/testimonial-card.tmpl.php"); 
 define('MENU_CATEGORY', SERVER_ROOT . "/components/templates/menu-category.tmpl.php");
 

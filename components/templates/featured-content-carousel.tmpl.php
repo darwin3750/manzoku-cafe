@@ -1,5 +1,6 @@
-<?php if(!$is_carousel){ ?>
-  <section class="">
+
+<?php if($is_carousel){ ?>
+  <section class="carousel-cell w-100">
     <div class="container p-0">
       <div class="row p-3 mt-2 mb-2 position-relative">
         <!-- edit button -->
@@ -43,4 +44,4 @@
       </div>
     </div>
   </section>
-  <?php }?>
+<?php }?>
