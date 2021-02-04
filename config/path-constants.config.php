@@ -38,8 +38,6 @@ define('TESTIMONIAL_CARD', SERVER_ROOT . "/components/templates/testimonial-card
 define('MENU_CATEGORY', SERVER_ROOT . "/components/templates/menu-category.tmpl.php");
 
 //TEMPLATES--FILE NAME
-define('FORM_FEATURED_CONTENT', "form-featured-content.tmpl.php"); 
-define('FORM_MENUS', "form-menus.tmpl.php"); 
 define('PRODUCT_CARD', SERVER_ROOT . "/components/templates/product-card.tmpl.php"); 
 define('CONTACT_US_CARD', SERVER_ROOT . "/components/templates/contact-us-card.tmpl.php"); 
 define('ABOUT_CARD', SERVER_ROOT . "/components/templates/about-card.tmpl.php"); 
