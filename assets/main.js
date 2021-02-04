@@ -29,14 +29,13 @@ window.onload = () => {
       });
     })
   })
-}
-//top-fixed header
-window.onscroll = () => {
-  if(window.scrollY > document.querySelector("#header").scrollHeight){
-    document.querySelector("#header").classList.add("fixed-top");
-  }else{
-    document.querySelector("#header").classList.remove("fixed-top");
-  }
+
+  // create an Observer instance
+  const resizeObserver = new ResizeObserver(entries => 
+    document.querySelector("#header-bottom").style.paddingTop = entries[0].target.clientHeight + "px"
+  )
+  // start observing a DOM node
+  resizeObserver.observe(document.querySelector("#header"))
 }
 
 // Modals
