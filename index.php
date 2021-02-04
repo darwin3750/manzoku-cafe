@@ -5,7 +5,7 @@ $page_name = "Home";
 require_once HEAD;
 include NAVBAR; ?>
 
-<section`>
+<section class="manzoku-color-contrast">
   <?php
   //connect to DB
   require_once "components/scripts/connect-database.script.php";
@@ -13,7 +13,12 @@ include NAVBAR; ?>
   //render modal
   $form = FORM_FEATURED_CONTENT;
   include "components/templates/modify-content-modal.tmpl.php";
-
+  
+  //render featured content carousel
+  ?><div class="carousel" data-flickity='{ "wrapAround": true }'><?php
+    include "components/scripts/display-featured-content-carousel.script.php";
+  ?></div><?php
+  
   //render featured content
   include "components/scripts/display-featured-content.script.php";
 
@@ -23,6 +28,14 @@ include NAVBAR; ?>
   //close DB connection
   require_once "components/scripts/close-database.script.php";
   ?>
-</section>
 
+
+<style>
+  .flickity-slider{
+    display: flex;
+    align-items: center;
+  }
+</style>
+
+</section>
 <?php include FOOTER; ?>
