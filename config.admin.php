@@ -8,7 +8,7 @@ include NAVBAR; ?>
 <section class="">
   <!-- data analytics button -->
   <section id="admin-config-nav" class="container d-flex justify-content-around p-3">
-    <div class="svg-container-icon-4 manzoku-border-accent1-3 rounded-circle p-2 tooltip-enabler" role="button" onclick="carouselSwitchTo(0);">
+    <div class="svg-container-icon-4 manzoku-border-accent1-3 rounded-circle p-2 tooltip-enabler active" role="button" onclick="carouselSwitchTo(0, '#admin-config-carousel');">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
         <g fill='var(--manzoku-contrast)'>
           <path d="M4 12h4v10H4zM10 4h4v18h-4zM16 8h4v14h-4z"></path>
@@ -19,7 +19,7 @@ include NAVBAR; ?>
       </span>
     </div>
     <!-- messages button -->
-    <div class="svg-container-icon-4 manzoku-border-accent1-3 rounded-circle p-2 tooltip-enabler" role="button" onclick="carouselSwitchTo(1);">
+    <div class="svg-container-icon-4 manzoku-border-accent1-3 rounded-circle p-2 tooltip-enabler" role="button" onclick="carouselSwitchTo(1, '#admin-config-carousel');">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
         <g fill='var(--manzoku-contrast)'>
           <path d="M1 5v14l7-7-7-7zm22 14V5l-7 7 7 7zm-11-3l-3.5-3.5L1 20h22l-7.5-7.5L12 16zM1 4l11 11L23 4H1z"></path>
@@ -30,7 +30,7 @@ include NAVBAR; ?>
       </span>
     </div>
     <!-- files button -->
-    <div class="svg-container-icon-4 manzoku-border-accent1-3 rounded-circle p-2 tooltip-enabler" role="button" onclick="carouselSwitchTo(2);">
+    <div class="svg-container-icon-4 manzoku-border-accent1-3 rounded-circle p-2 tooltip-enabler" role="button" onclick="carouselSwitchTo(2, '#admin-config-carousel');">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
         <g fill='var(--manzoku-contrast)'>
           <path d="M21 16.2V13c0-1.1-.9-2-2-2h-6V7.8c1.3-.5 2.2-1.9 1.9-3.4-.2-1.2-1.2-2.1-2.4-2.3C10.7 1.7 9 3.2 9 5c0 1.3.8 2.4 2 2.8V11H5c-1.1 0-2 .9-2 2v3.2c-1.3.5-2.2 1.9-1.9 3.4.2 1.2 1.2 2.1 2.4 2.3C5.3 22.3 7 20.8 7 19c0-1.3-.8-2.4-2-2.8V13h6v3.2c-1.3.5-2.2 1.9-1.9 3.4.2 1.2 1.2 2.1 2.4 2.3 1.9.3 3.6-1.1 3.6-2.9 0-1.3-.8-2.4-2-2.8V13h6v3.2c-1.3.5-2.2 1.9-1.9 3.4.2 1.2 1.2 2.1 2.4 2.3 1.9.3 3.6-1.1 3.6-2.9-.2-1.3-1-2.4-2.2-2.8z"></path>
@@ -41,7 +41,7 @@ include NAVBAR; ?>
       </span>
     </div>
     <!-- register button -->
-    <div class="svg-container-icon-4 manzoku-border-accent1-3 rounded-circle p-2 tooltip-enabler" role="button" onclick="carouselSwitchTo(3);">
+    <div class="svg-container-icon-4 manzoku-border-accent1-3 rounded-circle p-2 tooltip-enabler" role="button" onclick="carouselSwitchTo(3, '#admin-config-carousel');">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
         <g fill='var(--manzoku-contrast)'>
           <path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm4 10h-3v3.13c0 .48-.39.88-.88.88h-.25c-.48-.01-.87-.4-.87-.88V13H8c-.55 0-1-.45-1-1s.45-1 1-1h3V7.88c0-.49.39-.88.88-.88h.25c.48 0 .87.39.87.88V11h3c.55 0 1 .45 1 1s-.45 1-1 1z"></path>
@@ -64,7 +64,7 @@ include NAVBAR; ?>
       </span>
     </div>
   </section>
-  <section id="admin-config-carousel" class="carousel" data-flickity='{ "wrapAround": true, "adaptiveHeight": false, "pageDots": false }'>
+  <section id="admin-config-carousel" class="carousel" data-flickity='{ "wrapAround": true, "adaptiveHeight": true, "pageDots": false }' onload="initCarouselNav();">
     <div class="carousel-cell w-100">
       <?php include ADMIN_CONFIG_ANALYTICS; ?>
     </div>
@@ -86,12 +86,14 @@ include NAVBAR; ?>
 <?php include FOOTER; ?>
 
 <style>
-  #admin-config-nav .svg-container-icon-4:hover {
+  #admin-config-nav .svg-container-icon-4:hover, 
+      #admin-config-nav .svg-container-icon-4.active {
     border: 3px solid var(--manzoku-accent2);
     transition: 0.4s;
   }
 
-  #admin-config-nav .svg-container-icon-4:hover svg g {
+  #admin-config-nav .svg-container-icon-4:hover svg g, 
+      #admin-config-nav .svg-container-icon-4.active svg g {
     fill: var(--manzoku-base);
     transition: 0.4s;
   }

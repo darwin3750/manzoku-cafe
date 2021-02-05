@@ -18,13 +18,13 @@ define('ROOT_ABOUT_FOLDER', "assets/images/about/");
 define('ROOT_TESTIMONIALS_FOLDER', "assets/images/testimonies/");
 
 //FOLDER--RELATIVE PATH FROM TEMPLATE
-define('TEMPLATE_POSTERS_FOLDER', "../../assets/images/posters/"); 
+define('TEMPLATE_IMAGES_FOLDER', "../../assets/images/"); 
 define('TEMPLATE_MENUS_FOLDER', "../../assets/images/menus/"); 
 define('TEMPLATE_CONTACT_US_FOLDER', "../../assets/images/contact-us/"); 
 define('TEMPLATE_DECORATIONS_FOLDER', "../../assets/images/posters/"); 
 
 //FOLDERS--ABSOLUTE PATH
-define('POSTERS_FOLDER', SERVER_ROOT . "/assets/images/posters/"); 
+define('IMAGES_FOLDER', SERVER_ROOT . "/assets/images/"); 
 define('MENUS_FOLDER', SERVER_ROOT . "/assets/images/menus/"); 
 define('CONTACT_US_FOLDER', SERVER_ROOT . "/assets/images/contact-us/"); 
 define('DECORATIONS_FOLDER', SERVER_ROOT . "/assets/images/posters/"); 
@@ -44,6 +44,7 @@ define('ADMIN_CONFIG_REGISTRATION', SERVER_ROOT . "/components/templates/admin-c
 define('ADMIN_CONFIG_MESSAGES', SERVER_ROOT . "/components/templates/admin-config-messages.tmpl.php"); 
 define('ADMIN_CONFIG_FILES', SERVER_ROOT . "/components/templates/admin-config-files.tmpl.php"); 
 define('ADMIN_CONFIG_ANALYTICS', SERVER_ROOT . "/components/templates/admin-config-analytics.tmpl.php"); 
+define('ADMIN_CONFIG_FILES_CARD', SERVER_ROOT . "/components/templates/admin-config-files-card.tmpl.php"); 
 
 //TEMPLATES--FILE NAME
 define('FORM_FEATURED_CONTENT', "form-featured-content.tmpl.php"); 
@@ -56,4 +57,5 @@ define('AUTHENTICATE', SERVER_ROOT . "/components/scripts/authenticate.script.ph
 define("REGISTER", SERVER_ROOT . "/components/scripts/register.script.php"); 
 define('DISPLAY_POSTS', SERVER_ROOT . "/components/scripts/display-posts.script.php"); 
 define('GET_DISTINCT_MENU_CATEGORIES', SERVER_ROOT . "/components/scripts/get-distinct-menu-categories.script.php"); 
+define('DISPLAY_FOLDER', SERVER_ROOT . "/components/scripts/display-folder.script.php"); 
 ?>
