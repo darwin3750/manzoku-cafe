@@ -16,7 +16,7 @@ window.onload = () => {
     };
   });
 
-  //menu accordion
+  //menu & admin-config accordion
   document.querySelectorAll(".manzoku-accordion-head ").forEach(head => {
     head.addEventListener('click', () => {
       head.nextElementSibling.firstElementChild.classList.toggle("active");
@@ -31,24 +31,49 @@ window.onload = () => {
   })
 
   // create an Observer instance
-  const resizeObserver = new ResizeObserver(entries => 
+  const headerResizeObserver = new ResizeObserver(entries => 
     document.querySelector("#header-bottom").style.paddingTop = entries[0].target.clientHeight + "px"
   )
   // start observing a DOM node
-  resizeObserver.observe(document.querySelector("#header"));
+  headerResizeObserver.observe(document.querySelector("#header"));
+  
+  // admin carousel resizing
+  document.querySelectorAll(".manzoku-accordion-body").forEach(el => {
+    el.addEventListener('transitionend', () => {
+      resizeFlickity('#admin-config-carousel', null);
+    })
+  });
+  //admin carousel page buttons
+  if(document.title.slice(document.title.indexOf("|") + 2) == "Config"){
+    let adminCarousel = new Flickity("#admin-config-carousel");
+    adminCarousel.on( 'change', function( index ) {
+      document.querySelectorAll("#admin-config-nav .svg-container-icon-4").forEach((el, i) => {
+        if(index != i){
+          el.classList.remove("active");
+        }else{
+          el.classList.add("active");
+        }
+      });
+    });
+  }
 }
 
 // Admin Carousel
-function carouselSwitchTo(page){
-  console.log("asd1");
-  let adminCarousel = new Flickity('#admin-config-carousel');
-  adminCarousel.select(page);
-  console.log("asd");
+function carouselSwitchTo(page, flickityId){
+  let targetCarousel = new Flickity(flickityId);
+  targetCarousel.select(page);
+  //resizeFlickity(null, targetCarousel);
+}
+
+//general carousel resizing
+function resizeFlickity(flickityId = null, flickityObject = null){
+  let targetCarousel = flickityId == null ? flickityObject: new Flickity(flickityId);
+  targetCarousel.watchCSS();
+  targetCarousel.resize();
 }
 
 // Modals
 function openModal(modal, caller){
-  console.log("asd")
   document.querySelector(modal).classList.add("d-block");
   if(caller.id == "add-content"){
     document.querySelector("#modal-add-footer").classList.replace("d-none", "d-block");
