@@ -72,6 +72,22 @@ function resizeFlickity(flickityId = null, flickityObject = null){
   targetCarousel.resize();
 }
 
+//admin upload image
+var loadImage = function(event) {
+  let imgContainer = event.target.nextElementSibling.firstElementChild;
+  imgContainer.innerHTML = '';
+  let img = document.createElement("img");
+  let btn = document.createElement("input");
+  img.classList.add("img-fluid");
+  img.src = URL.createObjectURL(event.target.files[0]);
+  btn.type = "submit";
+  btn.value = "Submit";
+  btn.name = "upload-submit";
+  btn.classList.add("btn", "manzoku-btn-accent1", "btn-block", "manzoku-typeface-main0");
+  imgContainer.appendChild(img);
+  imgContainer.appendChild(btn);
+};
+
 // Modals
 function openModal(modal, caller){
   document.querySelector(modal).classList.add("d-block");

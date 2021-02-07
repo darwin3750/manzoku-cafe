@@ -57,5 +57,5 @@ define('AUTHENTICATE', SERVER_ROOT . "/components/scripts/authenticate.script.ph
 define("REGISTER", SERVER_ROOT . "/components/scripts/register.script.php"); 
 define('DISPLAY_POSTS', SERVER_ROOT . "/components/scripts/display-posts.script.php"); 
 define('GET_DISTINCT_MENU_CATEGORIES', SERVER_ROOT . "/components/scripts/get-distinct-menu-categories.script.php"); 
-define('DISPLAY_FOLDER', SERVER_ROOT . "/components/scripts/display-folder.script.php"); 
+define('DISPLAY_FOLDER', SERVER_ROOT . "/components/scripts/display-folder.script.php");
 ?>
