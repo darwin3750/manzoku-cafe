@@ -195,12 +195,6 @@
     opacity: 0.6;
   }
 
-  .manzoku-footer{
-    background-image: url("../images/decorations/footerbgdark.png");
-    
-
-  }
-
 /* button fills */
   .manzoku-btn-base {
     color: var(--manzoku-primary);
