@@ -19,7 +19,7 @@
   <select id="img_src" name="img_src" class="form-select manzoku-form-transparent mt-2 mb-2" required>
     <option class="d-none" value="" selected>Select image to display</option>
     <?php
-    foreach (scandir(POSTERS_FOLDER) as $key => $file) {
+    foreach (scandir(DECORATIONS_FOLDER) as $key => $file) {
       if(preg_match('/(jpg|png|webp|jpeg)$/', strtolower(pathinfo($file, PATHINFO_EXTENSION)))){ 
         echo '<option value="' . $file . '">' . $file . '</option>';
       }
