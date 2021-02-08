@@ -17,11 +17,11 @@ define('ROOT_DECORATIONS_FOLDER', "assets/images/posters/");
 define('ROOT_ABOUT_FOLDER', "assets/images/about/");
 define('ROOT_TESTIMONIALS_FOLDER', "assets/images/testimonies/");
 
-//FOLDER--RELATIVE PATH FROM TEMPLATE
-define('TEMPLATE_IMAGES_FOLDER', "../../assets/images/"); 
-define('TEMPLATE_MENUS_FOLDER', "../../assets/images/menus/"); 
-define('TEMPLATE_CONTACT_US_FOLDER', "../../assets/images/contact-us/"); 
-define('TEMPLATE_DECORATIONS_FOLDER', "../../assets/images/posters/"); 
+//TODO
+define('TEMPLATE_IMAGES_FOLDER', "assets/images/"); 
+define('TEMPLATE_MENUS_FOLDER', "assets/images/menus/"); 
+define('TEMPLATE_CONTACT_US_FOLDER', "assets/images/contact-us/"); 
+define('TEMPLATE_DECORATIONS_FOLDER', "assets/images/posters/"); 
 
 //FOLDERS--ABSOLUTE PATH
 define('IMAGES_FOLDER', SERVER_ROOT . "/assets/images/"); 
