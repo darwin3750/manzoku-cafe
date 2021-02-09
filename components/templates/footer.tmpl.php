@@ -27,13 +27,13 @@
       <div class="col-xl-3">
         <h3 class="manzoku-color-accent1-neg">Connect with us: </h3>
         <section id="footer-socials" class="d-flex justify-content-start">
-          <a class="svg-container-icon-5 manzoku-border-contrast-3 rounded m-1" href="facebook.com">
+          <a class="svg-container-icon-5 manzoku-border-contrast-3 rounded m-1" href="https://www.facebook.com/manzokucafe">
             <svg xmlns="http://www.w3.org/2000/svg" aria-label="Facebook" role="img" viewBox="0 0 512 512">
               <rect width="512" height="512" rx="15%" fill="var(--manzoku-accent1-pos)" />
               <path id="footer-fb-svg-innershape" d="M355.6 330l11.4-74h-71v-48c0-20.2 9.9-40 41.7-40H370v-63s-29.3-5-57.3-5c-58.5 0-96.7 35.4-96.7 99.6V256h-65v74h65v182h80V330h59.6z" fill="var(--manzoku-contrast)" />
             </svg>
           </a>
-          <a class="svg-container-icon-5 manzoku-border-contrast-3 rounded m-1" href="facebook.com">
+          <a class="svg-container-icon-5 manzoku-border-contrast-3 rounded m-1" href="https://www.instagram.com/manzokucafe/">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="Instagram" role="img" viewBox="0 0 512 512">
               <rect width="512" height="512" fill="var(--manzoku-accent1-pos)" />
               <g id="footer-ig-svg-innershape" fill="none" stroke="var(--manzoku-contrast)" stroke-width="30">
@@ -49,6 +49,7 @@
     <hr class="p-1 manzoku-bg-accent2 rounded" />
     <p class="text-center manzoku-font-2 m-2">© IT135-8L--GROUP BOTSWANA / MANZOKU CAFE 2021</p>
     <p class="manzoku-bold text-center manzoku-font-1 m-2">Made with love (and the help of <a class=" manzoku-color-base" href="https://www.svgbackgrounds.com/">#SVGBackgrounds</a>).</p>
+    <p class="manzoku-regular text-center manzoku-font-1 m-2"><a class=" manzoku-color-accent1-neg" href="login.admin.php">Administrator Login</a></p>
   </div>
 </footer>
 
