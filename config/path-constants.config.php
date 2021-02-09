@@ -45,6 +45,7 @@ define('ADMIN_CONFIG_MESSAGES', SERVER_ROOT . "/components/templates/admin-confi
 define('ADMIN_CONFIG_FILES', SERVER_ROOT . "/components/templates/admin-config-files.tmpl.php"); 
 define('ADMIN_CONFIG_ANALYTICS', SERVER_ROOT . "/components/templates/admin-config-analytics.tmpl.php"); 
 define('ADMIN_CONFIG_FILES_CARD', SERVER_ROOT . "/components/templates/admin-config-files-card.tmpl.php"); 
+define('ADMIN_MESSAGES', SERVER_ROOT . "/components/templates/admin-messages.tmpl.php"); 
 
 //TEMPLATES--FILE NAME
 define('FORM_FEATURED_CONTENT', "form-featured-content.tmpl.php"); 
@@ -58,4 +59,5 @@ define("REGISTER", SERVER_ROOT . "/components/scripts/register.script.php");
 define('DISPLAY_POSTS', SERVER_ROOT . "/components/scripts/display-posts.script.php"); 
 define('GET_DISTINCT_MENU_CATEGORIES', SERVER_ROOT . "/components/scripts/get-distinct-menu-categories.script.php"); 
 define('DISPLAY_FOLDER', SERVER_ROOT . "/components/scripts/display-folder.script.php");
+define('DISPLAY_MESSAGES', SERVER_ROOT . "/components/scripts/display-messages.script.php");
 ?>

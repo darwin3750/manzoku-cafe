@@ -8,7 +8,7 @@ include NAVBAR; ?>
 <section class="manzoku-color-contrast">
   <?php
   //connect to DB
-  require_once "components/scripts/connect-database.script.php";
+  require_once CONNECT_DATABASE;
 
   //render modal
   $form = FORM_FEATURED_CONTENT;
@@ -26,7 +26,7 @@ include NAVBAR; ?>
   include "components/templates/add-content-section.tmpl.php";
 
   //close DB connection
-  require_once "components/scripts/close-database.script.php";
+  require_once CLOSE_DATABASE;
   ?>
 
 </section>

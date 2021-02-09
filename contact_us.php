@@ -8,7 +8,7 @@ include NAVBAR; ?>
     <br><h1 class="manzoku-typeface-main0 manzoku-font-3 text-center manzoku-color-base">Send Us a Message</h1><br><br>
     <div class="container-fluid row card manzoku-bg-contrast">
     <div class="container-fluid py-3">
-    <form id="contact-form" method="POST" action="components/scripts/contact_message_db.php" role="form">
+    <form id="contact-form" method="POST" action="components/scripts/modify-contact-messages.script.php" role="form">
         <div class="messages"></div>
         <div class="controls">
             <div class="row">

@@ -1,4 +1,4 @@
-<section class="container p-3">
+<section class="container p-3 ">
   <div class="row">
     <div class="col-md-0"></div>
     <div class="col-md-12 manzoku-border-base-4 rounded-lg">
@@ -12,6 +12,7 @@
         </h2>
       </heading>
       <article class="manzoku-color-contrast p-3 manzoku-regular text-center">
+        <?php include DISPLAY_MESSAGES; ?>
       </article>
     </div>
     <div class="col-md-0"></div>

@@ -18,7 +18,7 @@
         return preg_match("/^[^\.]+$/", $file);
       }) as $key => $folder) {
       ?>
-        <heading class="manzoku-bg-base w-100 manzoku-accordion-head">
+        <heading class="manzoku-bg-base w-100 manzoku-accordion-head" role="button">
           <div class="d-flex justify-content-between">
             <h4>
               /<?php echo $folder ?>
