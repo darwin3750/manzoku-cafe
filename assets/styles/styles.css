@@ -108,6 +108,9 @@
   a{
     color: var(--manzoku-accent1);
   }
+  a:hover{
+    color: var(--manzoku-accent2);
+  }
   ::selection {
     background-color: var(--manzoku-base);
     color: var(--manzoku-primary);
@@ -152,6 +155,9 @@
   .manzoku-color-accent1{
     color: var(--manzoku-accent1);
   }
+  .manzoku-color-accent1-neg{
+    color: var(--manzoku-accent1-neg);
+  }
   .manzoku-color-accent2{
     color: var(--manzoku-accent2);
   }
@@ -171,6 +177,9 @@
   }
   .manzoku-bg-accent1{
     background-color: var(--manzoku-accent1);
+  }
+  .manzoku-bg-accent1-pos{
+    background-color: var(--manzoku-accent1-pos);
   }
   .manzoku-bg-accent2{
     background-color: var(--manzoku-accent2);
