@@ -3,7 +3,8 @@ session_start();
 require "constants.php";
 $page_name = "Config";
 require_once HEAD;
-include NAVBAR; ?>
+include NAVBAR; 
+require_once CONNECT_DATABASE;?>
 
 <section class="">
   <!-- data analytics button -->
@@ -83,7 +84,9 @@ include NAVBAR; ?>
     <input type="submit" value="Sign Out" class="btn manzoku-btn-accent1 btn-lg btn-block manzoku-typeface-main0" />
   </form>
 </section>
-<?php include FOOTER; ?>
+<?php 
+require_once CLOSE_DATABASE;
+include FOOTER; ?>
 
 <style>
   #admin-config-nav .svg-container-icon-4:hover, 
