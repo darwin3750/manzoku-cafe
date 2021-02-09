@@ -34,7 +34,7 @@
                   </svg>
                 </div>
               <?php } ?>
-              <img src="<?php echo TEMPLATE_MENUS_FOLDER . $img_src ?>" class="img-fluid manzoku-border-base-5 p-3">
+              <img src="<?php echo ROOT_MENUS_FOLDER . $img_src ?>" class="img-fluid manzoku-border-base-5 p-3">
             </div>
             <div class="col-md-2"></div>
           </div>

@@ -15,4 +15,4 @@ if (!mysqli_stmt_prepare($sql_statement, $sql_query_cardcode)) {
     include $template;
   }
 }
-      ?>
+?>

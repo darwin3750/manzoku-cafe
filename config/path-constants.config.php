@@ -16,12 +16,7 @@ define('ROOT_CONTACT_US_FOLDER', "assets/images/contact-us/");
 define('ROOT_DECORATIONS_FOLDER', "assets/images/posters/"); 
 define('ROOT_ABOUT_FOLDER', "assets/images/about/");
 define('ROOT_TESTIMONIALS_FOLDER', "assets/images/testimonies/");
-
-//TODO
-define('TEMPLATE_IMAGES_FOLDER', "assets/images/"); 
-define('TEMPLATE_MENUS_FOLDER', "assets/images/menus/"); 
-define('TEMPLATE_CONTACT_US_FOLDER', "assets/images/contact-us/"); 
-define('TEMPLATE_DECORATIONS_FOLDER', "assets/images/posters/"); 
+define('ROOT_IMAGES_FOLDER', "assets/images/"); 
 
 //FOLDERS--ABSOLUTE PATH
 define('IMAGES_FOLDER', SERVER_ROOT . "/assets/images/"); 
@@ -60,4 +55,5 @@ define('DISPLAY_POSTS', SERVER_ROOT . "/components/scripts/display-posts.script.
 define('GET_DISTINCT_MENU_CATEGORIES', SERVER_ROOT . "/components/scripts/get-distinct-menu-categories.script.php"); 
 define('DISPLAY_FOLDER', SERVER_ROOT . "/components/scripts/display-folder.script.php");
 define('DISPLAY_MESSAGES', SERVER_ROOT . "/components/scripts/display-messages.script.php");
+define('DISPLAY_CONTACT_US', SERVER_ROOT . "/components/scripts/display-contact-us.script.php");
 ?>

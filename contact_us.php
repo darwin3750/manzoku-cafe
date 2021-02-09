@@ -67,10 +67,10 @@ include NAVBAR; ?>
     <br><h1 class="manzoku-typeface-main0 manzoku-font-3 text-center manzoku-color-base">Our Socials</h1><br><br>
     <div class="row">
       <?php 
-      require_once "components/scripts/connect-database.script.php";
+      require_once CONNECT_DATABASE;
       $template = CONTACT_US_CARD;
-      include "components/scripts/display-contact-us.script.php";
-      require_once "components/scripts/close-database.script.php";
+      include DISPLAY_CONTACT_US;
+      require_once CLOSE_DATABASE;
       ?>
     </div>
   </section>
