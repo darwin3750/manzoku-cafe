@@ -11,7 +11,7 @@
       $message = $_POST['message'];
       $errors = "Location: ../../contact_us.php?error=;";
       //put to DB
-      $sql_query = "INSERT INTO CONTACT_MESSAGES (name, email, phone, subject, messages)  VALUES (?, ?, ?, ?, ?)";
+      $sql_query = "INSERT INTO CONTACT_MESSAGES (SENDER_NAME, SENDER_EMAIL, SENDER_PHONE, SUBJECT, BODY)  VALUES (?, ?, ?, ?, ?)";
       $sql_statement = mysqli_stmt_init($conn);
       if(!mysqli_stmt_prepare($sql_statement, $sql_query)){
         header("Location: ../../contact_us.php?error=sqlerorr2");
