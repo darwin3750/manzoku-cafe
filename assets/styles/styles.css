@@ -437,9 +437,32 @@
   }
 
 /* scrollbar */
-  /* width */
+@media (min-width: 576px) {
+  ::-webkit-scrollbar { /* width */
+    width: 0rem !important;
+  }
+}
+
+@media (min-width: 768px) {
+  ::-webkit-scrollbar { /* width */
+    width: 0.6rem !important;
+  }
+}
+
+@media (min-width: 992px) { 
+  ::-webkit-scrollbar { /* width */
+    width: 0.6rem !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  ::-webkit-scrollbar { /* width */
+    width: 0.6rem !important;
+  }
+}
+/* width */
 ::-webkit-scrollbar {
-  width: 0.6rem;
+  width: 0rem;
 }
 
 /* Track */
