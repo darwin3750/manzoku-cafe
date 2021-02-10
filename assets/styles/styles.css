@@ -54,7 +54,10 @@
 
   --manzoku-accent1: #fe6c2b;
   --manzoku-accent1-pos: #a84115;
+  --manzoku-accent1-pos1: #742a0b;
+  --manzoku-accent1-pos2: #6d2709;
   --manzoku-accent1-neg: #f3a888;
+  --manzoku-accent1-neg1:rgb(236, 194, 176);
 
   --manzoku-accent2: #26c2c2;
   --manzoku-accent2-pos: #0d6d6d;
