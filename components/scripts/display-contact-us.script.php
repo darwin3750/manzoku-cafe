@@ -8,7 +8,8 @@ if (!mysqli_stmt_prepare($sql_statement, $sql_query_cardcode)) {
   mysqli_stmt_execute($sql_statement);
   $result = mysqli_stmt_get_result($sql_statement);
   while ($row = mysqli_fetch_assoc($result)) {
-    $type = $row['CONTACT_TYPE'];
+    $contact_id = $row['CONTACT_ID'];
+    $contact_type = $row['CONTACT_TYPE'];
     $title = $row['TITLE'];
     $content = $row['CONTENT'];
     $img_src = $row['IMG_SRC'];
