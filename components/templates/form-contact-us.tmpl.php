@@ -1,4 +1,4 @@
-<form id="currentForm" action="components/scripts/modify-featured-content.script.php" class="" method="POST" enctype="multipart/form-data">
+<form id="currentForm" action="components/scripts/modify-contact-us.script.php" class="" method="POST" enctype="multipart/form-data">
   <!-- HIDDEN -->
   <div class="form-group d-none">
     <label for="contact_id" class="manzoku-color-secondary">Contact ID:</label>

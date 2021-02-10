@@ -51,14 +51,3 @@ include NAVBAR; ?>
   ?>
 </section>
 <?php include FOOTER; ?>
-
-<style>
-  .contact-card:hover {
-    border: 3px solid var(--manzoku-accent2);
-    transition: 0.2s;
-  }
-
-  .manzoku-send {
-    border: none;
-  }
-</style>
