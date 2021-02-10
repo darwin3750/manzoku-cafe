@@ -32,7 +32,7 @@
         } else if ($img_layout == "CENTER") {
           $imgCol = "6";
           echo '<div class="col-md-3"></div>';
-          include "featured-content-img-col.tmpl.php";
+          include "featured-content-img-carsousel.tmpl.php";
           echo '<div class="col-md-3"></div>';
         } else if ($img_layout == "") {
           $txtCol = "10";
