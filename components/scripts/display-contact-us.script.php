@@ -10,8 +10,8 @@ if (!mysqli_stmt_prepare($sql_statement, $sql_query_cardcode)) {
   while ($row = mysqli_fetch_assoc($result)) {
     $contact_id = $row['CONTACT_ID'];
     $contact_type = $row['CONTACT_TYPE'];
-    $title = preg_replace("/\r|\n/","<br/>",$row['TITLE']);
-    $content = preg_replace("/\r|\n/","<br/>",$row['CONTENT']);
+    $title = preg_replace("/\r/","",preg_replace("/\n/","<br/>",$row['TITLE']));
+    $content = preg_replace("/\r/","",preg_replace("/\n/","<br/>",$row['CONTENT']));
     $img_src = $row['IMG_SRC'];
     include $template;
   }
