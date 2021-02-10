@@ -14,11 +14,11 @@
    {
    echo
    '<div class="col-sm-6">
-   <div class="manzoku-border-base-3 mt-2 contact-card">;';
+   <div class="manzoku-border-base-3 mt-2 contact-card text-center">;';
      if($title=="Facebook Page")
-       echo '<a href="'.$content.'"><img src= "'.ROOT_CONTACT_US_FOLDER."/fb.jpg".'"  style="margin-left:auto; margin-right:auto;"></a>';
+       echo '<a href="'.$content.'"><img class="mx-auto img-fluid" src= "'.ROOT_CONTACT_US_FOLDER."/fb.jpg".'"  style="margin-left:auto; margin-right:auto;"></a>';
      else if($title=="Instagram Feed")
-       echo '<a href="'.$content.'"><img src= "'.ROOT_CONTACT_US_FOLDER."/ig.jpg".'"  style="margin-left:auto; margin-right:auto;"></a>';
+       echo '<a href="'.$content.'"><img class="mx-auto img-fluid" src= "'.ROOT_CONTACT_US_FOLDER."/ig.jpg".'"  style="margin-left:auto; margin-right:auto;"></a>';
    echo'</div>
    </div>';
    }
