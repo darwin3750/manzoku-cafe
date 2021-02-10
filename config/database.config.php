@@ -7,7 +7,7 @@ define('DB_PASS', '');
 define('DB_NAME', 'manzokucafe');
 define('DB_PORT', 3306);
 
-// DB Params for production DB
+//DB Params for production DB
 // define('CERRTIFICATE_AUTHORITY_FILE', SERVER_ROOT . '/BaltimoreCyberTrustRoot.crt.pem');
 // define('DB_SERVER', 'manzoku-cafe-dataserver.mysql.database.azure.com');
 // define('DB_USER', 'botswana@manzoku-cafe-dataserver');

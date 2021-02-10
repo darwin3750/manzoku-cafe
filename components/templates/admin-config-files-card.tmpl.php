@@ -10,7 +10,7 @@
           </svg>
         </div>
       </form>
-      <img src="<?php echo TEMPLATE_IMAGES_FOLDER . $folder . "/" . $file ?>" class="img-fluid">
+      <img src="<?php echo ROOT_IMAGES_FOLDER . $folder . "/" . $file ?>" class="img-fluid">
     </section>
     <div class="d-flex align-items-start">
       <p><?php echo $file ?></p>
