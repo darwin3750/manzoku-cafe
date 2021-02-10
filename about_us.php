@@ -44,7 +44,5 @@ include NAVBAR; ?>
       //render map
       include MAP;?>
   </section>
-
-  
 <?php include FOOTER; ?>
 
