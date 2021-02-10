@@ -33,7 +33,7 @@
   <div class="card-body" style="text-align:center;">
   <p class="card-body" style="margin-top:-8%;"><?php echo $content ?></p>
   <div style="position: absolute; margin-left: auto; margin-right: auto; left: 0; right: 0; text-align: center; bottom: 0; ">
-  <p class="card-title" style="font-style: italic;"><?php echo $author ?></p>
+  <p class="card-title" style="font-style: italic;"><?php echo $author_name ?></p>
   <p class="card-title" style="font-weight:bold;"><?php echo $title ?></p>
   </div>
   </div>
