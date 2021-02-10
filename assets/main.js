@@ -110,7 +110,7 @@ function populateFormModal(values){
   document.querySelector("#currentForm").reset();
   for (var key in values) {
     if(el = document.querySelector("#" + key)) {
-      el.value = values[key];
+      el.value = (values[key]).replace(/<br\/>/g, '\n');
       if(el.type=="checkbox" && (values[key] == true)){
         el.checked = true;
         console.log((values[key]));
