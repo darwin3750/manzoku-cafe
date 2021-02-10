@@ -33,6 +33,7 @@ define('FEATURED_CONTENT_CAROUSEL', SERVER_ROOT . "/components/templates/feature
 define('TESTIMONIAL_CARD', SERVER_ROOT . "/components/templates/testimonial-card.tmpl.php"); 
 define('MENU_CATEGORY', SERVER_ROOT . "/components/templates/menu-category.tmpl.php");
 define('CONTACT_US_CARD', SERVER_ROOT . "/components/templates/contact-us-card.tmpl.php"); 
+define('CONTACT_US_CARD_SOCIALS', SERVER_ROOT . "/components/templates/contact-us-socials-card.tmpl.php"); 
 define('ABOUT_CARD', SERVER_ROOT . "/components/templates/about-card.tmpl.php"); 
 define('MAP', SERVER_ROOT . "/components/templates/map.tmpl.php"); 
 define('ADMIN_CONFIG_REGISTRATION', SERVER_ROOT . "/components/templates/admin-config-registration.tmpl.php"); 
@@ -56,4 +57,5 @@ define('GET_DISTINCT_MENU_CATEGORIES', SERVER_ROOT . "/components/scripts/get-di
 define('DISPLAY_FOLDER', SERVER_ROOT . "/components/scripts/display-folder.script.php");
 define('DISPLAY_MESSAGES', SERVER_ROOT . "/components/scripts/display-messages.script.php");
 define('DISPLAY_CONTACT_US', SERVER_ROOT . "/components/scripts/display-contact-us.script.php");
+define('DISPLAY_CONTACT_SOCIALS', SERVER_ROOT . "/components/scripts/display-contact-us.script.php");
 ?>

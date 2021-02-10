@@ -15,28 +15,12 @@
   
    if ($type == "NUMBER")
    {
-     echo
-     '<div class="card col-sm-4 mt-3 manzoku-bg-contrast text-center" style="max-width: 370px; margin: 5px; ">
-        <div class="card-header"><b>'.$title.'</b></div>
-        <div class="card-body">
-          <p class="card-text">'.$content.'</p>
-        </div>
-      </div>';
-   } 
-    if ($type == "SOCIAL MEDIA")
-    {
     echo
-    '<div class="card w-50 mr-2 manzoku-bg-contrast" style="max-width: 555px; margin:5px">
-    <div class="card-body m-2" style="margin:20px">
-      <h5 class="card-title">'.$title.'</h5>';
-      if($title=="Facebook Page")
-      echo '<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fmanzokucafe%2Fposts%2F279671486822968&width=500&show_text=true&height=589&appId" width="500" height="589" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>';
-      else
-      echo '<iframe src="https://www.instagram.com/p/B6SuPPpHY6f/embed" width="500" height="580" frameborder="0" scrolling="no" allowtransparency="true"></iframe>';
-      echo '<a href="'.$content.'" class="btn manzoku-btn-secondary form-control">Visit</a>
-      
+    '<div class="col-sm-4" style="background-color:none;">
+    <div class="card manzoku-bg-contrast p-2 m-1">
+      <div class="card-title text-center"><b>'.$title.'</b></div>
+      <div class="text-center">'.$content.'</div>
     </div>
     </div>';
-    }
-
+   }
 ?>

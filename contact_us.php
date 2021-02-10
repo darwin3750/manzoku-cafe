@@ -6,9 +6,9 @@ require_once HEAD;
 include NAVBAR; ?>
   <section class="container">
     <br><h1 class="manzoku-typeface-main0 manzoku-font-3 text-center manzoku-color-base">Send Us a Message</h1><br><br>
-    <div class="container-fluid row card manzoku-bg-contrast">
+    <div class="container-fluid row card m-1 manzoku-bg-contrast">
     <div class="container-fluid py-3">
-    <form id="contact-form" method="POST" action="components/scripts/modify-contact-messages.script.php" role="form">
+    <form id="contact-form d-flex mt-5 mx-auto" method="POST" action="components/scripts/modify-contact-messages.script.php" role="form">
         <div class="messages"></div>
         <div class="controls">
             <div class="row">
@@ -53,7 +53,7 @@ include NAVBAR; ?>
                 </div>
             </div>
             <div class="col-md-12">
-                <input type="submit" class="btn manzoku-btn-base btn-send form-control" value="SEND MESSAGE" name="send-message">
+                <input type="submit" class="btn manzoku-btn-secondary btn-send form-control" value="SEND MESSAGE" name="send-message">
             </div>
         </div>
         <div class="row">
@@ -64,10 +64,19 @@ include NAVBAR; ?>
     </form>
   </div>
     </div>
-    <br><h1 class="manzoku-typeface-main0 manzoku-font-3 text-center manzoku-color-base">Our Socials</h1><br><br>
+    
+    <br><h1 class="manzoku-typeface-main0 manzoku-font-3 text-center manzoku-color-base">Our Socials</h1><br>
     <div class="row">
       <?php 
       require_once CONNECT_DATABASE;
+      $template = CONTACT_US_CARD_SOCIALS;
+      include DISPLAY_CONTACT_US;
+      
+      ?>
+    </div>
+    <br><h1 class="manzoku-typeface-main0 manzoku-font-3 text-center manzoku-color-base">Call Us</h1><br>
+    <div class="row">
+      <?php 
       $template = CONTACT_US_CARD;
       include DISPLAY_CONTACT_US;
       require_once CLOSE_DATABASE;
