@@ -33,8 +33,9 @@ define('FEATURED_CONTENT', SERVER_ROOT . "/components/templates/featured-content
 define('FEATURED_CONTENT_CAROUSEL', SERVER_ROOT . "/components/templates/featured-content-carousel.tmpl.php"); 
 define('TESTIMONIAL_CARD', SERVER_ROOT . "/components/templates/testimonial-card.tmpl.php"); 
 define('MENU_CATEGORY', SERVER_ROOT . "/components/templates/menu-category.tmpl.php");
-define('CONTACT_US_CARD', SERVER_ROOT . "/components/templates/contact-us-card.tmpl.php"); 
-define('CONTACT_US_CARD_SOCIALS', SERVER_ROOT . "/components/templates/contact-us-socials-card.tmpl.php"); 
+define('CONTACT_US_SOCIALS_CARD', SERVER_ROOT . "/components/templates/contact-us-socials-card.tmpl.php"); 
+define('CONTACT_US_NUMBERS_CARD', SERVER_ROOT . "/components/templates/contact-us-numbers-card.tmpl.php"); 
+define('CONTACT_US_MESSAGE', SERVER_ROOT . "/components/templates/contact-us-message.tmpl.php"); 
 define('ABOUT_US_CARD', SERVER_ROOT . "/components/templates/about-us-card.tmpl.php"); 
 define('ABOUT_US_HEADER', SERVER_ROOT . "/components/templates/about-us-header.tmpl.php"); 
 define('MAP', SERVER_ROOT . "/components/templates/map.tmpl.php"); 
