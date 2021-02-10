@@ -11,19 +11,21 @@ include NAVBAR; ?>
       require_once CONNECT_DATABASE;
 
       //render modal
-      $form = FORM_FEATURED_CONTENT;
+      $form = FORM_ABOUT_US;
       include "components/templates/modify-content-modal.tmpl.php";
       ?>
 
       <!-- Main Content -->
-      <div class="container p-0 manzoku-color-primary">
-        <h1 class="manzoku-typeface-main0 manzoku-font-3 text-center manzoku-color-base">About Us</h1>
+      <div class="container p-0 manzoku-color-contrast">
+        <heading class="p-3">
+          <h1 class="manzoku-typeface-main0 manzoku-font-3 text-center manzoku-color-base">About Us</h1>
+        </heading>
         <?php
           //render about header content
           $template = ABOUT_US_HEADER;
           include DISPLAY_ABOUT;
         ?>
-        <div class="row p-3 mt-2 mb-2 position-relative">
+        <div class="row">
           <?php
             //render about card content
             $template = ABOUT_US_CARD;

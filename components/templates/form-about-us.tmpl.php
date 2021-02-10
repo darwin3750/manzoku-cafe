@@ -1,4 +1,4 @@
-<form id="currentForm" action="components/scripts/modify-featured-content.script.php" class="" method="POST" enctype="multipart/form-data">
+<form id="currentForm" action="components/scripts/modify-about-us-content.script.php" class="" method="POST" enctype="multipart/form-data">
   <!-- HIDDEN -->
   <div class="form-group d-none">
     <label for="about_id" class="manzoku-color-secondary">Content ID:</label>
@@ -22,4 +22,12 @@
     }
     ?>
   </select>
+  <section class="d-flex justify-content-end">
+    <div class="form-check">
+      <input id="is_card" class="form-check-input manzoku-color-base" type="checkbox" name="is_card">
+      <label class="form-check-label manzoku-color-secondary" for="is_card">
+        Is this a card content?
+      </label>
+    </div>
+  </section>
 </form>

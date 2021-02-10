@@ -109,6 +109,14 @@ function closeModal(modal){
 function populateFormModal(values){
   document.querySelector("#currentForm").reset();
   for (var key in values) {
-    if(el = document.querySelector("#" + key)) el.value = values[key];
+    if(el = document.querySelector("#" + key)) {
+      el.value = values[key];
+      if(el.type=="checkbox" && (values[key] == true)){
+        el.checked = true;
+        console.log((values[key]));
+      }else{
+        el.checked = false;
+      }
+    }
   }
 }
