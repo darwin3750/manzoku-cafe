@@ -13,16 +13,20 @@
    if ($type == "SOCIAL MEDIA")
    {
    echo
-   '<div class="col-sm-6" style="background-color:none;">
-   <div class="card manzoku-bg-contrast m-1 p-2">
-     <h5 class="card-title text-center">'.$title.'</h5>';
+   '<div class="col-sm-6">
+   <div class="manzoku-border-base-3 mt-2 contact-card">;';
      if($title=="Facebook Page")
-       echo '<img src= "'.ROOT_CONTACT_US_FOLDER."/fb.jpg".'" class="card-img-top mt-1"  style="margin-left:auto; margin-right:auto;">';
-     else
-       echo '<img src= "'.ROOT_CONTACT_US_FOLDER."/ig.jpg".'" class="card-img-top mt-1"  style="margin-left:auto; margin-right:auto;">';
-     echo '<a href="'.$content.'" class="btn manzoku-btn-secondary">Visit</a>
-   </div>
+       echo '<a href="'.$content.'"><img src= "'.ROOT_CONTACT_US_FOLDER."/fb.jpg".'"  style="margin-left:auto; margin-right:auto;"></a>';
+     else if($title=="Instagram Feed")
+       echo '<a href="'.$content.'"><img src= "'.ROOT_CONTACT_US_FOLDER."/ig.jpg".'"  style="margin-left:auto; margin-right:auto;"></a>';
+   echo'</div>
    </div>';
    }
 
 ?>
+<style>
+  .contact-card:hover{
+    border: 3px solid var(--manzoku-accent2);
+    transition: 0.2s;
+  }
+</style>
