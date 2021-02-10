@@ -17,17 +17,17 @@
       <div class="col-xl-9 text-left">
         <section>
           <header class="">
-            <h3 class="manzoku-color-accent1-neg">Established in 2019,</h3>
+            <h5 class="manzoku-color-accent1-neg">Established in 2019,</h5>
           </header>
           <article>
-            <p class="p-3 manzoku-font-1 line-height-3 manzoku-black">
+            <p class="manzoku-font-1 line-height-2 manzoku-black">
               Manzoku Cafe has been serving Japanese cuisines in the City of Cabanatuan. Eventually, their dishes have evolved into a mixture of Japanese-Filipino taste.
             </p>
           </article>
         </section>
       </div>
       <div class="col-xl-3">
-        <h3 class="manzoku-color-accent1-neg">Connect with us: </h3>
+        <h5 class="manzoku-color-accent1-neg">Connect with us: </h5>
         <section id="footer-socials" class="d-flex justify-content-start">
           <a class="svg-container-icon-5 manzoku-border-contrast-3 rounded m-1" href="https://www.facebook.com/manzokucafe">
             <svg xmlns="http://www.w3.org/2000/svg" aria-label="Facebook" role="img" viewBox="0 0 512 512">
@@ -49,7 +49,7 @@
       </div>
     </section>
     <hr class="p-1 manzoku-bg-accent2 rounded" />
-    <p class="text-center manzoku-font-2 m-2">© IT135-8L--GROUP BOTSWANA / MANZOKU CAFE 2021</p>
+    <p class="text-center manzoku-font-2 m-1">© IT135-8L--GROUP BOTSWANA / MANZOKU CAFE 2021</p>
     <p class="manzoku-bold text-center manzoku-font-1 m-2">Made with love (and the help of <a class=" manzoku-color-base" href="https://www.svgbackgrounds.com/">#SVGBackgrounds</a>).</p>
     <p class="manzoku-regular text-center manzoku-font-1 m-2"><a class=" manzoku-color-accent1-neg" href="login.admin.php">Administrator Login</a></p>
   </div>
