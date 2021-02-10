@@ -11,7 +11,7 @@ include NAVBAR; ?>
   require_once CONNECT_DATABASE;
 
   //render modal
-  $form = FORM_ABOUT_US;
+  $form = FORM_CONTACT_US;
   include "components/templates/modify-content-modal.tmpl.php";
 
   //render message us form
@@ -35,12 +35,13 @@ include NAVBAR; ?>
     </heading>
     <div class="row">
       <?php
-      //render about card content
+      //render contact us numbers
       $template = CONTACT_US_NUMBERS_CARD;
       include DISPLAY_CONTACT_US;
       ?>
     </div>
   </div>
+
   <?php
   //render add-content section for admins
   include "components/templates/add-content-section.tmpl.php";

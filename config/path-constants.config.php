@@ -50,6 +50,7 @@ define('ADMIN_MESSAGES', SERVER_ROOT . "/components/templates/admin-messages.tmp
 define('FORM_FEATURED_CONTENT', "form-featured-content.tmpl.php"); 
 define('FORM_MENUS', "form-menus.tmpl.php"); 
 define('FORM_ABOUT_US', "form-about-us.tmpl.php"); 
+define('FORM_CONTACT_US', "form-contact-us.tmpl.php"); 
 
 //SCRIPTS--ABSOLUTE PATH
 define('CONNECT_DATABASE', SERVER_ROOT . "/components/scripts/connect-database.script.php"); 
