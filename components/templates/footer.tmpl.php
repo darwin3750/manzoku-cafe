@@ -5,7 +5,7 @@
 </svg>
 
 <footer class="manzoku-bg-accent1-pos">
-  <div class="container manzoku-color-contrast manzoku-typeface-main0">
+  <div class="container manzoku-color-contrast manzoku-typeface-main0 position-relative" style="z-index:2">
     <section class="row">
       <div class="col-xl-3"></div>
       <div class="col-xl-6">
@@ -53,7 +53,7 @@
     <p class="manzoku-bold text-center manzoku-font-1 m-2">Made with love (and the help of <a class=" manzoku-color-base" href="https://www.svgbackgrounds.com/">#SVGBackgrounds</a>).</p>
     <p class="manzoku-regular text-center manzoku-font-1 m-2"><a class=" manzoku-color-accent1-neg" href="login.admin.php">Administrator Login</a></p>
   </div>
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="position-relative" style="z-index: 2; margin-top:-5%">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="position-relative" style="z-index: 1; margin-top:-5%">
     <path fill="var(--manzoku-accent1-pos2)" fill-opacity="1" d="M0,288L40,282.7C80,277,160,267,240,256C320,245,400,235,480,218.7C560,203,640,181,720,165.3C800,149,880,139,960,144C1040,149,1120,171,1200,160C1280,149,1360,107,1400,85.3L1440,64L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
     <path fill="var(--manzoku-accent1-pos1)" fill-opacity="1" d="M0,0L40,32C80,64,160,128,240,181.3C320,235,400,277,480,277.3C560,277,640,235,720,229.3C800,224,880,256,960,266.7C1040,277,1120,267,1200,266.7C1280,267,1360,277,1400,282.7L1440,288L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
   </svg>
