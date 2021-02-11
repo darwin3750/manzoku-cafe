@@ -1,37 +1,37 @@
-.weatherapp-animate-wavetext-letter-container {
+.manzoku-animate-wavetext-letter-container {
   display: inline-block;
   overflow: hidden;
   line-height: 0;
 }
-.weatherapp-animate-wavetext-letter {
+.manzoku-animate-wavetext-letter {
   display: inline-block;
   line-height: 1em;
 }
-.weatherapp-animate-wavetext{
+.manzoku-animate-wavetext{
   transition: 0.6s;
 }
-.weatherapp-animate-slidescale{
+.manzoku-animate-slidescale{
   opacity: 0;
   transform-origin: 0 0;
 }
 
-.weatherapp-animate-slidein{
+.manzoku-animate-slidein{
   transform: translateX(-100%);
 }
 
-.weatherapp-animate-slidedown{
+.manzoku-animate-slidedown{
   transform: translateY(-100%);
 }
 
-.weatherapp-animate-slideup{
+.manzoku-animate-slideup{
   transform: translateY(100%);
   opacity: 0;
 }
 
-.weatherapp-animate-fadein .weatherapp-animate-fadein2{
+.manzoku-animate-fadein .manzoku-animate-fadein2{
   opacity: 0;
 }
 
-.weatherapp-animate-slidefadein{
+.manzoku-animate-slidefadein{
   opacity: 0;
 }

@@ -129,3 +129,43 @@ function populateFormModal(values){
     }
   }
 }
+
+//check if in viewport entirely
+function isInViewportEntirely(el) {
+  const elBorders = el.getBoundingClientRect();
+  return (
+    elBorders.top >= 0 &&
+    elBorders.left >= 0 &&
+    elBorders.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    elBorders.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+//check if in viewport partially
+function isInViewportPartially(el) {
+  const elBorders = el.getBoundingClientRect();
+  let elMiddle = elBorders.top + (elBorders.bottom - elBorders.top)/2;
+  return (
+    elMiddle <= (window.innerHeight || document.documentElement.clientHeight)
+  );
+}
+
+//ANIMATIONS
+window.onscroll = function(){
+  document.querySelectorAll(".manzoku-animate-slidefadein").forEach(el => {
+    if(isInViewportPartially(el) && !el.classList.contains("animation-activated")){
+      el.classList.add("animation-activated");
+      slideFadeIn(el);
+    }
+  })
+}
+
+let slideFadeIn = el => anime({
+  targets: el,
+  opacity: [0,1],
+  translateY: ['3rem', 0],
+  easing: "easeOutExpo",
+  duration: 2000,
+  complete: function() {
+  }
+});

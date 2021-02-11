@@ -1,5 +1,5 @@
 <?php if(!$is_carousel){ ?>
-  <section class="">
+  <section class="manzoku-animate-slidefadein">
     <div class="container pl-md-5 pr-md-5 p-3 mt-2">
       <div class="row p-3 mt-2 mb-2 position-relative">
         <!-- edit button -->

@@ -19,7 +19,7 @@
 <!-- navbar for mobile view -->
 <section class="d-md-none d-block fixed-bottom w-100 manzoku-typeface-main0 manzoku-color-contrast">
   <div class="d-flex justify-content-end">
-    <button class="btn btn-lg manzoku-btn-accent1 flat-hill pr-3 pl-3" onclick='document.querySelector("#mobile-navigation-links").classList.toggle("mh-100")'>
+    <button class="btn btn-lg manzoku-btn-accent1 flat-hill pr-3 pl-3" onclick='document.querySelector("#mobile-navigation-links").classList.toggle("active")'>
       Navigation
     </button>
   </div>
@@ -54,5 +54,14 @@
   #navigation-links>a.active,
   #mobile-navigation-links>a.active {
     color: var(--manzoku-accent2);
+  }
+  #mobile-navigation-links.active{
+    transform: translateY(0);
+    opacity: 1;
+    height: auto;
+    max-height: 5000px;
+  }
+  #mobile-navigation-links{
+    transition: 0.6s;
   }
 </style>
