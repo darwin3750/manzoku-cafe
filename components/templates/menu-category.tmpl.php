@@ -1,5 +1,5 @@
 <section>
-  <header class="manzoku-bg-base manzoku-accordion-head">
+  <header class="manzoku-bg-base manzoku-accordion-head manzoku-animate-slideinx">
     <div class="container pr-5 pl-5 position-relative d-flex justify-content-between align-items-center">
       <!-- edit button -->
       <h2 class="manzoku-typeface-main0 manzoku-font-3 manzoku-color-primary p-3 m-0"><?php echo $category ?></h2>

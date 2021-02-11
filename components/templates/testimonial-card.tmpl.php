@@ -1,4 +1,4 @@
-<section class="col-lg-3 col-md-4 col-sm-6 p-3 p-sm-1">
+<section class="col-lg-3 col-md-4 col-sm-6 p-3 p-sm-1 manzoku-animate-slidefadein">
   <div class="manzoku-border-base-3 rounded p-3 h-100">
     <!-- edit button -->
     <?php if (isset($_SESSION['current_user_privilege']) && $_SESSION['current_user_privilege'] == "ADMIN") { ?>

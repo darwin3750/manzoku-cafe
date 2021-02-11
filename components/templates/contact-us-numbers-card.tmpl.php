@@ -1,5 +1,5 @@
 <?php if ($contact_type == "NUMBER") { ?>
-  <div class="col-sm-4 pl-3 pr-3 p-1">
+  <div class="col-sm-4 pl-3 pr-3 p-1 manzoku-animate-slidefadein">
     <div class="manzoku-border-base-3 contact-card p-3 h-100 d-flex flex-column justify-content-between rounded position-relative">
       <!-- edit button -->
       <?php if (isset($_SESSION['current_user_privilege']) && $_SESSION['current_user_privilege'] == "ADMIN") { ?>

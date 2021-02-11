@@ -37,14 +37,9 @@ window.onload = () => {
   // start observing a DOM node
   headerResizeObserver.observe(document.querySelector("#header"));
   
-  // admin carousel resizing
-  document.querySelectorAll(".manzoku-accordion-body").forEach(el => {
-    el.addEventListener('transitionend', () => {
-      resizeFlickity('#admin-config-carousel', null);
-    })
-  });
-  //admin carousel page buttons
+  //when in config page
   if(document.title.slice(document.title.indexOf("|") + 2) == "Config"){
+    //admin carousel page buttons
     let adminCarousel = new Flickity("#admin-config-carousel");
     adminCarousel.on( 'change', function( index ) {
       document.querySelectorAll("#admin-config-nav .svg-container-icon-4").forEach((el, i) => {
@@ -54,6 +49,13 @@ window.onload = () => {
           el.classList.add("active");
         }
       });
+    });
+
+    // admin carousel resizing
+    document.querySelectorAll(".manzoku-accordion-body").forEach(el => {
+      el.addEventListener('transitionend', () => {
+        resizeFlickity('#admin-config-carousel', null);
+      })
     });
   }
   
@@ -65,6 +67,36 @@ window.onload = () => {
       resizeFlickity(null, homeCarousel);
     });
   }
+
+  //fade-in animation
+  document.querySelectorAll(".manzoku-animate-slidefadein").forEach(el => {
+    if(isInViewportPartially(el) && !el.classList.contains("animation-activated")){
+      el.classList.add("animation-activated");
+      slideFadeIn(el);
+    }
+  })
+
+  //slideInX animation
+  anime({
+    targets: '.manzoku-animate-slideinx',
+    translateX: ['-100%', '0'],
+    easing: "easeOutQuad",
+    delay: (el, i) => i * 200,
+    offset: 600,
+    duration: 1000,
+    complete: function() {
+    }
+  });
+}
+
+//ANIMATIONS
+window.onscroll = function(){
+  document.querySelectorAll(".manzoku-animate-slidefadein").forEach(el => {
+    if(isInViewportPartially(el) && !el.classList.contains("animation-activated")){
+      el.classList.add("animation-activated");
+      slideFadeIn(el);
+    }
+  })
 }
 
 // Admin Carousel
@@ -150,22 +182,24 @@ function isInViewportPartially(el) {
   );
 }
 
-//ANIMATIONS
-window.onscroll = function(){
-  document.querySelectorAll(".manzoku-animate-slidefadein").forEach(el => {
-    if(isInViewportPartially(el) && !el.classList.contains("animation-activated")){
-      el.classList.add("animation-activated");
-      slideFadeIn(el);
-    }
-  })
-}
-
+//ANIMATION FUNCTIONS
 let slideFadeIn = el => anime({
   targets: el,
   opacity: [0,1],
   translateY: ['3rem', 0],
   easing: "easeOutExpo",
   duration: 2000,
+  complete: function() {
+  }
+});
+
+let slideInX = el => anime({
+  targets: el,
+  translateX: ['-100%', '0'],
+  easing: "easeOutQuad",
+  delay: (el, i) => i * 200,
+  offset: 600,
+  duration: 1000,
   complete: function() {
   }
 });
