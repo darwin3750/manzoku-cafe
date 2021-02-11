@@ -2,32 +2,32 @@
   <!-- HIDDEN -->
   <div class="form-group d-none">
     <label for="content_id" class="manzoku-color-secondary">Content ID:</label>
-    <input id="content_id" type="text" name="content_id" class="manzoku-form-transparent"/>
+    <input id="content_id" type="text" name="content_id" class="manzoku-form-transparent manzoku-regular"/>
   </div>
   <div class="form-group">
     <label for="content_title" class="manzoku-color-secondary">Content Title:</label>
-    <input id="content_title" type="text" name="content_title" autocomplete="off" class="manzoku-form-transparent" />
+    <input id="content_title" type="text" name="content_title" autocomplete="off" class="manzoku-form-transparent manzoku-regular" />
   </div>
   <div class="form-group">
     <label for="subheading" class="manzoku-color-secondary">Subheading:</label>
-    <input id="subheading" type="text" name="subheading" autocomplete="off" class="manzoku-form-transparent" />
+    <input id="subheading" type="text" name="subheading" autocomplete="off" class="manzoku-form-transparent manzoku-regular" />
   </div>
   <div class="form-group">
     <label for="description" class="manzoku-color-secondary">Description:</label>
     <!-- <input id="description" type="text" name="description" autocomplete="off" class="manzoku-form-transparent" /> -->
-    <textarea id="description" name="description" autocomplete="off" class="manzoku-form-transparent manzoku-textarea"></textarea>
+    <textarea id="description" name="description" autocomplete="off" class="manzoku-form-transparent manzoku-regular manzoku-textarea"></textarea>
   </div>
-  <select id="img_src" name="img_src" class="form-select manzoku-form-transparent mt-2 mb-2" required>
+  <select id="img_src" name="img_src" class="form-select manzoku-form-transparent mt-2 mb-2 manzoku-regular" required>
     <option class="d-none" value="" selected>Select image to display</option>
     <?php
-    foreach (scandir(DECORATIONS_FOLDER) as $key => $file) {
+    foreach (scandir(POSTERS_FOLDER) as $key => $file) {
       if(preg_match('/(jpg|png|webp|jpeg)$/', strtolower(pathinfo($file, PATHINFO_EXTENSION)))){ 
         echo '<option value="' . $file . '">' . $file . '</option>';
       }
     }
     ?>
   </select>
-  <select id="img_layout" name="img_layout" class="form-select manzoku-form-transparent mt-2 mb-2" required>
+  <select id="img_layout" name="img_layout" class="form-select manzoku-form-transparent mt-2 mb-2 manzoku-regular" required>
     <option class="d-none" value="" selected>Select image position</option>
     <option value="CENTER">CENTER</option>
     <option value="RIGHT">RIGHT</option>

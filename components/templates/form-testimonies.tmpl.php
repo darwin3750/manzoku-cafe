@@ -2,22 +2,22 @@
   <!-- HIDDEN -->
   <div class="form-group d-none">
     <label for="testimony_id" class="manzoku-color-secondary">Testimony ID:</label>
-    <input id="testimony_id" type="text" name="testimony_id" class="manzoku-form-transparent"/>
+    <input id="testimony_id" type="text" name="testimony_id" class="manzoku-form-transparent manzoku-regular"/>
   </div>
   <div class="form-group">
     <label for="author_name" class="manzoku-color-secondary">Author's Name:</label>
-    <input id="author_name" type="text" name="author_name" autocomplete="off" class="manzoku-form-transparent" />
+    <input id="author_name" type="text" name="author_name" autocomplete="off" class="manzoku-form-transparent manzoku-regular" />
   </div>
   <div class="form-group">
     <label for="title" class="manzoku-color-secondary">Person's Title</label>
-    <input id="title" type="text" name="title" autocomplete="off" class="manzoku-form-transparent" />
+    <input id="title" type="text" name="title" autocomplete="off" class="manzoku-form-transparent manzoku-regular" />
   </div>
   <div class="form-group">
     <label for="content" class="manzoku-color-secondary">Testimonial Statement:</label>
     <!-- <input id="content" type="text" name="content" autocomplete="off" class="manzoku-form-transparent" /> -->
-    <textarea id="content" name="content" autocomplete="off" class="manzoku-form-transparent manzoku-textarea"></textarea>
+    <textarea id="content" name="content" autocomplete="off" class="manzoku-form-transparent manzoku-textarea manzoku-regular"></textarea>
   </div>
-  <select id="img_src" name="img_src" class="form-select manzoku-form-transparent mt-2 mb-2">
+  <select id="img_src" name="img_src" class="form-select manzoku-form-transparent mt-2 mb-2 manzoku-regular">
     <option class="d-none" value="" selected>Select profile image to display</option>
     <?php
     foreach (scandir(ROOT_TESTIMONIALS_FOLDER) as $key => $file) {

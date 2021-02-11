@@ -6,14 +6,14 @@
   </div>
   <div class="form-group">
     <label for="title" class="manzoku-color-secondary">Title:</label>
-    <input id="title" type="text" name="title" autocomplete="off" class="manzoku-form-transparent" />
+    <input id="title" type="text" name="title" autocomplete="off" class="manzoku-form-transparent manzoku-regular" />
   </div>
   <div class="form-group">
     <label for="content" class="manzoku-color-secondary">Content:</label>
     <!-- <input id="content" type="text" name="content" autocomplete="off" class="manzoku-form-transparent" /> -->
-    <textarea id="content" name="content" autocomplete="off" class="manzoku-form-transparent manzoku-textarea"></textarea>
+    <textarea id="content" name="content" autocomplete="off" class="manzoku-form-transparent manzoku-textarea manzoku-regular"></textarea>
   </div>
-  <select id="img_src" name="img_src" class="form-select manzoku-form-transparent mt-2 mb-2">
+  <select id="img_src" name="img_src" class="form-select manzoku-form-transparent mt-2 mb-2 manzoku-regular">
     <option class="d-none" value="" selected>Select image to display</option>
     <?php
     foreach (scandir(CONTACT_US_FOLDER) as $key => $file) {
@@ -23,7 +23,7 @@
     }
     ?>
   </select>
-  <select id="contact_type" name="contact_type" class="form-select manzoku-form-transparent mt-2 mb-2" required>
+  <select id="contact_type" name="contact_type" class="form-select manzoku-form-transparent mt-2 mb-2 manzoku-regular" required>
     <option class="d-none" value="" selected>Select Content Type</option>
     <option value="NUMBER">NUMBER</option>
     <option value="SOCIAL MEDIA">SOCIAL MEDIA</option>

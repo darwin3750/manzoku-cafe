@@ -2,18 +2,18 @@
   <!-- HIDDEN -->
   <div class="form-group d-none">
     <label for="about_id" class="manzoku-color-secondary">Content ID:</label>
-    <input id="about_id" type="text" name="about_id" class="manzoku-form-transparent"/>
+    <input id="about_id" type="text" name="about_id" class="manzoku-form-transparent manzoku-regular"/>
   </div>
   <div class="form-group">
     <label for="title" class="manzoku-color-secondary">Content Title:</label>
-    <input id="title" type="text" name="title" autocomplete="off" class="manzoku-form-transparent" />
+    <input id="title" type="text" name="title" autocomplete="off" class="manzoku-form-transparent manzoku-regular" />
   </div>
   <div class="form-group">
     <label for="description" class="manzoku-color-secondary">Description:</label>
     <!-- <input id="description" type="text" name="description" autocomplete="off" class="manzoku-form-transparent" /> -->
-    <textarea id="description" name="description" autocomplete="off" class="manzoku-form-transparent manzoku-textarea"></textarea>
+    <textarea id="description" name="description" autocomplete="off" class="manzoku-form-transparent manzoku-textarea manzoku-regular"></textarea>
   </div>
-  <select id="img_src" name="img_src" class="form-select manzoku-form-transparent mt-2 mb-2" required>
+  <select id="img_src" name="img_src" class="form-select manzoku-form-transparent mt-2 mb-2 manzoku-regular" required>
     <option class="d-none" value="" selected>Select image to display</option>
     <?php
     foreach (scandir(ABOUT_FOLDER) as $key => $file) {

@@ -6,7 +6,7 @@
         <h2 class="manzoku-typeface-main0 manzoku-font-3 manzoku-color-base p-3 m-0">Site Analytics
           <span class="tooltip-enabler">(?)
             <span class="tooltip manzoku-font-1 manzoku-typeface-main0 p-2">
-              asd.
+              View data about the website here.
             </span>
           </span>
         </h2>

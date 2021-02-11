@@ -1,4 +1,4 @@
-<section class="p-1">
+<section class="p-1 manzoku-animate-slidefadein">
   <heading class="p-3">
     <h1 class="manzoku-typeface-main0 manzoku-font-3 text-center manzoku-color-base">Send Us a Message</h1>
   </heading>

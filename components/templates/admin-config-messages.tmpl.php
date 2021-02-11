@@ -6,7 +6,7 @@
         <h2 class="manzoku-typeface-main0 manzoku-font-3 manzoku-color-base p-3 m-0">Messages
           <span class="tooltip-enabler">(?)
             <span class="tooltip manzoku-font-1 manzoku-typeface-main0 p-2">
-              This is where you'll see the messages sent by the users from the Contact Us page.
+              View messages sent by the users from the Contact Us page here.
             </span>
           </span>
         </h2>

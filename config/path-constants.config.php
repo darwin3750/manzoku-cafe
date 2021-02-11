@@ -22,7 +22,8 @@ define('ROOT_IMAGES_FOLDER', "assets/images/");
 define('IMAGES_FOLDER', SERVER_ROOT . "/assets/images/"); 
 define('MENUS_FOLDER', SERVER_ROOT . "/assets/images/menus/"); 
 define('CONTACT_US_FOLDER', SERVER_ROOT . "/assets/images/contact-us/"); 
-define('DECORATIONS_FOLDER', SERVER_ROOT . "/assets/images/posters/"); 
+define('POSTERS_FOLDER', SERVER_ROOT . "/assets/images/posters/"); 
+define('DECORATIONS_FOLDER', SERVER_ROOT . "/assets/images/decorations/"); 
 define('ABOUT_FOLDER', SERVER_ROOT . "/assets/images/about/"); 
 
 //TEMPLATES--ABSOLUTE PATH
