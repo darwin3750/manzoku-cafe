@@ -17,10 +17,10 @@
       </div>
       <?php } ?>
       <heading class="">
-        <div class=" manzoku-font-1 text-center manzoku-color-secondary"><span class="font-weight-bold"><?php echo $title; ?></span></div>
+        <div class=" manzoku-font-1 text-center manzoku-regular manzoku-color-secondary"><span class="font-weight-bold"><?php echo $title; ?></span></div>
         <hr class="manzoku-bg-contrast" />
       </heading>
-      <div class="manzoku-font-1 text-center manzoku-color-contrast"><?php echo $content; ?></div>
+      <div class="manzoku-font-1 text-center manzoku-regular manzoku-color-contrast"><?php echo $content; ?></div>
     </div>
   </div>
 <?php } ?>

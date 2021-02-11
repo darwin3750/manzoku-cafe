@@ -7,13 +7,12 @@ include NAVBAR; ?>
 
   <section class="container">
     
-    <br><h1 class="manzoku-typeface-main0 manzoku-font-3 text-center manzoku-color-base">Testimonials</h1>
-    <br><h2 class="manzoku-typeface-main0 manzoku-font-3 text-center manzoku-color-base">See what customers say about our services</h2><br><br>
+    <h1 class="manzoku-typeface-main0 manzoku-font-3 text-center manzoku-color-base mt-5">TESTIMONIES</h1>
+    <h2 class="manzoku-regular-semibold manzoku-font-2 text-center manzoku-color-secondary">SEE WHAT CUSTOMERS SAY ABOUT OUR SERVICES</h2><br><br>
     <div class="row">
       
       <?php 
       require_once "components/scripts/connect-database.script.php";
-      //require_once "components/scripts/get-testimonies.script.php";
       //render modal
       $form = FORM_TESTIMONIES;
       include "components/templates/modify-content-modal.tmpl.php";

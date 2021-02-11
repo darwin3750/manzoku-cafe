@@ -19,11 +19,11 @@
       <img src="<?php echo ROOT_ABOUT_FOLDER . $img_src ?>" class="img-fluid w-50 p-4" style="">
       <article class="p-3 w-100">
         <heading>
-          <h5 class=""><?php echo $title; ?></h5>
+          <h5 class="manzoku-regular"><?php echo $title; ?></h5>
         </heading>
-        <hr class="manzoku-bg-contrast" />
+        <hr class="manzoku-bg-contrast " />
         <article>
-          <p>
+          <p class="manzoku-regular">
             <?php echo $description; ?>
           </p>
         </article>
