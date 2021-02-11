@@ -6,10 +6,10 @@ require "../../constants.php";
 //connect to the DB
 require_once "connect-database.script.php";
 
-$testimony_id = $_POST['about_id'];
+$testimony_id = $_POST['testimony_id'];
 $title = $_POST['title'];
-$name = $_POST['name'];
-$statement = $_POST['statement'];
+$name = $_POST['author_name'];
+$statement = $_POST['content'];
 $img_src = $_POST['img_src'];
 
 $sql_statement = mysqli_stmt_init($conn);
@@ -17,7 +17,7 @@ $sql_statement = mysqli_stmt_init($conn);
 function prepareSQLStatement($sql_query){
   global $sql_statement;
   if(!mysqli_stmt_prepare($sql_statement, $sql_query)){
-    header("Location: ../../about_us.php?error=sqlerorr");
+    header("Location: ../../testimonies.php?error=sqlerorr");
     exit();
   }
 }
@@ -30,12 +30,12 @@ if(isset($_POST['add-content-submit'])){
 //for editing content
 else if(isset($_POST['edit-content-submit'])){
   prepareSQLStatement("UPDATE TESTIMONIES SET TITLE=?, AUTHOR_NAME=?, CONTENT=?, IMG_SRC=? WHERE TESTIMONY_ID=?");
-  mysqli_stmt_bind_param($sql_statement, "ssss", $title, $name, $statement, $img_src);
+  mysqli_stmt_bind_param($sql_statement, "ssssi", $title, $name, $statement, $img_src, $testimony_id);
 }
 //for deleting content
 else if(isset($_POST['delete-section-submit'])){
-  prepareSQLStatement("DELETE FROM TESTIMONIES WHERE ABOUT_ID=?");
-  mysqli_stmt_bind_param($sql_statement, "i", $about_id);
+  prepareSQLStatement("DELETE FROM TESTIMONIES WHERE TESTIMONY_ID=?");
+  mysqli_stmt_bind_param($sql_statement, "i", $testimony_id);
 }else{
   header("Location: ../../testimonies.php");
   exit();

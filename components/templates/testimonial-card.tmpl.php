@@ -34,10 +34,10 @@
                 <img class="card-img mt-2 ml-2 mb-3" src="<?php echo ROOT_TESTIMONIALS_FOLDER . $img_src ?>"
                     alt="<?php echo ROOT_TESTIMONIALS_FOLDER?>default-user.png" style="width: 299px; height: 299px;">
                 <div class="card-body" style="text-align:center;">
-                    <p style="margin-top:-8%;"><?php echo $content ?></p>
+                    <p style="margin-top:-8%;" class="manzoku-regular"><?php echo $content ?></p>
                       <div style="position:absolute; bottom:0; margin-bottom:60px; margin-left: auto; margin-right: auto; left: 0; right: 0; text-align: center;">
-                          <p class="card-title" style="font-style: italic; "><?php echo $author_name ?></p>
-                          <p class="card-title" style="font-weight:bold; "><?php echo $title ?></p>
+                          <p class="card-title manzoku-regular style="font-style: italic; "><?php echo $author_name ?></p>
+                          <p class="card-title manzoku-regular" style="font-weight:bold; "><?php echo $title ?></p>
                       </div>
                 </div>
             </div>
