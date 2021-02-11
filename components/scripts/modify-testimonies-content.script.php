@@ -10,7 +10,7 @@ $testimony_id = $_POST['testimony_id'];
 $title = $_POST['title'];
 $name = $_POST['author_name'];
 $statement = $_POST['content'];
-$img_src = $_POST['img_src'];
+$img_src = empty($_POST['img_src']) ? NULL : $_POST['img_src'];
 
 $sql_statement = mysqli_stmt_init($conn);
 //to prevent SQL injections

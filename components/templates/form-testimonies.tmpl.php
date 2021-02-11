@@ -17,7 +17,7 @@
     <!-- <input id="content" type="text" name="content" autocomplete="off" class="manzoku-form-transparent" /> -->
     <textarea id="content" name="content" autocomplete="off" class="manzoku-form-transparent manzoku-textarea"></textarea>
   </div>
-  <select id="img_src" name="img_src" class="form-select manzoku-form-transparent mt-2 mb-2" required>
+  <select id="img_src" name="img_src" class="form-select manzoku-form-transparent mt-2 mb-2">
     <option class="d-none" value="" selected>Select profile image to display</option>
     <?php
     foreach (scandir(ROOT_TESTIMONIALS_FOLDER) as $key => $file) {
