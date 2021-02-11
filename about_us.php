@@ -18,7 +18,7 @@ include NAVBAR; ?>
   <!-- Main Content -->
   <div class="container p-0 manzoku-color-contrast">
     <heading class="p-3">
-      <h1 class="manzoku-typeface-main0 manzoku-font-3 text-center manzoku-color-base">About Us</h1>
+      <h1 class="manzoku-typeface-main0 manzoku-font-3 text-center manzoku-color-base manzoku-animate-slidefadein">About Us</h1>
     </heading>
     <article class="p-3">
       <?php

@@ -9,5 +9,5 @@
   <script defer src="assets/main.js"></script>
   <script src="assets/flickity.pkgd.js"></script>
   <script src="assets/anime.min.js"></script>
-  <body class="theme1 manzoku-bg-primary overflow-auto">
 </head>
+<body class="theme1 manzoku-bg-primary overflow-auto">

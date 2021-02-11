@@ -20,8 +20,8 @@ include NAVBAR; ?>
 
   <!-- Main Content -->
   <div class="container p-0 manzoku-color-contrast">
-    <heading class="p-3 manzoku-animate-slidefadein">
-      <h1 class="manzoku-typeface-main0 manzoku-font-3 text-center manzoku-color-base">Connect with us:</h1>
+    <heading class="p-3">
+      <h1 class="manzoku-typeface-main0 manzoku-font-3 text-center manzoku-color-base manzoku-animate-slidefadein">Connect with us:</h1>
     </heading>
     <div class="row p-1">
       <?php
@@ -30,8 +30,8 @@ include NAVBAR; ?>
       include DISPLAY_CONTACT_US;
       ?>
     </div>
-    <heading class="p-3 manzoku-animate-slidefadein">
-      <h1 class="manzoku-typeface-main0 manzoku-font-3 text-center manzoku-color-base">Communicate with us:</h1>
+    <heading class="p-3">
+      <h1 class="manzoku-typeface-main0 manzoku-font-3 text-center manzoku-color-base manzoku-animate-slidefadein">Communicate with us:</h1>
     </heading>
     <div class="row p-1">
       <?php
