@@ -1,5 +1,5 @@
 <?php if ($is_carousel) { ?>
-  <section class="carousel-cell w-100">
+  <section class="carousel-cell w-100 p-4">
     <div class="container p-0 manzoku-border-base-3">
       <div class="row pr-3 pl-3 p-1 mt-1 mb-1 position-relative manzoku-border-secondary-3">
         <!-- edit button -->

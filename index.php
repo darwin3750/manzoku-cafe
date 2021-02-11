@@ -15,7 +15,7 @@ include NAVBAR; ?>
     include "components/templates/modify-content-modal.tmpl.php";
   ?>
   <!-- CAROUSEL -->
-  <div class="carousel p-md-5" data-flickity='{ "wrapAround": true, "autoPlay": true, "adaptiveHeight": false, "pageDots": false }'>
+  <div class="carousel pl-md-3 pr-md-3" data-flickity='{ "wrapAround": true, "autoPlay": true, "adaptiveHeight": false, "pageDots": false }'>
     <?php
       $template = FEATURED_CONTENT;
       include "components/scripts/display-featured-content-carousel.script.php";
