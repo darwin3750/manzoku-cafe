@@ -1,4 +1,4 @@
-<section>
+<section class="manzoku-animate-slidefadein">
   <heading class="p-3">
     <h2 class="manzoku-typeface-main0 manzoku-font-3 text-center manzoku-color-base">Where to find us?</h2>
   </heading>

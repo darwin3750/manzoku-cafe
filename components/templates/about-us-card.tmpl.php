@@ -1,5 +1,5 @@
 <?php if ($is_card) { ?>
-  <div class="col-lg-4 p-3">
+  <div class="col-lg-4 p-3 manzoku-animate-slidefadein">
     <div class="manzoku-border-base-3 rounded h-100 d-flex flex-column align-items-center about-card position-relative">
       <!-- edit button -->
       <?php if (isset($_SESSION['current_user_privilege']) && $_SESSION['current_user_privilege'] == "ADMIN") { ?>
