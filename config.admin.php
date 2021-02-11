@@ -65,7 +65,8 @@ require_once CONNECT_DATABASE;?>
       </span>
     </div>
   </section>
-  <section id="admin-config-carousel" class="carousel" data-flickity='{ "wrapAround": true, "adaptiveHeight": true, "pageDots": false }' onload="initCarouselNav();">
+  <section id="admin-config-carousel" class="carousel p-3"
+      data-flickity='{ "wrapAround": true, "adaptiveHeight": true, "pageDots": false, "prevNextButtons": false}' onload="initCarouselNav();">
     <div class="carousel-cell w-100">
       <?php include ADMIN_CONFIG_ANALYTICS; ?>
     </div>

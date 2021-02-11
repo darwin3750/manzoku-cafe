@@ -16,7 +16,7 @@
     <?php } ?>
     <div class="d-flex flex-column justify-content-between align-items-center h-100">
       <!-- IMAGE -->
-      <section class="w-100 d-flex flex-column align-items-center">
+      <section class="w-100 d-flex flex-column align-items-center overflow-hidden" style="max-height: 200px">
         <?php if (!is_null($img_src)) { ?>
           <img class="img-fluid w-75" src="<?php echo ROOT_TESTIMONIALS_FOLDER . $img_src; ?>">
         <?php } else { ?>
@@ -28,13 +28,11 @@
             </svg>
           </div>
         <?php } ?>
-
-        <p class="manzoku-regular"><blockquote class="font-italic">"<?php echo $content ?>"</blockquote></p>
       </section>
-
-      <section class="mt-5 w-100 text-center">
-        <p class="card-title manzoku-regular style=" font-style: italic; "><?php echo $author_name ?></p>
-        <p class=" card-title manzoku-regular" style="font-weight:bold; "><?php echo $title ?></p>
+      <section class="w-100 text-center manzoku-regular">    
+        <p class=""><blockquote class="font-italic">"<?php echo $content ?>"</blockquote></p>
+        <p class="mt-5"><?php echo $author_name ?></p>
+        <p class="manzoku-bold" style=""><?php echo $title ?></p>
       </section>
 
     </div>
