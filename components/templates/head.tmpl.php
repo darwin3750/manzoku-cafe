@@ -9,5 +9,6 @@
   <script defer src="assets/main.js"></script>
   <script src="assets/flickity.pkgd.js"></script>
   <script src="assets/anime.min.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
 <body class="theme1 manzoku-bg-primary overflow-auto">

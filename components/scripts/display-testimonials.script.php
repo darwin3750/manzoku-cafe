@@ -1,8 +1,8 @@
 <?php
 
-$sql_query_cardcode = "SELECT * FROM TESTIMONIES";
+$sql_query = "SELECT * FROM TESTIMONIES";
 $sql_statement = mysqli_stmt_init($conn);
-if (!mysqli_stmt_prepare($sql_statement, $sql_query_cardcode)) {
+if (!mysqli_stmt_prepare($sql_statement, $sql_query)) {
   echo "sqlerror";
 } else {
   mysqli_stmt_execute($sql_statement);

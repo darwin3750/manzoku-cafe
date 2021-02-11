@@ -46,6 +46,7 @@ define('ADMIN_CONFIG_FILES', SERVER_ROOT . "/components/templates/admin-config-f
 define('ADMIN_CONFIG_ANALYTICS', SERVER_ROOT . "/components/templates/admin-config-analytics.tmpl.php"); 
 define('ADMIN_CONFIG_FILES_CARD', SERVER_ROOT . "/components/templates/admin-config-files-card.tmpl.php"); 
 define('ADMIN_MESSAGES', SERVER_ROOT . "/components/templates/admin-messages.tmpl.php"); 
+define('ADMIN_VIEW_STATS_CARD', SERVER_ROOT . "/components/templates/admin-view-stats-card.tmpl.php"); 
 
 //TEMPLATES--FILE NAME
 define('FORM_FEATURED_CONTENT', "form-featured-content.tmpl.php"); 
@@ -66,4 +67,5 @@ define('DISPLAY_FOLDER', SERVER_ROOT . "/components/scripts/display-folder.scrip
 define('DISPLAY_MESSAGES', SERVER_ROOT . "/components/scripts/display-messages.script.php");
 define('DISPLAY_CONTACT_US', SERVER_ROOT . "/components/scripts/display-contact-us.script.php");
 define('DISPLAY_CONTACT_SOCIALS', SERVER_ROOT . "/components/scripts/display-contact-us.script.php");
+define('DISPLAY_VIEW_STATS', SERVER_ROOT . "/components/scripts/display-view-stats.script.php");
 ?>
