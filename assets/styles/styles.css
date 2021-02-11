@@ -265,6 +265,8 @@
     border-bottom: 4px solid var(--manzoku-contrast);
   }
 
+
+  
 /* forms */
   .manzoku-form-transparent{
     display: block;
@@ -287,6 +289,10 @@
   }
   .manzoku-form-transparent::-webkit-input-placeholder{
     color: var(--manzoku-contrast-pos1);
+  }
+  .manzoku-textarea{
+    min-height:80px;
+    resize:vertical;
   }
 /* others */
   .flat-hill{
@@ -512,4 +518,23 @@
 	display: inline-block;
 	position: relative;
   width: 100%;
+}
+
+/* FLICKITY */
+
+.flickity-button {
+  background: var(--manzoku-accent1-neg);
+  transition: 0.2s;
+}
+.flickity-button:hover {
+  background: var(--manzoku-accent1);
+}
+
+.flickity-prev-next-button {
+  
+}
+/* icon color */
+.flickity-button:hover .flickity-button-icon {
+  fill: var(--manzoku-base);
+  transition: 0.2s;
 }

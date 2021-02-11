@@ -6,6 +6,14 @@
 }
 .fit-content{
   width: fit-content;
+  height: fit-content;
+}
+.w-fit-content{
+  width: fit-content;
+  height: fit-content;
+}
+.h-fit-content{
+  height: fit-content;
 }
 .line-height-normal{
   line-height: normal;

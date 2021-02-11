@@ -15,7 +15,7 @@
   <div class="form-group">
     <label for="description" class="manzoku-color-secondary">Description:</label>
     <!-- <input id="description" type="text" name="description" autocomplete="off" class="manzoku-form-transparent" /> -->
-    <textarea id="description" name="description" autocomplete="off" class="manzoku-form-transparent" style="min-height:120px;resize:vertical;"></textarea>
+    <textarea id="description" name="description" autocomplete="off" class="manzoku-form-transparent manzoku-textarea"></textarea>
   </div>
   <select id="img_src" name="img_src" class="form-select manzoku-form-transparent mt-2 mb-2" required>
     <option class="d-none" value="" selected>Select image to display</option>

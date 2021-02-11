@@ -11,7 +11,7 @@
   <div class="form-group">
     <label for="content" class="manzoku-color-secondary">Content:</label>
     <!-- <input id="content" type="text" name="content" autocomplete="off" class="manzoku-form-transparent" /> -->
-    <textarea id="content" name="content" autocomplete="off" class="manzoku-form-transparent" style="min-height:120px;resize:vertical;"></textarea>
+    <textarea id="content" name="content" autocomplete="off" class="manzoku-form-transparent manzoku-textarea"></textarea>
   </div>
   <select id="img_src" name="img_src" class="form-select manzoku-form-transparent mt-2 mb-2" required>
     <option class="d-none" value="" selected>Select image to display</option>

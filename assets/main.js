@@ -56,6 +56,15 @@ window.onload = () => {
       });
     });
   }
+  
+  //home carousel resize on change settle
+  if(document.title.slice(document.title.indexOf("|") + 2) == "Home"){
+    let homeCarousel = new Flickity(".carousel");
+    resizeFlickity(null, homeCarousel);
+    homeCarousel.on('settle', ()=>{
+      resizeFlickity(null, homeCarousel);
+    });
+  }
 }
 
 // Admin Carousel

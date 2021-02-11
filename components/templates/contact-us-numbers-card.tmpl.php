@@ -7,8 +7,8 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="d-inline-block p-1" role="button" onclick="
               openModal('#modify-content-modal', this);
               populateFormModal({<?php echo 
-                "contact_id:'{$contact_id}', contact_type:'{$contact_type}', title:'{$title}', 
-                content:'{$content}', img_src:'{$img_src}'"
+                "contact_id:'{$contact_id}', contact_type:'{$contact_type}', title:'{$js_title}', 
+                content:'{$js_content}', img_src:'{$img_src}'"
               ?>});">
           <g fill='var(--manzoku-contrast)'>
             <path d="M2 17l-2 7 7-2zM3 16L16 3l5 5L8 21zM22 7l1-1c2-2-3-7-5-5l-1 1 5 5z"></path>

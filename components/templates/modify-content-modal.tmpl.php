@@ -1,4 +1,4 @@
-<div class="modal" id="modify-content-modal">
+<div class="modal overflow-scroll" id="modify-content-modal">
   <div class="modal-dialog">
     <div class="modal-content manzoku-bg-primary manzoku-color-contrast manzoku-typeface-main0 rounded manzoku-border-contrast-3">
       <!-- Modal Header -->

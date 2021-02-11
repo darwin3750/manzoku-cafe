@@ -8,11 +8,16 @@ if (!mysqli_stmt_prepare($sql_statement, $sql_query)) {
   $result = mysqli_stmt_get_result($sql_statement);
   while ($row = mysqli_fetch_assoc($result)) {
     $message_id = $row['MESSAGE_ID'];
-    $sender_name = preg_replace("/\r/","",preg_replace("/\n/","<br/>",$row['SENDER_NAME']));
-    $sender_email = preg_replace("/\r/","",preg_replace("/\n/","<br/>",$row['SENDER_EMAIL']));
-    $sender_phone = preg_replace("/\r/","",preg_replace("/\n/","<br/>",$row['SENDER_PHONE']));
-    $subject = preg_replace("/\r/","",preg_replace("/\n/","<br/>",$row['SUBJECT']));
-    $body = preg_replace("/\r/","",preg_replace("/\n/","<br/>",$row['BODY']));
+    $sender_name = filterLineBreaks($row['SENDER_NAME']);
+    $sender_email = filterLineBreaks($row['SENDER_EMAIL']);
+    $sender_phone = filterLineBreaks($row['SENDER_PHONE']);
+    $subject = filterLineBreaks($row['SUBJECT']);
+    $body = filterLineBreaks($row['BODY']);
+    $js_sender_name = filterAll($row['SENDER_NAME']);
+    $js_sender_email = filterAll($row['SENDER_EMAIL']);
+    $js_sender_phone = filterAll($row['SENDER_PHONE']);
+    $js_subject = filterAll($row['SUBJECT']);
+    $js_body = filterAll($row['BODY']);
     include ADMIN_MESSAGES;
   }
 }

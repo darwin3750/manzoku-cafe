@@ -1,6 +1,6 @@
 <?php if(!$is_carousel){ ?>
   <section class="">
-    <div class="container p-0">
+    <div class="container pl-5 pr-5">
       <div class="row p-3 mt-2 mb-2 position-relative">
         <!-- edit button -->
         <?php if (isset($_SESSION['current_user_privilege']) && $_SESSION['current_user_privilege'] == "ADMIN") { ?>
@@ -8,7 +8,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="d-inline-block p-1" role="button" onclick="
                   openModal('#modify-content-modal', this);
                   populateFormModal({<?php echo 
-                    "content_id:'{$content_id}', content_title:'{$content_title}', subheading:'{$subheading}', description:'{$description}', 
+                    "content_id:'{$content_id}', content_title:'{$js_content_title}', subheading:'{$js_subheading}', description:'{$js_description}', 
                     img_src:'{$img_src}', img_layout:'{$img_layout}', is_carousel:'{$is_carousel}'"
                   ?>});">
               <g fill='var(--manzoku-contrast)'>

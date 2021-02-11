@@ -11,9 +11,12 @@ if (!mysqli_stmt_prepare($sql_statement, $sql_query)) {
     $content_id = $row['CONTENT_ID'];
     $img_layout = $row['IMG_LAYOUT'];
     $is_carousel = $row['IS_CAROUSEL'];
-    $content_title = preg_replace("/\r/","",preg_replace("/\n/","<br/>",$row['CONTENT_TITLE']));
-    $subheading = preg_replace("/\r/","",preg_replace("/\n/","<br/>",$row['SUBHEADING']));
-    $description = preg_replace("/\r/","",preg_replace("/\n/","<br/>",$row['DESCRIPTION']));
+    $content_title = filterLineBreaks($row['CONTENT_TITLE']);
+    $subheading = filterLineBreaks($row['SUBHEADING']);
+    $description = filterLineBreaks($row['DESCRIPTION']);
+    $js_content_title = filterAll($row['CONTENT_TITLE']);
+    $js_subheading = filterAll($row['SUBHEADING']);
+    $js_description = filterAll($row['DESCRIPTION']);
     $img_src = $row['IMG_SRC'];
     include FEATURED_CONTENT_CAROUSEL;
   }
