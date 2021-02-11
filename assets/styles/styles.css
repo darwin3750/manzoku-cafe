@@ -112,6 +112,7 @@
 }
 
 /* elements */
+  html, body {width: auto!important; overflow-x: hidden!important} 
   a{
     color: var(--manzoku-accent1);
   }

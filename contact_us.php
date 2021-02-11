@@ -23,7 +23,7 @@ include NAVBAR; ?>
     <heading class="p-3">
       <h1 class="manzoku-typeface-main0 manzoku-font-3 text-center manzoku-color-base">Connect with us:</h1>
     </heading>
-    <div class="row">
+    <div class="row p-1">
       <?php
       //render contact us socials
       $template = CONTACT_US_SOCIALS_CARD;
@@ -33,7 +33,7 @@ include NAVBAR; ?>
     <heading class="p-3">
       <h1 class="manzoku-typeface-main0 manzoku-font-3 text-center manzoku-color-base">Communicate with us:</h1>
     </heading>
-    <div class="row">
+    <div class="row p-1">
       <?php
       //render contact us numbers
       $template = CONTACT_US_NUMBERS_CARD;

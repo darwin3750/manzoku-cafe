@@ -1,5 +1,5 @@
 <?php if ($contact_type == "SOCIAL MEDIA") { ?>
-  <div class="col-md-6">
+  <div class="col-md-6 pl-3 pr-3 p-1">
     <div class="manzoku-border-base-3 mt-2 contact-card rounded position-relative">
       <!-- edit button -->
       <?php if (isset($_SESSION['current_user_privilege']) && $_SESSION['current_user_privilege'] == "ADMIN") { ?>

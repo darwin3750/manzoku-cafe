@@ -22,7 +22,7 @@
         <section class="manzoku-bg-primary manzoku-color-contrast container accordion-content">
           <div class="row p-0">
             <div class="col-md-2"></div>
-            <div class="col-md-8 p-5 manzoku-border-secondary-5">
+            <div class="col-md-8 p-md-5 p-2 manzoku-border-secondary-5">
               <?php if (isset($_SESSION['current_user_privilege']) && $_SESSION['current_user_privilege'] == "ADMIN") { ?>
                 <div class="svg-container-icon-1 position-absolute right-0 top-0 float-right">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="d-inline-block p-1" role="button" onclick="

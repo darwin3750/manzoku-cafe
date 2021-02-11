@@ -14,6 +14,7 @@ include NAVBAR; ?>
     $form = FORM_FEATURED_CONTENT;
     include "components/templates/modify-content-modal.tmpl.php";
   ?>
+  
   <!-- CAROUSEL -->
   <div class="carousel pl-md-3 pr-md-3" data-flickity='{ "wrapAround": true, "autoPlay": true, "adaptiveHeight": false, "pageDots": false }'>
     <?php
@@ -21,8 +22,10 @@ include NAVBAR; ?>
       include "components/scripts/display-featured-content-carousel.script.php";
     ?>
   </div>
+
   <?php
     //render featured content
+    $template = FEATURED_CONTENT;
     include "components/scripts/display-featured-content.script.php";
 
     //render add-content section for admins
