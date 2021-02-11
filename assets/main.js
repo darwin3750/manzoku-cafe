@@ -1,4 +1,7 @@
 window.onload = () => {
+  //count page view
+  countView();
+
   //DESKTOP NAVBAR
   [].slice.call(document.querySelector("#navigation-links").children).forEach(function(el){
     if(el.textContent == document.title.slice(document.title.indexOf("|") + 2)){
@@ -203,3 +206,16 @@ let slideInX = el => anime({
   complete: function() {
   }
 });
+
+//Count page view
+function countView(){
+  var xhttp;
+  xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      console.log(this.responseText);
+    }
+  };
+  xhttp.open("GET", "components/scripts/count-page.script.php?page="+document.title.slice(document.title.indexOf("|") + 2), true);
+  xhttp.send();
+}

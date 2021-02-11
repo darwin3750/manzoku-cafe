@@ -1,8 +1,8 @@
 <?php
 
-$sql_query_cardcode = "SELECT * FROM ABOUT_US";
+$sql_query = "SELECT * FROM ABOUT_US";
 $sql_statement = mysqli_stmt_init($conn);
-if (!mysqli_stmt_prepare($sql_statement, $sql_query_cardcode)) {
+if (!mysqli_stmt_prepare($sql_statement, $sql_query)) {
   echo "sqlerror";
 } else {
   mysqli_stmt_execute($sql_statement);
@@ -16,9 +16,6 @@ if (!mysqli_stmt_prepare($sql_statement, $sql_query_cardcode)) {
     $img_src = $row['IMG_SRC'];
     $is_card = $row['IS_CARD'];
     include $template;
-
-
-    
   }
 }
       ?>
