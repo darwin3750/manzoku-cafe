@@ -2,6 +2,9 @@ window.onload = () => {
   //count page view
   countView();
 
+  //close preloader on load
+  document.querySelector("#preloader-container").classList.replace("d-flex", "d-none");
+
   //DESKTOP NAVBAR
   [].slice.call(document.querySelector("#navigation-links").children).forEach(function(el){
     if(el.textContent == document.title.slice(document.title.indexOf("|") + 2)){

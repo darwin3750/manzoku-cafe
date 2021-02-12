@@ -4,6 +4,7 @@
 define('CSS', "assets/styles/styles.css");  
 define('LOGO', "assets/images/logo.png"); 
 define('LOGO2', "assets/images/logo2.png"); 
+define('LOADER_GIF', "assets/images/manzoku-loader.gif"); 
 define('BANNER', "assets/images/banner.png"); 
 define('BANNER2', "assets/images/banner2.png"); 
 define('SITE_NAME', "Manzoku Cafe");
@@ -40,6 +41,7 @@ define('CONTACT_US_MESSAGE', SERVER_ROOT . "/components/templates/contact-us-mes
 define('ABOUT_US_CARD', SERVER_ROOT . "/components/templates/about-us-card.tmpl.php"); 
 define('ABOUT_US_HEADER', SERVER_ROOT . "/components/templates/about-us-header.tmpl.php"); 
 define('MAP', SERVER_ROOT . "/components/templates/map.tmpl.php"); 
+define('PRELOADER', SERVER_ROOT . "/components/templates/preloader.tmpl.php"); 
 define('ADMIN_CONFIG_REGISTRATION', SERVER_ROOT . "/components/templates/admin-config-registration.tmpl.php"); 
 define('ADMIN_CONFIG_MESSAGES', SERVER_ROOT . "/components/templates/admin-config-messages.tmpl.php"); 
 define('ADMIN_CONFIG_FILES', SERVER_ROOT . "/components/templates/admin-config-files.tmpl.php"); 

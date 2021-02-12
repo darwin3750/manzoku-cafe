@@ -67,18 +67,20 @@
   border-top-left-radius: 0 !important;
   border-bottom-left-radius: 0 !important;
 }
-
-.top-0{
-  top: 0;
-}
 .transition-1{
   transition: 1s;
 }
+.bottom-0{
+  bottom: 0 !important;
+}
+.top-0{
+  top: 0 !important;
+}
 .right-0{
-  right: 0;
+  right: 0 !important;
 }
 .left-0{
-  left: 0;
+  left: 0 !important;
 }
 .underline{
   text-decoration: underline;
