@@ -3,7 +3,7 @@ require "../../constants.php";
 require "connect-database.script.php";
 
 $date_results = array();
-$sql_query = "SELECT * FROM VIEW_STATS ORDER BY DATE DESC";
+$sql_query = "SELECT * FROM view_stats WHERE (DATE BETWEEN DATE_SUB(CURDATE(), INTERVAL 7 DAY) AND CURDATE()) ORDER BY DATE DESC";
 $sql_statement = mysqli_stmt_init($conn);
 if (!mysqli_stmt_prepare($sql_statement, $sql_query)) {
   echo "sqlerror";
