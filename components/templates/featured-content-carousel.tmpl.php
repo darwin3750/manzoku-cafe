@@ -1,7 +1,7 @@
 <?php if ($is_carousel) { ?>
   <section class="carousel-cell w-100 p-4">
-    <div class="container p-0 manzoku-border-base-3">
-      <div class="row pr-3 pl-3 p-1 mt-1 mb-1 position-relative manzoku-border-secondary-3">
+    <div class="container p-0">
+      <div class="row pr-3 pl-3 p-1 mt-1 mb-1 position-relative custom-border-frame">
         <!-- edit button -->
         <?php if (isset($_SESSION['current_user_privilege']) && $_SESSION['current_user_privilege'] == "ADMIN") { ?>
           <div class="svg-container-icon-1 position-absolute right-0 float-right mt-1 mr-4" style="z-index: 3">
@@ -17,29 +17,29 @@
             </svg>
           </div>
         <?php } ?>
-        <?php
-        if ($img_layout == "RIGHT") {
-          $imgCol = "6";
-          $txtCol = "6";
-          include "featured-content-txt-col.tmpl.php";
-          include "featured-content-img-col.tmpl.php";
-        } else if ($img_layout == "LEFT") {
-          $imgCol = "6";
-          $txtCol = "6";
-          include "featured-content-img-col.tmpl.php";
-          include "featured-content-txt-col.tmpl.php";
-        } else if ($img_layout == "CENTER") {
-          $imgCol = "6";
-          echo '<div class="col-md-3"></div>';
-          include "featured-content-img-col.tmpl.php";
-          echo '<div class="col-md-3"></div>';
-        } else if ($img_layout == "") {
-          $txtCol = "10";
-          echo '<div class="col-md-1"></div>';
-          include "featured-content-txt-col.tmpl.php";
-          echo '<div class="col-md-1"></div>';
-        }
-        ?>
+          <?php
+          if ($img_layout == "RIGHT") {
+            $imgCol = "6";
+            $txtCol = "6";
+            include "featured-content-txt-col.tmpl.php";
+            include "featured-content-img-col.tmpl.php";
+          } else if ($img_layout == "LEFT") {
+            $imgCol = "6";
+            $txtCol = "6";
+            include "featured-content-img-col.tmpl.php";
+            include "featured-content-txt-col.tmpl.php";
+          } else if ($img_layout == "CENTER") {
+            $imgCol = "6";
+            echo '<div class="col-md-3"></div>';
+            include "featured-content-img-col.tmpl.php";
+            echo '<div class="col-md-3"></div>';
+          } else if ($img_layout == "") {
+            $txtCol = "10";
+            echo '<div class="col-md-1"></div>';
+            include "featured-content-txt-col.tmpl.php";
+            echo '<div class="col-md-1"></div>';
+          }
+          ?>
       </div>
     </div>
   </section>

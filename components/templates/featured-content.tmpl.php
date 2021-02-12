@@ -44,3 +44,26 @@
     </div>
   </section>
   <?php }?>
+
+  <style>
+
+@media (min-width: 576px) {
+  .custom-border-frame{border-width: 30px !important;}
+}
+@media (min-width: 576px) {
+  .custom-border-frame{border-width: 30px !important;}
+}
+@media (min-width: 992px) {
+  .custom-border-frame{border-width: 40px !important;}
+}
+@media (min-width: 1200px) {
+  .custom-border-frame{border-width: 60px !important;}
+}
+
+.custom-border-frame{
+  border: 30px solid transparent;
+  border-image-source: url(<?php echo ROOT_IMAGES_FOLDER . "border.png";?>);
+  border-image-slice: 34%;
+  border-image-repeat: round;
+}
+</style>
