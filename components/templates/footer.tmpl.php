@@ -21,7 +21,7 @@
               <h5 class="manzoku-color-accent1-neg">Established in 2019,</h5>
             </header>
             <article>
-              <p class="manzoku-font-1 line-height-2 manzoku-black">
+              <p class="manzoku-font-1 line-height-2 manzoku-regular">
                 Manzoku Cafe has been serving Japanese cuisines in the City of Cabanatuan. Eventually, their dishes have evolved into a mixture of Japanese-Filipino taste.
               </p>
             </article>
@@ -51,7 +51,7 @@
       </section>
       <hr class="p-1 manzoku-bg-accent2 rounded manzoku-animate-slidefadein" />
       <p class="text-center manzoku-font-2 m-1 manzoku-animate-slidefadein">© IT135-8L--GROUP BOTSWANA / MANZOKU CAFE 2021</p>
-      <p class="manzoku-bold text-center manzoku-font-1 m-2 manzoku-animate-slidefadein">Made with love (and the help of <a class=" manzoku-color-base" href="https://www.svgbackgrounds.com/">#SVGBackgrounds</a>).</p>
+      <p class="manzoku-semibold text-center manzoku-font-1 m-2 manzoku-animate-slidefadein">Made with love (and the help of <a class=" manzoku-color-base" href="https://www.svgbackgrounds.com/">#SVGBackgrounds</a>).</p>
       <p class="manzoku-regular text-center manzoku-font-1 m-2 manzoku-animate-slidefadein"><a class=" manzoku-color-accent1-neg" href="login.admin.php">Administrator Login</a></p>
     </div>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="position-relative manzoku-animate-slidefadein" style="z-index: 1; margin-top:-5%">

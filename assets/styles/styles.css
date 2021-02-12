@@ -11,22 +11,22 @@
 
 @font-face {
   font-family: main1Regular;
-  src: url(../typefaces/Lato/Lato-Regular.ttf);
+  src: url(../typefaces/Inter/Inter-Regular-slnt=0.ttf);
 }
 
 @font-face {
   font-family: main1SemiBold;
-  src: url(../typefaces/Lato/Lato-SemiBold.ttf);
+  src: url(../typefaces/Inter/Inter-SemiBold-slnt=0.ttf);
 }
 
 @font-face {
   font-family: main1Bold;
-  src: url(../typefaces/Lato/Lato-Bold.ttf);
+  src: url(../typefaces/Inter/Inter-Bold-slnt=0.ttf);
 }
 
 @font-face {
   font-family: main1Black;
-  src: url(../typefaces/Lato/Lato-Black.ttf);
+  src: url(../typefaces/Inter/Inter-Black-slnt=0.ttf);
 }
 
 
@@ -159,6 +159,9 @@
   }
   .manzoku-color-secondary{
     color: var(--manzoku-secondary);
+  }
+  .manzoku-color-secondary-neg{
+    color: var(--manzoku-secondary-neg);
   }
   .manzoku-color-accent1{
     color: var(--manzoku-accent1);

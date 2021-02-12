@@ -19,7 +19,7 @@ include NAVBAR; ?>
   <div class="container p-0 manzoku-color-contrast">
     <heading class="p-3 manzoku-animate-slidefadein d-block">
       <h1 class="manzoku-typeface-main0 manzoku-font-3 text-center manzoku-color-base">Testimonials</h1>
-      <h2 class="manzoku-typeface-main0 manzoku-font-2 text-center manzoku-color-secondary">See what customers say about our services</h2>
+      <h2 class="manzoku-typeface-main0 manzoku-font-2 text-center manzoku-color-secondary-neg">See what customers say about our services</h2>
     </heading>
     <article class="row p-3">
       <?php
@@ -31,10 +31,10 @@ include NAVBAR; ?>
   </div>
 
   <?php
-  //
+  //render add-content section for admins
   include "components/templates/add-content-section.tmpl.php";
 
-  //
+  //close DB connection
   require_once CLOSE_DATABASE;
   ?>
 </section>
