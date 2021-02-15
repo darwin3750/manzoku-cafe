@@ -18,7 +18,7 @@ include NAVBAR; ?>
   <!-- Main Content -->
   <div class="container p-0 manzoku-color-contrast">
     <heading class="p-3 manzoku-animate-slidefadein d-block">
-      <h1 class="manzoku-typeface-main0 manzoku-font-3 text-center manzoku-color-base">Testimonials</h1>
+      <h1 class="manzoku-typeface-main0 manzoku-font-3 text-center manzoku-color-base">Testimonies</h1>
       <h2 class="manzoku-typeface-main0 manzoku-font-2 text-center manzoku-color-secondary-neg">See what customers say about our services</h2>
     </heading>
     <article class="row p-3">

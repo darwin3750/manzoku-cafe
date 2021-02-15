@@ -346,7 +346,7 @@
     transform: translateY(0);
     opacity: 1;
     height: auto;
-    max-height: 5000px;
+    max-height: 50000px;
   }
 
 /* borders */

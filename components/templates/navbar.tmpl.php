@@ -5,7 +5,7 @@
     <!-- navbar for desktop view -->
     <section id="navigation-links" class="manzoku-typeface-main0 manzoku-color-contrast d-md-block d-none">
       <a class="manzoku-font-2" href="index.php">Home</a>
-      <a class="manzoku-font-2" href="menus.php">Menus</a>
+      <a class="manzoku-font-2" href="menus.php">Menu</a>
       <a class="manzoku-font-2" href="about_us.php">About Us</a>
       <a class="manzoku-font-2" href="contact_us.php">Contact Us</a>
       <a class="manzoku-font-2" href="testimonies.php">Testimonies</a>
@@ -25,7 +25,7 @@
   </div>
   <section id="mobile-navigation-links" class="mh-0 h-auto manzoku-bg-primary d-flex flex-column p-0 manzoku-border-top-base-4">
     <a class="manzoku-font-2" href="index.php">Home</a>
-    <a class="manzoku-font-2" href="menus.php">Menus</a>
+    <a class="manzoku-font-2" href="menus.php">Menu</a>
     <a class="manzoku-font-2" href="about_us.php">About Us</a>
     <a class="manzoku-font-2" href="contact_us.php">Contact Us</a>
     <a class="manzoku-font-2" href="testimonies.php">Testimonies</a>
