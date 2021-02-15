@@ -21,6 +21,12 @@ if (isset($_POST['send-message'])) {
   $subject = $_POST['subject'];
   $message = $_POST['message'];
 
+  //validate phone input
+  if(!preg_match("/^0[1-9][0-9]{9}$/", $phone)){
+    header("Location: ../../contact_us.php?error=invalidphonenumber");
+    exit();
+  }
+
   prepareSQLStatement("INSERT INTO CONTACT_MESSAGES (SENDER_NAME, SENDER_EMAIL, SENDER_PHONE, SUBJECT, BODY)  VALUES (?, ?, ?, ?, ?)");
   mysqli_stmt_bind_param($sql_statement, "sssss", $name, $email, $phone, $subject, $message);
   header("Location: ../../contact_us.php?messagesend=success");
