@@ -32,6 +32,10 @@ window.onload = () => {
         //rotate chevron
         body.parentElement.previousElementSibling.firstElementChild.lastElementChild.style.transform = 
             body.classList.contains("active") ? 'rotate(900deg)' : 'rotate(0deg)';
+        body.addEventListener('transitionend', () => {
+          head.parentElement.previousElementSibling.previousElementSibling.scrollIntoView({ block: 'start',  behavior: 'smooth' });
+          //window.scrollBy(0, -head.offsetHeight); // Adjust scrolling with a negative value here
+        })
       });
     })
   })
